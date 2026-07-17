@@ -22,8 +22,31 @@ src="https://www.facebook.com/tr?id=4608548576089764&ev=PageView&noscript=1" alt
 <meta name="color-scheme" content="dark">
 <meta name="supported-color-schemes" content="dark">
 <meta name="theme-color" content="#0B0C0B">
-<title>Atmos Villas — villas privadas con piscina en Koh Phangan</title>
-<meta name="description" content="Atmos Villas — 8 villas privadas con piscina en Hin Kong, costa oeste de Koh Phangan. Totalmente amuebladas, leasehold de 30 años inscrito, precio fijo desde 4,69 M THB.">
+<title>Comprar una villa en Koh Phangan — Atmos Villas | Villas con piscina en Tailandia</title>
+<meta name="description" content="Compre una villa con piscina en Koh Phangan, Tailandia. 8 villas llave en mano en venta en Hin Kong: 158 m², piscina privada, totalmente amuebladas, leasehold de 30 años inscrito. Desde 4,69 M THB (~143.000 $).">
+<link rel="canonical" href="https://atmos.villas/es.html">
+<link rel="alternate" hreflang="en" href="https://atmos.villas/">
+<link rel="alternate" hreflang="ru" href="https://atmos.villas/ru.html">
+<link rel="alternate" hreflang="uk" href="https://atmos.villas/uk.html">
+<link rel="alternate" hreflang="de" href="https://atmos.villas/de.html">
+<link rel="alternate" hreflang="fr" href="https://atmos.villas/fr.html">
+<link rel="alternate" hreflang="es" href="https://atmos.villas/es.html">
+<link rel="alternate" hreflang="he" href="https://atmos.villas/he.html">
+<link rel="alternate" hreflang="x-default" href="https://atmos.villas/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atmos Villas">
+<meta property="og:title" content="Comprar una villa en Koh Phangan — Atmos Villas | Villas con piscina en Tailandia">
+<meta property="og:description" content="Compre una villa con piscina en Koh Phangan, Tailandia. 8 villas llave en mano en venta en Hin Kong: 158 m², piscina privada, totalmente amuebladas, leasehold de 30 años inscrito. Desde 4,69 M THB (~143.000 $).">
+<meta property="og:url" content="https://atmos.villas/es.html">
+<meta property="og:image" content="https://atmos.villas/img/w/aaab99e3ec.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1067">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Comprar una villa en Koh Phangan — Atmos Villas | Villas con piscina en Tailandia">
+<meta name="twitter:description" content="Compre una villa con piscina en Koh Phangan, Tailandia. 8 villas llave en mano en venta en Hin Kong: 158 m², piscina privada, totalmente amuebladas, leasehold de 30 años inscrito. Desde 4,69 M THB (~143.000 $).">
+<meta name="twitter:image" content="https://atmos.villas/img/w/aaab99e3ec.webp">
+
 <link rel="preload" as="image" href="img/w/aaab99e3ec.webp" media="(min-width:761px)" fetchpriority="high">
 <link rel="preload" as="image" href="img/m/aaab99e3ec.webp" media="(max-width:760px)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -438,7 +461,8 @@ footer{border-top:1px solid var(--line2);padding:44px 0 60px}
 
 .hero{overflow:hidden}
 body{overflow-x:hidden}
-h1,h2,h3,h4,.eyebrow,.card p,.cap,.btn,.stat .l{overflow-wrap:break-word;word-break:normal;hyphens:auto}
+h1,h2,h3,h4{overflow-wrap:normal;word-break:keep-all;hyphens:none}
+.card p,.cap,.btn,.stat .l,.eyebrow{overflow-wrap:break-word;hyphens:none}
 
 @media(max-width:560px){
  .toggle{width:100%;box-sizing:border-box;max-width:100%}
@@ -551,8 +575,80 @@ html[dir="rtl"] .lang-menu a .tick{margin-left:0;margin-right:auto}
 @supports not (background-image:url('x.webp')){.final .bg{background-image:url('img/1110d0ca98.jpg')!important}}
 .pl{color:var(--gold2);text-decoration:underline;text-underline-offset:2px}
 .legaltext .pl,.formnote .pl{color:var(--gold2)}
+
+/* ===== правки от 17.07: липкая кнопка, отступы, цены ===== */
+/* 1. Липкая панель: WhatsApp прозрачная с салатовой рамкой и свечением */
+.stickybar .btn-wa{
+  background:transparent!important;
+  color:#2EE06F!important;
+  border:1.5px solid #25D366!important;
+  box-shadow:none!important;
+  text-shadow:none;
+}
+.stickybar .btn-wa svg{filter:none}
+.stickybar .btn-wa:active{background:rgba(37,211,102,.12)!important}
+
+/* 2. Меньше пустоты между секциями на мобильном */
+@media(max-width:760px){
+  .sec{padding-top:64px;padding-bottom:64px}
+  .blockcta{margin-top:26px;margin-bottom:0}
+  .blockcta+*{margin-top:0}
+}
+
+/* 3. Цены в таблице этапов не переносятся */
+.pay li b, .pay .price, .stages b{white-space:nowrap}
+@media(max-width:560px){
+  .pay li{font-size:13.5px}
+  .pay li b{font-size:14.5px;letter-spacing:0}
+}
+
+/* цены лестницы этапов: не переносить ฿, ужать на мобильном */
+.ladder .row .p{white-space:nowrap}
+@media(max-width:560px){
+  .ladder .row{gap:8px}
+  .ladder .row .p{font-size:14px;letter-spacing:0}
+  .ladder .row .m{font-size:12.5px}
+  .ladder .row .d{font-size:11.5px;white-space:nowrap}
+}
+@media(max-width:400px){
+  .ladder .row .p{font-size:13px}
+  .ladder .row .d{display:block;flex-basis:100%;text-align:left}
+}
+
+@media(max-width:340px){
+  .eyebrow,.eyebrow.two{font-size:10px;letter-spacing:.1em;white-space:normal}
+  .intnote{padding-left:14px;padding-right:14px}
+  .intgal .big{max-width:100%}
+}
+
+/* ===== 3D tour ===== */
+.tour-box{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+  aspect-ratio:16/9;background:#0E100E;margin-top:34px}
+.tour-box img.cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+  filter:brightness(.62)}
+.tour-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.tour-cta{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:14px;cursor:pointer;background:transparent;border:0;width:100%;font-family:var(--f)}
+.tour-cta .ring{width:76px;height:76px;border-radius:50%;background:var(--grad);display:flex;
+  align-items:center;justify-content:center;box-shadow:0 12px 34px rgba(201,168,106,.35);transition:.25s}
+.tour-cta:hover .ring{transform:scale(1.07)}
+.tour-cta .ring svg{width:26px;height:26px;margin-left:3px}
+.tour-cta .t{color:#fff;font-weight:800;font-size:15.5px;letter-spacing:.02em;
+  text-shadow:0 2px 14px rgba(0,0,0,.65)}
+.tour-cta .badge360{position:absolute;top:16px;right:16px;background:rgba(11,12,11,.72);
+  border:1px solid var(--line);color:var(--gold2);font-size:11px;font-weight:800;letter-spacing:.14em;
+  padding:7px 12px;border-radius:30px}
+.tour-hint{color:var(--muted);font-size:12.5px;margin-top:12px;text-align:center}
+@media(max-width:760px){
+  .tour-box{aspect-ratio:4/3;border-radius:14px;margin-top:26px}
+  .tour-cta .ring{width:64px;height:64px}
+}
+html[dir="rtl"] .tour-cta .badge360{right:auto;left:16px}
 </style>
 <script src="config.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Atmos Villas", "url": "https://atmos.villas/", "logo": "https://atmos.villas/logo.svg", "email": "atmos.villas@gmail.com", "telephone": "+66656352972", "sameAs": ["https://www.instagram.com/atmos.villas"], "address": {"@type": "PostalAddress", "addressLocality": "Hin Kong, Koh Phangan", "addressRegion": "Surat Thani", "addressCountry": "TH"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Atmos Villas — private pool villa, Koh Phangan", "description": "8 villas privadas llave en mano con piscina en Hin Kong, costa oeste de Koh Phangan, Tailandia. Villa de 158 m² con piscina privada de 15 m², terreno vallado de 320–383 m², totalmente amueblada. Leasehold de 30 años inscrito directamente con el propietario tailandés del terreno. Precio desde 4.690.000 THB.", "image": "https://atmos.villas/img/w/aaab99e3ec.webp", "brand": {"@type": "Brand", "name": "Atmos Villas"}, "offers": {"@type": "Offer", "price": "4690000", "priceCurrency": "THB", "availability": "https://schema.org/LimitedAvailability", "url": "https://atmos.villas/", "validFrom": "2026-01-01"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a villa at Atmos Villas cost?", "acceptedAnswer": {"@type": "Answer", "text": "The current stage price is 4,690,000 THB (about $143,000), fully furnished, all included. The price rises stage by stage as construction progresses; the final price is 5,890,000 THB."}}, {"@type": "Question", "name": "Can a foreigner buy a villa on Koh Phangan?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The land is acquired under a registered 30-year leasehold signed directly with the Thai land owner and registered at the Land Office. Only a passport is needed — no Thai company, no nominees."}}, {"@type": "Question", "name": "What rental income can the villa generate?", "acceptedAnswer": {"@type": "Answer", "text": "Based on current Koh Phangan market rates, estimated net income is around 14–16% per year with daily rental (high season 6,000 THB/night). All figures are estimates, not guarantees."}}, {"@type": "Question", "name": "When will the villas be completed?", "acceptedAnswer": {"@type": "Answer", "text": "Construction takes 12 months per villa. The first villa is due Dec 2026 – Jan 2027; the whole project is scheduled for completion in 2027."}}]}</script>
 </head>
 <body>
 
@@ -583,7 +679,7 @@ html[dir="rtl"] .lang-menu a .tick{margin-left:0;margin-right:auto}
   <div class="hero-in"><div class="wrap">
     <span class="loc-tag">Hin Kong · Koh Phangan · Tailandia</span>
     <h1>Villas privadas con piscina en la <span class="gold">costa oeste de Phangan</span></h1>
-    <p class="sub">Un proyecto boutique de 8 villas llave en mano: piscina privada, terreno vallado y mobiliario completo. Listas para vivir o alquilar.</p>
+    <p class="sub">Un proyecto boutique de 8 villas con piscina en venta en Koh Phangan: piscina privada, terreno vallado y mobiliario completo. Comprar una villa para vivir o alquilar.</p>
     <div class="pricebox">
       <div class="pb now">
         <span class="pb-l">Última villa a este precio</span>
@@ -642,7 +738,6 @@ html[dir="rtl"] .lang-menu a .tick{margin-left:0;margin-right:auto}
   <div class="rv">
     <span class="eyebrow two">Plano</span>
     <h2 style="font-size:clamp(28px,3.9vw,50px);margin-top:18px">158 m² de espacio <span class="gold">bien pensado</span></h2>
-    <ul class="specrow"><li><b>33.6</b><span>m² · salón</span></li><li><b>19.4</b><span>m² · dormitorio y baño</span></li><li><b>33</b><span>m² · terraza</span></li><li><b>15</b><span>m² · piscina</span></li><li><b>10</b><span>m² · barbacoa</span></li><li><b>47</b><span>m² · aparcamiento y caminos</span></li></ul>
     <div class="plancta"><a class="btn btn-wa" href="https://wa.me/66656352972?text=%C2%A1Hola%21%20Quiero%20elegir%20un%20terreno%20en%20Atmos%20Villas.%20%C2%BFCu%C3%A1les%20quedan%20libres%20y%20qu%C3%A9%20precio%20tienen%3F" target="_blank" rel="noopener">Elegir terreno</a><span class="plotinfo">Terreno de 320 a 383 m²</span></div>
   </div>
   <div class="media rv"><picture><source media="(max-width:760px)" srcset="img/m/c756addc40.webp" type="image/webp"><source srcset="img/w/c756addc40.webp" type="image/webp"><img width="1125" height="1125" loading="lazy" decoding="async" src="img/c756addc40.jpg" alt="План виллы 158 m²"></picture></div>
@@ -678,6 +773,27 @@ html[dir="rtl"] .lang-menu a .tick{margin-left:0;margin-right:auto}
   </ul>
 <div class="blockcta rv"><a class="btn btn-wa" href="https://wa.me/66656352972?text=%C2%A1Hola%21%20Me%20interesa%20una%20villa%20de%20Atmos%20llave%20en%20mano.%20Env%C3%ADenme%20los%20detalles%20y%20el%20precio%2C%20por%20favor." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.74-.86-2-.95-.27-.1-.47-.15-.66.15-.2.29-.76.95-.93 1.14-.17.2-.34.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.89-.8-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.51.15-.17.2-.29.3-.49.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.9-2.18-.24-.57-.48-.5-.66-.5l-.56-.01c-.2 0-.51.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.74-.71 1.98-1.4.24-.68.24-1.27.17-1.39-.07-.12-.27-.19-.57-.34zM12.04 21.5a9.5 9.5 0 01-4.84-1.33l-.35-.2-3.6.94.96-3.5-.23-.36a9.46 9.46 0 01-1.45-5.05c0-5.23 4.26-9.49 9.5-9.49 2.54 0 4.92.99 6.71 2.79a9.42 9.42 0 012.78 6.71c0 5.24-4.26 9.49-9.5 9.49zM20.5 3.49A11.42 11.42 0 0012.04.08C5.75.08.63 5.2.63 11.48c0 2.01.53 3.97 1.53 5.7L.5 24l6.06-1.59a11.4 11.4 0 005.48 1.4h.01c6.28 0 11.4-5.12 11.4-11.4 0-3.05-1.19-5.91-3.35-8.07z"/></svg> Consultar precio</a><span class="bc-note">Mobiliario y electrodomésticos incluidos</span></div>
   </div></section>
+<section class="sec" id="tour">
+  <div class="wrap">
+    <span class="eyebrow two">Tour 3D</span>
+    <h2>Recorra la villa <span class="gold">en 360°</span></h2>
+    <p class="sub">Un tour virtual real por la villa de un dormitorio: salón, dormitorio, terraza y piscina. Mire alrededor, acerque los detalles, cambie de habitación.</p>
+    <div class="tour-box" id="tourbox">
+      <picture>
+        <source media="(max-width:760px)" srcset="img/m/66b85cc106.webp" type="image/webp">
+        <source srcset="img/w/66b85cc106.webp" type="image/webp">
+        <img class="cover" src="img/66b85cc106.jpg" alt="360° virtual tour — Atmos Villas" loading="lazy" decoding="async">
+      </picture>
+      <button class="tour-cta" id="tourbtn" type="button" aria-label="Abrir el tour 3D">
+        <span class="badge360">360°</span>
+        <span class="ring"><svg viewBox="0 0 24 24" fill="#1a1206"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+        <span class="t">Abrir el tour 3D</span>
+      </button>
+    </div>
+    <p class="tour-hint">Arrastre para mirar · las miniaturas cambian de habitación</p>
+  </div>
+</section>
+
 
 <!-- TEAM + BUILDER -->
 <section class="sec" id="price" style="background:var(--bg2)"><div class="wrap">
@@ -1108,5 +1224,19 @@ document.querySelectorAll('.copymail2').forEach(bind);
    }catch(err){}
  },true);
 })();
+</script><script>
+(function(){var b=document.getElementById('tourbtn');if(!b)return;
+b.addEventListener('click',function(){
+  var box=document.getElementById('tourbox');
+  var i=document.createElement('iframe');
+  i.src='https://kuula.co/share/collection/7TL6D?logo=-1&info=0&fs=1&vr=1&thumbs=1&inst=0';
+  i.allow='xr-spatial-tracking; gyroscope; accelerometer; fullscreen';
+  i.setAttribute('allowfullscreen','');
+  i.loading='eager';
+  box.appendChild(i);
+  b.style.display='none';
+  var c=box.querySelector('img.cover'); if(c) c.style.opacity='0';
+  try{if(window.fbq)fbq('track','ViewContent',{content_name:'3D tour',content_ids:[document.documentElement.lang]});}catch(e){}
+});})();
 </script></body>
 </html>

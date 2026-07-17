@@ -1,10 +1,2 @@
-/* ===================================================================
-   ATMOS VILLAS — единственный файл, который нужно отредактировать.
-   Вставьте сюда адрес вашего Cloudflare Worker (см. TELEGRAM-SETUP.md).
-   Пример: "https://atmos-form.aleksandr.workers.dev"
-   =================================================================== */
-
+/* Atmos Villas — адрес обработчика формы (Cloudflare Worker). */
 window.ATMOS_FORM_ENDPOINT = "https://atmos-form.magic-resu.workers.dev";
-
-/* Пока строка пустая, форма не отправляется:
-   она покажет кнопку «Написать в WhatsApp» как запасной вариант. */
