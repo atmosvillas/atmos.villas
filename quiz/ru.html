@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B0C0B">
+<meta name="robots" content="noindex">
+<title>Подберите свою виллу на Пангане — Atmos Villas</title>
+<meta name="description" content="Ответьте на 4 вопроса — пришлём подборку вилл Atmos под вас: планировки, участки, цены этапов.">
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4608548576089764');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4608548576089764&ev=PageView&noscript=1" alt=""/></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="../img/m/aaab99e3ec.webp" fetchpriority="high">
+<style>
+:root{color-scheme:dark only;
+ --bg:#0B0C0B; --card:#151310; --card2:#1C1912; --gold:#C9A86A; --gold2:#E4C98A;
+ --ink:#F3EFE7; --muted:#9C968B; --muted2:#C6C0B5;
+ --line:rgba(201,168,106,.22); --line2:rgba(243,239,231,.09);
+ --f:'Manrope',system-ui,Arial,sans-serif;
+ --grad:linear-gradient(135deg,#E4C98A 0%,#C9A86A 55%,#A8894E 100%);
+ --wa:#25D366}
+*,*::before,*::after{box-sizing:border-box}
+html{background:#0B0C0B}
+html,body{margin:0;padding:0;background:#0B0C0B}
+body{overscroll-behavior:none}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-weight:500;
+ min-height:100svh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:var(--f)}
+
+header{padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{height:17px;width:auto;display:block;max-width:56vw}
+.lg-mark{fill:var(--gold)}.lg-text{fill:var(--ink)}
+.lg-mark{fill:var(--gold)}.lg-text{fill:var(--ink)}
+.left-chip{font-size:10px;font-weight:800;letter-spacing:.08em;color:var(--gold2);
+ border:1px solid var(--line);border-radius:30px;padding:5px 9px;white-space:nowrap;flex:none}
+@media(max-width:440px){.left-chip{display:none}}
+header{gap:8px}
+.logo{max-width:62vw}
+
+.bar{height:3px;background:var(--line2);border-radius:3px;margin:0 18px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:3px;transition:width .4s cubic-bezier(.2,.8,.2,1)}
+
+main{flex:1;display:flex;flex-direction:column;padding:10px 18px 22px;max-width:560px;margin:0 auto;width:100%}
+.step{display:none;flex:1;flex-direction:column;animation:in .35s cubic-bezier(.2,.8,.2,1)}
+.step.on{display:flex}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+.kicker{font-size:10.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin:10px 0 0}
+h1,h2{font-weight:800;letter-spacing:-.01em;line-height:1.18;margin:10px 0 0}
+h1{font-size:clamp(25px,6.6vw,32px)}
+h2{font-size:clamp(21px,5.6vw,26px)}
+.sub{color:var(--muted2);font-size:14.5px;line-height:1.65;margin:12px 0 0}
+.gold{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px;
+ border-radius:12px;border:0;font-size:15px;font-weight:800;cursor:pointer;transition:.22s;letter-spacing:.01em}
+.btn-gold{background:var(--grad);color:#1a1206;box-shadow:0 10px 26px rgba(201,168,106,.25)}
+.btn-gold:active{transform:scale(.985)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 26px rgba(37,211,102,.3)}
+.btn-line{background:transparent;border:1px solid var(--line2);color:var(--muted2);font-weight:700}
+.btn-line:active{border-color:var(--gold)}
+.actions{margin-top:auto;padding-top:18px;display:grid;gap:10px}
+.back{background:none;border:0;color:var(--muted);font-size:13px;font-weight:700;cursor:pointer;padding:10px}
+
+.hero0{position:relative;border-radius:16px;overflow:hidden;margin-top:16px;aspect-ratio:4/3;border:1px solid var(--line)}
+.hero0 img{width:100%;height:100%;object-fit:cover}
+.hero0 .ov{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(11,12,11,.82) 100%)}
+.hero0 .tag{position:absolute;left:14px;bottom:12px;font-size:12px;font-weight:800;letter-spacing:.1em;color:#fff}
+
+.cards{display:grid;gap:12px;margin-top:18px}
+.vcard{position:relative;border:1.5px solid var(--line2);border-radius:16px;overflow:hidden;background:var(--card);
+ cursor:pointer;transition:.22s;text-align:left;padding:0}
+.vcard img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.vcard .vb{padding:13px 15px 15px}
+.vcard .vt{font-size:16.5px;font-weight:800}
+.vcard .vd{color:var(--muted);font-size:12.5px;margin-top:4px}
+.vcard.sel{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold), 0 12px 30px rgba(201,168,106,.18)}
+.vcard .badge{position:absolute;top:12px;left:12px;background:var(--grad);color:#1a1206;
+ font-size:11px;font-weight:800;letter-spacing:.04em;padding:7px 11px;border-radius:30px}
+.vcard .tick{position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;
+ background:var(--grad);display:none;align-items:center;justify-content:center}
+.vcard.sel .tick{display:flex}
+.opt-any{border:1.5px dashed var(--line2);border-radius:13px;background:none;color:var(--muted2);
+ padding:14px;font-size:14px;font-weight:700;cursor:pointer;transition:.2s}
+.opt-any.sel{border-color:var(--gold);color:var(--gold2);border-style:solid}
+
+.plan-wrap{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);margin-top:16px;background:#0E100E}
+.plan-wrap img{width:100%;display:block}
+.pin{position:absolute;transform:translate(-50%,-50%);width:34px;height:34px;border-radius:50%;
+ border:2px solid #fff;background:var(--grad);color:#1a1206;font-weight:800;font-size:13px;
+ display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s;
+ box-shadow:0 4px 14px rgba(0,0,0,.45);padding:0}
+.pin:active{transform:translate(-50%,-50%) scale(1.12)}
+.pin.sold{background:#3a3a37;border-color:#5c5b56;color:#8b8a83;cursor:default;font-size:9px;letter-spacing:.02em}
+.pin.sel{background:#fff;color:#1a1206;border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,168,106,.45)}
+.plan-note{display:flex;gap:14px;margin-top:10px;color:var(--muted);font-size:11.5px;flex-wrap:wrap}
+.plan-note b{color:var(--muted2)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:-1px;margin-right:5px}
+
+.slider{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);margin-top:16px;background:#0E100E}
+.slides{display:flex;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.slide{min-width:100%;aspect-ratio:3/2;position:relative}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slide.contain img{object-fit:contain;background:#10120F}
+.slide .cap{position:absolute;left:12px;bottom:10px;background:rgba(11,12,11,.72);border:1px solid var(--line2);
+ color:var(--muted2);font-size:11px;font-weight:700;letter-spacing:.06em;padding:6px 10px;border-radius:30px}
+.snav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;
+ background:rgba(11,12,11,.8);border:1.5px solid var(--gold);color:var(--gold2);font-size:22px;font-weight:700;cursor:pointer;
+ display:flex;align-items:center;justify-content:center}
+.snav.prev{left:10px}.snav.next{right:10px}
+.dots{display:flex;gap:6px;justify-content:center;margin-top:10px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--line2);transition:.2s}
+.dots i.on{background:var(--gold);width:18px;border-radius:4px}
+
+.chips{display:grid;gap:10px;margin-top:16px}
+.chip{border:1.5px solid var(--line2);border-radius:12px;background:var(--card);color:var(--ink);
+ padding:15px;font-size:14.5px;font-weight:700;cursor:pointer;transition:.2s;text-align:left;
+ display:flex;align-items:center;gap:11px}
+.chip .ico{flex:none;font-size:18px}
+.chip.sel{border-color:var(--gold);background:var(--card2)}
+
+.legal{display:grid;gap:11px;margin-top:16px}
+.lrow{display:flex;gap:13px;background:var(--card);border:1px solid var(--line2);border-radius:13px;padding:15px}
+.lrow .ic{flex:none;width:38px;height:38px;border-radius:10px;background:rgba(201,168,106,.12);
+ display:flex;align-items:center;justify-content:center;font-size:17px}
+.lrow b{display:block;font-size:14.5px;margin-bottom:3px}
+.lrow p{margin:0;color:var(--muted);font-size:12.5px;line-height:1.55}
+
+.sum{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:16px}
+.sum .row{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line2);font-size:14px}
+.sum .row:last-child{border:0}
+.sum .k{color:var(--muted)}
+.sum .v{font-weight:800;text-align:right}
+.gift{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.gift span{font-size:12px;color:var(--muted2);border:1px solid var(--line2);border-radius:30px;padding:7px 12px}
+.gift span b{color:var(--gold2)}
+
+.fin{text-align:center;padding-top:26px}
+.fin .big{width:74px;height:74px;border-radius:50%;background:rgba(37,211,102,.14);border:1.5px solid var(--wa);
+ display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:30px}
+.count{font-size:11.5px;color:var(--muted);text-align:center;margin-top:12px}
+.count b{color:var(--gold2)}
+@media(min-width:561px){ .vcard img{aspect-ratio:16/9} }
+
+.plan-wrap{position:relative}
+.plotsvg{position:absolute;inset:0;width:100%;height:100%}
+.plotshape{fill:rgba(201,168,106,0);stroke:rgba(201,168,106,0);stroke-width:6;
+  cursor:pointer;transition:fill .2s,stroke .2s;pointer-events:auto}
+.plotshape:hover{fill:rgba(201,168,106,.18);stroke:rgba(201,168,106,.7)}
+.plotshape.sel{fill:rgba(201,168,106,.34);stroke:#E4C98A;stroke-width:9}
+.plotshape.sold{cursor:default;pointer-events:none}
+
+/* воздух и анти-обрезка */
+.step{padding-bottom:6px}
+h1,h2{overflow-wrap:normal;word-break:keep-all;hyphens:none;padding-right:2px}
+.kicker{margin-top:14px}
+.sub{margin-top:14px}
+.vcard .vb{padding:14px 16px 16px}
+.vcard .vt{line-height:1.25}
+.vcard .vd{line-height:1.5;margin-top:6px}
+.lrow b{line-height:1.3}
+.sum{margin-top:18px}
+a{color:inherit;text-decoration:none}
+a:link,a:visited{color:inherit}
+.btn-line{color:var(--muted2)}
+/* генплан на чёрном фоне */
+.plan-wrap{background:#000}
+.plan-wrap img{background:#000}
+@media(max-width:400px){
+  main{padding-left:16px;padding-right:16px}
+  h1{font-size:clamp(23px,6.3vw,30px)}
+}
+
+/* карточки вилл: убрать синеву, задать цвета явно */
+.vcard,.vcard *{color:var(--ink)}
+.vcard .vt{color:var(--gold2)!important}
+.vcard .vd{color:var(--muted)!important}
+.vcard .vb{padding:14px 16px 18px}
+.opt-any{color:var(--muted2)!important}
+#bgfix{position:fixed;inset:0;background:#0B0C0B;z-index:-1}
+html{background:#0B0C0B!important}body{background:#0B0C0B!important}
+
+/* карточка: заголовок и описание — отдельными строками, с воздухом */
+.vcard .vb{display:block;padding:14px 16px 18px}
+.vcard .vt{display:block;font-size:16.5px;font-weight:800;line-height:1.3}
+.vcard .vd{display:block;font-size:12.5px;line-height:1.55;margin-top:7px}
+
+.hwa{flex:none;display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:10px;
+  background:var(--wa);color:#fff;font-size:12.5px;font-weight:800;letter-spacing:.01em;
+  box-shadow:0 6px 16px rgba(37,211,102,.28)}
+.hwa svg{flex:none}
+.hwa:active{transform:scale(.97)}
+/* WA-кнопка: короткий текст на среднем мобильном, иконка на очень узком */
+@media(max-width:430px){.hwa span{font-size:0}.hwa span::after{content:"Написать";font-size:12.5px}}
+@media(max-width:360px){.hwa span{display:none}.hwa{padding:10px;gap:0}.hwa svg{width:20px;height:20px}}
+
+.vcard .vfeat{display:block;font-size:12.5px;line-height:1.6;color:var(--muted2);margin-top:8px}
+
+.pgrid-h{font-size:13px;font-weight:800;color:var(--muted2);margin:16px 0 10px}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.plotbtn{border:1.5px solid var(--line2);border-radius:11px;background:var(--card);color:var(--ink);
+  padding:12px 4px;font-size:15px;font-weight:800;cursor:pointer;transition:.18s;
+  display:flex;flex-direction:column;align-items:center;gap:3px;line-height:1.1}
+.plotbtn .pa{font-size:9.5px;font-weight:600;color:var(--muted);letter-spacing:.01em}
+.plotbtn:active{transform:scale(.96)}
+.plotbtn.sel{border-color:var(--gold);background:var(--card2);box-shadow:0 0 0 1px var(--gold)}
+.plotbtn.sel .pa{color:var(--gold2)}
+.plotbtn.sold{opacity:.4;cursor:default;border-style:dashed}
+.plotbtn.sold .pa{color:#c9564f}
+@media(max-width:400px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+
+/* sticky header + floating кнопка */
+header{position:sticky;top:0;z-index:50;background:#0B0C0B;border-bottom:1px solid var(--line2);gap:8px}
+.bar{position:sticky;top:56px;z-index:49;background:#0B0C0B;margin:0;padding:0 18px 6px}
+main{padding-bottom:96px}
+.actions{margin-top:22px;padding-top:0;display:grid;gap:10px}
+/* нижняя закреплённая кнопка "Дальше" */
+.dockbtn{position:fixed;left:0;right:0;bottom:0;z-index:48;padding:12px 18px 18px;
+  background:linear-gradient(180deg,transparent,#0B0C0B 32%);pointer-events:none}
+.dockbtn .btn{pointer-events:auto;max-width:524px;margin:0 auto}
+#dockbtn{width:100%}
+#dock.wa #dockbtn{background:var(--wa);color:#fff;box-shadow:0 10px 26px rgba(37,211,102,.3)}
+#dock.hide{display:none}
+
+.qhead{display:flex;align-items:flex-start;gap:10px;margin-top:6px}
+.barrow{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line2);
+  background:transparent;color:var(--muted2);font-size:22px;line-height:1;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;margin-top:8px;transition:.18s;font-family:var(--f)}
+.barrow:active{border-color:var(--gold);color:var(--gold2)}
+.qhead .kicker{margin-top:0}
+.qhead h2{margin-top:8px}
+
+/* экран 4: воздух и разделение */
+[data-s="4"] .legal{gap:14px}
+[data-s="4"] .after-q{margin-top:28px;padding-top:24px;border-top:1px solid var(--line2)}
+
+/* прогресс стройки на экране 2 */
+.progress{margin-top:18px}
+.prog-h{font-size:13px;font-weight:800;color:var(--gold2);margin:0 0 12px}
+.prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:relative}
+.prog-cell{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line2);aspect-ratio:1/1}
+.prog-cell img{width:100%;height:100%;object-fit:cover}
+.prog-cell .pl{position:absolute;left:0;right:0;bottom:0;padding:20px 10px 9px;
+  background:linear-gradient(transparent,rgba(11,12,11,.9));color:#fff;font-size:11.5px;font-weight:700;
+  display:flex;flex-direction:column;gap:1px}
+.prog-cell .pl b{color:var(--gold2);font-size:10px;font-weight:800;letter-spacing:.05em}
+.prog-cell.now{border-color:var(--gold)}
+.prog-cell.now::before{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 2px var(--gold);border-radius:12px;z-index:2;pointer-events:none}
+.prog-cell.future img{filter:brightness(.4) grayscale(.4)}
+.prog-cell.future .pl{color:var(--muted2)}
+.prog-cell.future::after{content:"скоро";position:absolute;top:8px;right:8px;background:rgba(11,12,11,.75);
+  border:1px solid var(--line2);color:var(--muted2);font-size:9px;font-weight:800;letter-spacing:.1em;
+  padding:4px 8px;border-radius:20px;text-transform:uppercase}
+/* стрелки направления между этапами */
+.prog-cell.done::after,.prog-cell.now::after{content:"→";position:absolute;z-index:3;color:var(--gold2);
+  font-size:16px;font-weight:800;top:50%;right:-8px;transform:translateY(-50%);
+  background:#0B0C0B;border-radius:50%;width:18px;height:18px;display:flex;align-items:center;justify-content:center}
+.prog-cell:nth-child(2)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-8px;transform:translateX(-50%)}
+.prog-cell:nth-child(4)::after{display:none}
+
+/* экран 0: фон-картинка + текст поверх, кнопка под текстом */
+.hero-step{padding:0!important}
+.step.on.hero-step{display:flex;flex-direction:column}
+.hero-bg{position:relative;width:100%;height:44vh;min-height:280px;background-image:url('../img/m/aaab99e3ec.webp');
+  background-size:cover;background-position:center 60%;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(11,12,11,.1) 0%,rgba(11,12,11,.35) 60%,rgba(11,12,11,.95) 100%)}
+.hero-inner{position:relative;z-index:1;padding:20px 18px 30px;width:100%;margin-top:-70px}
+.hero-tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--gold2);
+  border:1px solid var(--line);border-radius:30px;padding:7px 13px;margin-bottom:16px;background:rgba(11,12,11,.4)}
+.hero-step h1{font-size:clamp(21px,5.6vw,30px);line-height:1.22;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+.hero-step .sub{color:#e8e4db;text-shadow:0 1px 12px rgba(0,0,0,.6);max-width:34ch}
+@media(max-width:340px){.hero-step h1{font-size:19px}}
+.hero-cta{margin-top:24px}
+/* на первом экране док-кнопку прячем — CTA под текстом */
+body.s0 #dock{display:none}
+
+
+
+/* карточка: текст 70% + цена 30% */
+.vcard .vb{display:flex;gap:10px;align-items:flex-start;padding:14px 15px 16px}
+.vcard .vtext{flex:1 1 68%;min-width:0}
+.vcard .vprice{flex:0 0 30%;display:flex;flex-direction:column;align-items:flex-end;text-align:right;
+  padding-left:10px;border-left:1px solid var(--line2)}
+.vcard .vp-now{font-size:14px;font-weight:800;color:var(--gold2);line-height:1.15;white-space:nowrap}
+.vcard .vp-lbl{font-size:9px;font-weight:700;color:var(--muted);letter-spacing:.04em;margin-top:2px;text-transform:uppercase}
+.vcard .vp-next{font-size:10.5px;color:var(--muted);margin-top:8px;white-space:nowrap}
+@media(max-width:360px){.vcard .vp-now{font-size:12.5px}.vcard .vp-next{font-size:9.5px}}
+
+.deal-sec{margin-top:20px}
+.deal-h{font-size:13.5px;font-weight:800;color:var(--ink);margin:0 0 10px}
+.deal-sec .compare{margin-top:0}
+
+/* карточка: заголовок в одну строку, цена по центру справа */
+.vcard .vt{white-space:nowrap;font-size:15px;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:400px){.vcard .vt{font-size:13.5px}}
+.vcard .vprice{justify-content:center}
+
+/* таблица сделки */
+.dtable{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:0;border-radius:12px;overflow:hidden}
+.dtable th{font-size:12px;font-weight:800;padding:11px 10px;text-align:left;vertical-align:middle}
+.dtable th.us{background:rgba(201,168,106,.14);color:var(--gold2)}
+.dtable th.them{background:rgba(201,86,79,.1);color:#d99089}
+.dtable td{font-size:11.5px;line-height:1.35;padding:11px 10px;vertical-align:top;border-top:1px solid var(--line2)}
+.dtable td:first-child{background:rgba(201,168,106,.05);color:var(--ink);width:50%}
+.dtable td:last-child{background:rgba(201,86,79,.03);color:var(--muted2);width:50%}
+
+/* кнопка подбора участка на всю ширину */
+.chip.help{width:100%;justify-content:center}
+
+.slide .vbadge{position:absolute;top:12px;left:12px;background:var(--grad);color:#1a1206;
+  font-size:11px;font-weight:800;letter-spacing:.03em;padding:6px 11px;border-radius:30px}
+
+.gift-h{font-size:13px;font-weight:800;color:var(--ink);margin:16px 0 10px}
+.wa-field{margin-top:18px}
+.wa-field label{display:block;font-size:13px;font-weight:700;color:var(--muted2);margin-bottom:8px}
+.wa-field label .opt{color:var(--muted);font-weight:600}
+.wa-field input{width:100%;padding:14px;border-radius:11px;border:1.5px solid var(--line2);
+  background:var(--card);color:var(--ink);font-size:15px;font-family:var(--f);outline:none;transition:.18s}
+.wa-field input:focus{border-color:var(--gold)}
+.wa-field input::placeholder{color:var(--muted)}
+.wa-hint{font-size:11.5px;color:var(--muted);margin:8px 0 0}
+
+.lang{position:relative;flex:none}
+.lang-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);
+  border:1px solid var(--line2);border-radius:30px;padding:6px 10px 6px 7px;cursor:pointer;
+  font-family:var(--f);font-size:11.5px;font-weight:800;letter-spacing:.08em;color:var(--muted2);transition:.24s;line-height:1}
+.lang-btn:hover{border-color:var(--gold);color:var(--ink);background:rgba(201,168,106,.08)}
+.lang.open .lang-btn{border-color:var(--gold);color:var(--ink)}
+.lang.open .chev{transform:rotate(180deg)}
+.lang-menu{position:absolute;top:calc(100% + 10px);right:0;min-width:190px;background:#131512;
+  border:1px solid var(--line);border-radius:12px;padding:6px;z-index:90;
+  box-shadow:0 20px 50px rgba(0,0,0,.6);opacity:0;visibility:hidden;transform:translateY(-8px) scale(.97);
+  transform-origin:top right;transition:.22s cubic-bezier(.2,.8,.2,1)}
+.lang.open .lang-menu{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
+.lang-menu a{display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:8px;
+  font-size:13.5px;font-weight:600;color:var(--muted2);transition:.16s;letter-spacing:0;white-space:nowrap}
+.lang-menu a:hover{background:rgba(255,255,255,.06);color:var(--ink)}
+.lang-menu a.on{color:var(--gold2);font-weight:800}
+.lang-menu a .fl{width:22px;height:15px;border-radius:2.5px;overflow:hidden;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
+.lang-menu a .fl svg{width:100%;height:100%;display:block}
+.lang-menu a .tick{margin-left:auto;width:13px;height:13px;opacity:0;flex:none}
+.lang-menu a.on .tick{opacity:1}
+.lang-btn .fl{width:20px;height:14px;border-radius:2.5px;overflow:hidden;flex:none;display:block;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
+.lang-btn .fl svg{width:100%;height:100%;display:block}
+.lang-btn .code{font-size:11.5px}
+@media(max-width:400px){.lang-btn .code{display:none}}
+</style>
+<script>
+(function(){
+ var MAP={'ru':'ru.html','uk':'uk.html','de':'de.html','fr':'fr.html','es':'es.html','he':'he.html','iw':'he.html'};
+ var saved=null; try{saved=localStorage.getItem('atmos_lang');}catch(e){}
+ if(saved){ if(saved!=='en'&&MAP[saved]){location.replace(MAP[saved]);} return; }
+ var seen=null; try{seen=sessionStorage.getItem('atmos_quiz_auto');}catch(e){}
+ if(seen) return;
+ try{sessionStorage.setItem('atmos_quiz_auto','1');}catch(e){}
+ var list=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||'en'];
+ for(var i=0;i<list.length;i++){
+   var code=String(list[i]||'').toLowerCase().split('-')[0];
+   if(code==='en') return;
+   if(MAP[code]){ location.replace(MAP[code]); return; }
+ }
+})();
+</script>
+</head>
+<body>
+<div id="bgfix"></div>
+<header>
+  <a href="../ru.html" aria-label="Atmos Villas"><svg class="logo" viewBox="0 0 1518 143" role="img" aria-label="Atmos Villas" xmlns="http://www.w3.org/2000/svg"><g class="lg-mark"><path d="M78.5232 71.8122C65.5269 71.8122 26.1744 139.198 0 139.198C0 117.46 65.5269 3.33996 78.5232 3.33996C91.5195 3.33996 157.046 117.46 157.046 139.198C130.872 139.198 91.5195 71.8122 78.5232 71.8122Z"/><path d="M63.5664 106.791C63.5664 98.5307 70.2628 91.8343 78.5232 91.8343C86.7836 91.8343 93.48 98.5307 93.48 106.791C93.48 115.052 86.7836 121.748 78.5232 121.748C70.2628 121.748 63.5664 115.052 63.5664 106.791Z"/></g><g class="lg-text"><path d="M283.395 2.82874V14.5478H236.014V139.821H206.514V14.5478H159.032V2.82874H283.395Z"/><path d="M309.46 2.82874H338.354L386.139 96.8844L436.046 2.82874H464.233V139.821H434.733V42.027L386.139 139.821H376.845L326.736 42.2291V139.821H309.46V2.82874Z"/><path d="M575.16 142.852C564.384 142.852 554.348 141.067 545.054 137.497C535.76 133.928 527.677 128.944 520.808 122.545C514.005 116.079 508.651 108.435 504.744 99.6122C500.838 90.7218 498.885 80.9896 498.885 70.4155C498.885 60.0434 500.838 50.5469 504.744 41.926C508.651 33.2377 514.005 25.7954 520.808 19.5991C527.677 13.4029 535.76 8.58726 545.054 5.15235C554.348 1.71745 564.384 0 575.16 0C585.936 0 595.971 1.75113 605.266 5.25338C614.56 8.68828 622.642 13.5039 629.512 19.7002C636.382 25.8965 641.77 33.3051 645.676 41.926C649.583 50.4796 651.536 59.8751 651.536 70.1124C651.536 81.0233 649.583 90.9576 645.676 99.9152C641.77 108.873 636.382 116.551 629.512 122.949C622.642 129.28 614.56 134.197 605.266 137.699C595.971 141.134 585.936 142.852 575.16 142.852ZM575.16 131.334C582.164 131.334 588.327 129.819 593.648 126.788C599.036 123.69 603.548 119.447 607.185 114.059C610.822 108.671 613.55 102.273 615.368 94.8639C617.254 87.388 618.197 79.2385 618.197 70.4155C618.197 61.7272 617.254 53.7798 615.368 46.5732C613.55 39.3667 610.822 33.1704 607.185 27.9844C603.548 22.7983 599.036 18.7573 593.648 15.8612C588.327 12.9651 582.164 11.517 575.16 11.517C568.088 11.517 561.858 12.9651 556.47 15.8612C551.149 18.7573 546.67 22.7983 543.034 27.9844C539.464 33.1704 536.736 39.3667 534.85 46.5732C533.032 53.7798 532.123 61.7272 532.123 70.4155C532.123 79.2385 533.032 87.388 534.85 94.8639C536.736 102.273 539.464 108.671 543.034 114.059C546.67 119.447 551.149 123.69 556.47 126.788C561.858 129.819 568.088 131.334 575.16 131.334Z"/><path d="M732.357 141.841C724.477 141.841 717.574 140.898 711.647 139.013C705.787 137.059 700.77 134.399 696.594 131.031C692.485 127.664 689.185 123.656 686.693 119.009C684.201 114.295 682.484 109.142 681.541 103.552H700.938C701.746 106.987 702.958 110.186 704.575 113.15C706.191 116.113 708.246 118.706 710.738 120.929C713.297 123.084 716.328 124.801 719.83 126.081C723.4 127.293 727.508 127.9 732.155 127.9C735.253 127.9 738.318 127.597 741.349 126.99C744.379 126.384 747.073 125.408 749.431 124.061C751.855 122.646 753.809 120.861 755.29 118.706C756.772 116.484 757.513 113.756 757.513 110.523C757.513 106.819 756.536 103.485 754.583 100.521C752.63 97.4906 750.037 94.7292 746.804 92.2372C743.571 89.6779 739.833 87.3206 735.59 85.1654C731.414 82.9428 727.104 80.7202 722.659 78.4976C718.011 76.2077 713.398 73.8167 708.818 71.3247C704.238 68.8327 700.13 66.0377 696.493 62.9395C692.856 59.774 689.926 56.1708 687.703 52.1297C685.481 48.0886 684.37 43.3741 684.37 37.986C684.37 32.5305 685.515 27.5129 687.805 22.933C690.094 18.2858 693.395 14.2784 697.705 10.9109C702.083 7.47596 707.404 4.8156 713.667 2.92977C719.998 0.97659 727.171 0 735.186 0C741.719 0 747.646 0.942914 752.967 2.82874C758.355 4.71457 763.103 7.34126 767.211 10.7088C771.32 14.009 774.788 17.9154 777.617 22.4279C780.446 26.8731 782.635 31.655 784.184 36.7737H766.908C765.696 33.5408 764.248 30.4427 762.564 27.4792C760.948 24.5158 758.86 21.9228 756.301 19.7002C753.809 17.4776 750.744 15.7265 747.107 14.4468C743.537 13.0998 739.227 12.4263 734.176 12.4263C729.394 12.4263 725.386 12.9987 722.154 14.1437C718.921 15.2887 716.294 16.7704 714.273 18.5889C712.32 20.34 710.906 22.3269 710.03 24.5494C709.155 26.7047 708.717 28.8262 708.717 30.9141C708.717 34.0796 709.694 37.0431 711.647 39.8045C713.667 42.5658 716.328 45.1925 719.628 47.6845C722.928 50.1765 726.666 52.5675 730.842 54.8574C735.085 57.08 739.395 59.3026 743.773 61.5252C748.555 63.9498 753.337 66.5091 758.119 69.2032C762.901 71.8299 767.211 74.7596 771.05 77.9925C774.889 81.2253 777.988 84.8623 780.345 88.9034C782.769 92.8771 783.982 97.3896 783.982 102.441C783.982 108.031 782.87 113.217 780.648 117.999C778.425 122.781 775.125 126.957 770.747 130.526C766.437 134.029 761.049 136.79 754.583 138.81C748.185 140.831 740.776 141.841 732.357 141.841Z"/><path d="M887.494 5.85954L939.523 113.453L987.106 5.85954H997.613L936.997 142.75L932.754 142.953L867.39 5.85954H887.494Z"/><path d="M1018.32 5.85954H1036.81V139.821H1018.32V5.85954Z"/><path d="M1077.32 5.85954H1095.81V131.132H1163.3V139.821H1077.32V5.85954Z"/><path d="M1187.44 5.85954H1205.93V131.132H1273.42V139.821H1187.44V5.85954Z"/><path d="M1346.15 2.82874L1409.19 139.821H1389.9L1369.49 95.167H1310.19L1289.28 139.821H1278.37L1342.42 2.82874H1346.15ZM1314.33 86.4787H1365.35L1339.69 32.0254L1314.33 86.4787Z"/><path d="M1473.55 134.466C1477.12 134.466 1480.62 134.029 1484.06 133.153C1487.56 132.21 1490.66 130.863 1493.35 129.112C1496.11 127.293 1498.33 125.105 1500.02 122.545C1501.7 119.918 1502.54 116.888 1502.54 113.453C1502.54 109.748 1501.57 106.381 1499.61 103.35C1497.66 100.319 1495.07 97.5243 1491.83 94.9649C1488.6 92.3382 1484.86 89.8799 1480.62 87.59C1476.44 85.2327 1472.13 82.9091 1467.69 80.6192C1462.97 78.1945 1458.29 75.7026 1453.65 73.1432C1449.07 70.5165 1444.92 67.5868 1441.22 64.3539C1437.58 61.0537 1434.62 57.3494 1432.33 53.241C1430.11 49.0652 1429 44.2159 1429 38.6932C1429 33.5745 1429.91 28.8262 1431.72 24.4484C1433.54 20.0706 1436.2 16.2989 1439.7 13.1334C1443.27 9.9006 1447.65 7.37494 1452.84 5.55646C1458.02 3.73798 1463.95 2.82874 1470.62 2.82874C1476.61 2.82874 1481.97 3.50225 1486.68 4.84927C1491.46 6.19629 1495.64 8.21682 1499.21 10.9109C1502.85 13.5376 1505.94 16.8041 1508.5 20.7104C1511.06 24.6168 1513.18 29.1293 1514.87 34.248L1506.79 37.986C1505.51 34.0796 1503.79 30.51 1501.63 27.2772C1499.55 23.977 1496.99 21.1819 1493.96 18.892C1490.93 16.5347 1487.39 14.7162 1483.35 13.4365C1479.31 12.1569 1474.73 11.517 1469.61 11.517C1465.03 11.517 1461.02 12.1232 1457.59 13.3355C1454.15 14.4805 1451.29 16.0295 1449 17.9827C1446.78 19.8686 1445.09 22.0238 1443.95 24.4484C1442.8 26.8057 1442.23 29.2303 1442.23 31.7223C1442.23 34.7531 1443.21 37.6492 1445.16 40.4106C1447.18 43.1047 1449.81 45.6977 1453.04 48.1897C1456.34 50.6816 1460.08 53.1063 1464.25 55.4636C1468.43 57.7535 1472.71 60.0434 1477.08 62.3334C1481.93 64.8254 1486.78 67.4857 1491.63 70.3145C1496.48 73.0759 1500.86 76.174 1504.77 79.6089C1508.67 82.9765 1511.84 86.7144 1514.26 90.8229C1516.75 94.8639 1518 99.4101 1518 104.461C1518 109.782 1517.02 114.8 1515.07 119.514C1513.12 124.162 1510.22 128.236 1506.38 131.739C1502.54 135.174 1497.73 137.901 1491.94 139.922C1486.21 141.942 1479.54 142.953 1471.93 142.953C1465.87 142.953 1460.42 142.245 1455.57 140.831C1450.72 139.417 1446.41 137.362 1442.63 134.668C1438.93 131.907 1435.73 128.573 1433.04 124.667C1430.41 120.693 1428.19 116.181 1426.37 111.129L1434.96 107.593C1436.3 111.836 1438.19 115.608 1440.61 118.908C1443.11 122.208 1446 125.037 1449.3 127.394C1452.6 129.684 1456.31 131.436 1460.42 132.648C1464.52 133.86 1468.9 134.466 1473.55 134.466Z"/></g></svg></a>
+  <div class="lang" id="lang"><button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="13.34" fill="#fff"/><rect y="13.34" width="60" height="13.33" fill="#0039A6"/><rect y="26.67" width="60" height="13.33" fill="#D52B1E"/></svg></span><span class="code">RU</span><svg class="chev" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="lang-menu" role="listbox"><a href="index.html" hreflang="en" data-lang="en"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0l60 40M60 0L0 40" stroke="#C8102E" stroke-width="4"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="13"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="7"/></svg></span>English<svg class="tick" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="ru.html" hreflang="ru" data-lang="ru" class="on"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="13.34" fill="#fff"/><rect y="13.34" width="60" height="13.33" fill="#0039A6"/><rect y="26.67" width="60" height="13.33" fill="#D52B1E"/></svg></span>Русский<svg class="tick" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="uk.html" hreflang="uk" data-lang="uk"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="20" fill="#005BBB"/><rect y="20" width="60" height="20" fill="#FFD500"/></svg></span>Українська<svg class="tick" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="de.html" hreflang="de" data-lang="de"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="13.34" fill="#000"/><rect y="13.34" width="60" height="13.33" fill="#DD0000"/><rect y="26.67" width="60" height="13.33" fill="#FFCE00"/></svg></span>Deutsch<svg class="tick" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="fr.html" hreflang="fr" data-lang="fr"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="20" height="40" fill="#002395"/><rect x="20" width="20" height="40" fill="#fff"/><rect x="40" width="20" height="40" fill="#ED2939"/></svg></span>Français<svg class="tick" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="es.html" hreflang="es" data-lang="es"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/></svg></span>Español<svg class="tick" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="he.html" hreflang="he" data-lang="he"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#fff"/><rect y="4" width="60" height="4.5" fill="#0038B8"/><rect y="31.5" width="60" height="4.5" fill="#0038B8"/><path d="M30 12.5l5.6 9.7H24.4zM30 27.5l-5.6-9.7h11.2z" fill="none" stroke="#0038B8" stroke-width="1.5"/></svg></span>עברית<svg class="tick" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div>
+  <a class="hwa" href="https://wa.me/66656352972?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D0%BE%20%D0%B2%D0%B8%D0%BB%D0%BB%D0%B0%D1%85%20Atmos" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Написать в WhatsApp</span>
+  </a>
+</header>
+<div class="bar"><i id="bar"></i></div>
+
+<main>
+
+<!-- ЭКРАН 0: старт -->
+<section class="step on hero-step" data-s="0">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="hero-tag">ОСТАЛОСЬ 5 ИЗ 8</span>
+    <h1>Своя вилла с бассейном<br><span class="gold">на острове Панган</span></h1>
+    <p class="sub">Просыпаться под шум пальм, завтракать у собственного бассейна, встречать закат с террасы. Бутиковый проект из 8 вилл под ключ — выберите свою за 60 секунд.</p>
+    <button class="btn btn-gold hero-cta" data-next>Смотреть виллы и цены →</button>
+  </div>
+</section>
+
+<!-- ЭКРАН 1: выбор виллы -->
+<section class="step" data-s="1">
+  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div><p class="kicker">Вопрос 1 из 4</p>
+  <h2>Какая вилла вам нужна?</h2></div></div>
+  <div class="cards">
+    <button class="vcard" data-villa="1 спальня">
+      <img src="img/v1.webp" alt="Вилла с 1 спальней" loading="lazy">
+      <span class="tick"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2.5 7.5l3 3 6-7" stroke="#1a1206" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+      <span class="vb"><span class="vtext"><span class="vt">Односпальная вилла · 105 м²</span>
+      <span class="vfeat">🏊 Бассейн 15 м² · терраса 33 м² · BBQ-зона · уличный душ · парковка и дорожки 47 м² · тропический сад</span></span>
+      <span class="vprice"><span class="vp-now">4 690 000 ฿</span><span class="vp-lbl">текущий этап</span><span class="vp-next">далее 4 990 000 ฿</span></span></span>
+    </button>
+    <button class="vcard" data-villa="3 спальни">
+      <span class="badge">По цене двуспальной</span>
+      <img src="img/v3.webp" alt="Вилла с 3 спальнями" loading="lazy">
+      <span class="tick"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2.5 7.5l3 3 6-7" stroke="#1a1206" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+      <span class="vb"><span class="vtext"><span class="vt">Трёхспальная вилла · 158 м²</span>
+      <span class="vfeat">🛏 3 спальни · 3 санузла · большая терраса с бассейном · BBQ-зона · для семьи и премиум-аренды</span></span>
+      <span class="vprice"><span class="vp-now">7 490 000 ฿</span><span class="vp-lbl">текущий этап</span><span class="vp-next">далее 7 990 000 ฿</span></span></span>
+    </button>
+    <button class="opt-any" data-villa="Пока выбираю">Пока не знаю — покажите обе</button>
+  </div>
+  
+</section>
+
+<!-- ЭКРАН 2: участок -->
+<section class="step" data-s="2">
+  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div><p class="kicker">Вопрос 2 из 4</p>
+  <h2>Какой участок вам интереснее?</h2></div></div>
+  <p class="sub">Ровная земля с пальмами, дорога с двух сторон. Участки 320–383 м² — заметно больше среднего по острову. Любую виллу можно поставить на любой свободный участок.</p>
+  <div class="progress">
+    <p class="prog-h">Проект уже строится — 3-й этап из 4</p>
+    <div class="prog-grid">
+      <div class="prog-cell done"><img src="img/st1.webp" alt="Участок" loading="lazy"><span class="pl">1 · Участок</span></div>
+      <div class="prog-cell done"><img src="img/st2.webp" alt="Отсыпка участка" loading="lazy"><span class="pl">2 · Отсыпка</span></div>
+      <div class="prog-cell now"><img src="img/st3.webp" alt="Строительство" loading="lazy"><span class="pl">3 · Строительство<b>сейчас здесь</b></span></div>
+      <div class="prog-cell future"><img src="img/st4.webp" alt="Готовая вилла" loading="lazy"><span class="pl">4 · Сдача · сен 2027</span></div>
+    </div>
+
+  <div class="plan-wrap" id="plan">
+    <img src="../img/w/6fddd45be5.webp" alt="Генплан Atmos Villas — 8 участков">
+  </div>
+  <div class="plan-note">
+    <span><i class="dot" style="background:var(--gold)"></i><b>свободен</b></span>
+    <span><i class="dot" style="background:#4a4945"></i><b>продан</b></span>
+
+  </div>
+  <p class="pgrid-h">Выберите участок <span style="color:var(--muted);font-weight:600">— или пропустите, подскажем сами</span></p>
+  <div class="pgrid"><button class="plotbtn sold" disabled>№1<span class="pa">продан</span></button><button class="plotbtn sold" disabled>№2<span class="pa">продан</span></button><button class="plotbtn" data-plot="Участок №3">№3<span class="pa">367.5 м²</span></button><button class="plotbtn" data-plot="Участок №4">№4<span class="pa">320 м²</span></button><button class="plotbtn" data-plot="Участок №5">№5<span class="pa">369.6 м²</span></button><button class="plotbtn" data-plot="Участок №6">№6<span class="pa">377.3 м²</span></button><button class="plotbtn" data-plot="Участок №7">№7<span class="pa">369.6 м²</span></button><button class="plotbtn sold" disabled>№8<span class="pa">продан</span></button></div>
+  <button class="chip help" data-plot="Подберите участок для меня" style="margin-top:10px"><span class="ico">🤝</span>Подберите участок для меня</button>
+  
+</section>
+
+<!-- ЭКРАН 3: галерея + вопрос -->
+<section class="step" data-s="3">
+  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div><p class="kicker">Вопрос 3 из 4</p>
+  <h2>Так выглядит ваша вилла</h2></div></div>
+  <div class="slider" id="slider">
+    <div class="slides" id="slides"></div>
+    <button class="snav prev" id="sprev" aria-label="Назад">‹</button>
+    <button class="snav next" id="snext" aria-label="Вперёд">›</button>
+  </div>
+  <div class="dots" id="sdots"></div>
+  <p style="text-align:center;color:var(--muted);font-size:11.5px;margin-top:8px" id="scount">Листайте фото →</p>
+  <p class="sub" style="margin-top:14px">Вы рассматриваете виллу для себя или как инвестицию?</p>
+  <div class="chips">
+    <button class="chip" data-pri="Для себя / переезд"><span class="ico">🏡</span>Для себя — жить или отдыхать</button>
+    <button class="chip" data-pri="Под аренду / инвестиция"><span class="ico">📈</span>Под аренду — как инвестиция</button>
+    <button class="chip" data-pri="И то, и другое"><span class="ico">✨</span>И то, и другое — жить и сдавать</button>
+  </div>
+  
+</section>
+
+<!-- ЭКРАН 4: оформление -->
+<section class="step" data-s="4">
+  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div><p class="kicker">Вопрос 4 из 4 · как оформляется</p>
+  <h2>Как вы <span class="gold">становитесь владельцем</span></h2></div></div>
+  <p class="sub">Единственная легальная схема владения виллой для иностранца в Таиланде — прозрачно, на ваше имя.</p>
+
+  <div class="deal-sec">
+    <p class="deal-h">🏝 Земля · 30-летний leasehold</p>
+    <table class="dtable">
+      <thead><tr><th class="us">✓ Atmos Villas</th><th class="them">✗ Часто у других</th></tr></thead>
+      <tbody>
+        <tr><td>Прямой договор с собственником земли</td><td>Договор с номинальной тайской компанией</td></tr>
+        <tr><td>Регистрация в Land Office</td><td>Субаренда без регистрации</td></tr>
+        <tr><td>Нужен только паспорт</td><td>Сложные схемы владения</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="deal-sec">
+    <p class="deal-h">🏗 Строительство</p>
+    <table class="dtable">
+      <thead><tr><th class="us">✓ Atmos Villas</th><th class="them">✗ Часто у других</th></tr></thead>
+      <tbody>
+        <tr><td>Договор с лицензированной тайской компанией</td><td>Договор с номинальной компанией</td></tr>
+        <tr><td>Оплата по этапам готовых работ</td><td>Оплата вперёд без гарантий</td></tr>
+        <tr><td>Гарантия 5 лет на конструктив, 2 года на интерьер</td><td>Нет ответственности и гарантии качества</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="after-q"><p class="sub" style="font-size:14px;margin-top:0">Когда планируете покупку?</p></div>
+  <div class="chips" style="margin-top:10px">
+    <button class="chip" data-when="В ближайшие 1–3 месяца"><span class="ico">🔥</span>В ближайшие 1–3 месяца</button>
+    <button class="chip" data-when="В этом году"><span class="ico">📅</span>В этом году</button>
+    <button class="chip" data-when="Присматриваюсь"><span class="ico">👀</span>Пока присматриваюсь</button>
+  </div>
+  
+</section>
+
+<!-- ЭКРАН 5: итог + WhatsApp -->
+<section class="step" data-s="5">
+  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div><p class="kicker">Готово</p>
+  <h2>Готово — <span class="gold">забирайте подборку</span></h2></div></div>
+  <div class="sum" id="sum"></div>
+  <p class="gift-h">Отправим вам:</p>
+  <div class="gift">
+    <span>📕 <b>Презентацию</b> проекта</span>
+    <span>📐 <b>Планировки</b> обеих вилл</span>
+    <span>💰 <b>Цены этапов</b> и рассрочку</span>
+    <span>🎬 <b>Видео со стройки</b></span>
+  </div>
+  <p class="count" style="margin-top:14px">Отвечаем лично, <b>в среднем за 15 минут</b> · без спама и рассылок</p>
+</section>
+
+<!-- ЭКРАН 6: после клика -->
+<section class="step" data-s="6">
+  <div class="fin">
+    <div class="big">✅</div>
+    <h2>Сообщение готово — нажмите «Отправить» в WhatsApp</h2>
+    <p class="sub">Если WhatsApp не открылся — нажмите кнопку ещё раз. А пока ждёте ответ:</p>
+  </div>
+  <div class="actions">
+    <button class="btn btn-wa" id="wabtn2">Открыть WhatsApp ещё раз</button>
+    <a class="btn btn-line" href="../ru.html#tour">Пройтись по вилле в 3D-туре →</a>
+    <a class="btn btn-line" href="../ru.html">Открыть сайт проекта</a>
+  </div>
+</section>
+
+</main>
+
+<div class="dockbtn" id="dock">
+  <button class="btn btn-gold" id="dockbtn">Дальше →</button>
+</div>
+<script>
+var S={villa:null,plot:null,pri:null,when:null};
+var PHONE='66656352972';
+var steps=[].slice.call(document.querySelectorAll('.step'));
+var cur=0, MAX=6;
+var dock=document.getElementById('dock'), dockbtn=document.getElementById('dockbtn');
+
+/* какие шаги требуют выбора перед "Дальше". Шаг 2 (участок) — НЕ обязателен. */
+var REQUIRED={1:function(){return !!S.villa}, 3:function(){return !!S.pri}, 4:function(){return !!S.when}};
+var LABELS={0:'Смотреть виллы и цены →',1:'Дальше →',2:'Дальше →',3:'Дальше →',4:'Получить предложение →'};
+
+function bar(){document.getElementById('bar').style.width=Math.round(cur/(MAX-1)*100)+'%';}
+function refreshDock(){
+  document.body.classList.toggle('s0',cur===0);
+  dock.classList.remove('wa','hide');
+  if(cur===0){ dock.classList.add('hide'); return; }
+  if(cur===5){ dock.classList.add('wa'); dockbtn.textContent='Получить в WhatsApp'; dockbtn.disabled=false; dockbtn.style.opacity='1'; return; }
+  if(cur===6){ dock.classList.add('hide'); return; }
+  dockbtn.textContent=LABELS[cur]||'Дальше →';
+  var need=REQUIRED[cur]?!REQUIRED[cur]():false;
+  dockbtn.disabled=need; dockbtn.style.opacity=need?'.5':'1';
+}
+function show(n){
+  steps[cur].classList.remove('on');
+  cur=n; steps[cur].classList.add('on');
+  window.scrollTo({top:0});
+  bar(); refreshDock();
+  if(n===5) sum();
+  try{if(window.fbq)fbq('trackCustom','QuizStep',{step:n});}catch(e){}
+}
+dockbtn.addEventListener('click',function(){
+  if(dockbtn.disabled) return;
+  if(cur===5){ goWA(); return; }
+  show(Math.min(cur+1,MAX));
+});
+document.addEventListener('click',function(e){
+  if(e.target.closest('[data-back]')) show(Math.max(cur-1,0));
+  var nx=e.target.closest('[data-next]');
+  if(nx&&!nx.disabled) show(Math.min(cur+1,MAX));
+});
+
+/* Экран 1: вилла */
+document.querySelectorAll('[data-villa]').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('[data-villa]').forEach(function(x){x.classList.remove('sel')});
+    b.classList.add('sel'); S.villa=b.getAttribute('data-villa');
+    refreshDock();
+    buildSlides();
+  });
+});
+
+/* Экран 2: выбор участка кнопками */
+document.querySelectorAll('.plotbtn:not(.sold), .chip[data-plot]').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.plotbtn, .chip[data-plot]').forEach(function(x){x.classList.remove('sel')});
+    b.classList.add('sel'); S.plot=b.getAttribute('data-plot');
+    refreshDock();
+  });
+});
+
+/* Экран 3: слайдер под выбранную виллу */
+var sl=0, slidesData=[];
+function buildSlides(){
+  var EXT=[['img/v1.webp','Экстерьер',0],['../img/w/21bb46f5f1.webp','Вход на виллу и парковка',0],
+           ['../img/w/7315b72ba9.webp','Терраса и бассейн',0]];
+  var G3ONLY=[['img/v3a.webp','Экстерьер и терраса',0],['img/v3b.webp','Вход на виллу',0],
+           ['img/v3plan2.webp','Планировка · 158 м²',1]];
+  var INT=[['../img/w/66b85cc106.webp','Гостиная и кухня',0],['../img/w/95b939da00.webp','Кухня',0],
+           ['../img/w/cea6f2aea3.webp','Гостиная',0],['../img/w/ee5095727a.webp','Спальня',0],
+           ['../img/w/6b7f850826.webp','Ванная',0]];
+  var G1=EXT.concat(INT).concat([['img/v1plan.webp','Планировка · 105 м²',1]]);
+  var G3=G3ONLY;
+  if(S.villa==='3 спальни') slidesData=G3;
+  else if(S.villa==='1 спальня') slidesData=G1;
+  else slidesData=G1.map(function(s){return s.concat(['Односпальная вилла'])})
+                    .concat(G3.map(function(s){return s.concat(['Трёхспальная вилла'])}));
+  var box=document.getElementById('slides'); box.innerHTML='';
+  var dots=document.getElementById('sdots'); dots.innerHTML='';
+  slidesData.forEach(function(s,i){
+    var d=document.createElement('div'); d.className='slide'+(s[2]?' contain':'');
+    var vbadge=s[3]?'<span class="vbadge">'+s[3]+'</span>':'';
+    d.innerHTML='<img src="'+s[0]+'" alt="'+s[1]+'" loading="lazy">'+vbadge+'<span class="cap">'+s[1]+'</span>';
+    box.appendChild(d);
+    var o=document.createElement('i'); if(i===0)o.className='on'; dots.appendChild(o);
+  });
+  sl=0; box.style.transform='translateX(0)';
+}
+function go(n){
+  sl=(n+slidesData.length)%slidesData.length;
+  document.getElementById('slides').style.transform='translateX(-'+sl*100+'%)';
+  [].forEach.call(document.getElementById('sdots').children,function(d,i){d.className=i===sl?'on':''});
+}
+document.getElementById('sprev').addEventListener('click',function(){go(sl-1)});
+document.getElementById('snext').addEventListener('click',function(){go(sl+1)});
+var tx=null;
+document.getElementById('slider').addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+document.getElementById('slider').addEventListener('touchend',function(e){
+  if(tx===null)return; var dx=e.changedTouches[0].clientX-tx;
+  if(Math.abs(dx)>40) go(sl+(dx<0?1:-1)); tx=null;},{passive:true});
+
+document.querySelectorAll('[data-pri]').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('[data-pri]').forEach(function(x){x.classList.remove('sel')});
+    b.classList.add('sel'); S.pri=b.getAttribute('data-pri');
+    refreshDock();
+  });
+});
+document.querySelectorAll('[data-when]').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('[data-when]').forEach(function(x){x.classList.remove('sel')});
+    b.classList.add('sel'); S.when=b.getAttribute('data-when');
+    refreshDock();
+    sum();
+  });
+});
+
+/* Экран 5: итог */
+function sum(){
+  var rows=[['Вилла',S.villa||'—'],['Участок',S.plot||'—'],['Важно',S.pri||'—'],['Срок',S.when||'—']];
+  document.getElementById('sum').innerHTML=rows.map(function(r){
+    return '<div class="row"><span class="k">'+r[0]+'</span><span class="v">'+r[1]+'</span></div>';}).join('');
+}
+function waLink(){
+  var msg='Здравствуйте! Прошёл подбор виллы Atmos:\n'
+    +'• Вилла: '+(S.villa||'—')+'\n'
+    +(S.plot?'• '+S.plot+'\n':'')
+    +'• Планирую: '+(S.when||'—')+'\n'
+    +'Пришлите, пожалуйста, презентацию, планировки, цены этапов и видео со стройки';
+  return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg);
+}
+function goWA(){
+  try{if(window.fbq)fbq('track','Lead',{content_name:'Quiz',content_category:S.when||'',
+    content_ids:[S.villa||'',S.plot||'']});}catch(e){}
+  window.open(waLink(),'_blank');
+  show(6);
+}
+
+document.getElementById('wabtn2').addEventListener('click',function(){window.open(waLink(),'_blank')});
+bar(); refreshDock();
+</script>
+<script>
+(function(){
+ var l=document.getElementById('lang'); if(!l) return;
+ var b=l.querySelector('.lang-btn');
+ b.addEventListener('click',function(e){e.stopPropagation();
+   var o=l.classList.toggle('open'); b.setAttribute('aria-expanded',o?'true':'false');});
+ document.addEventListener('click',function(){l.classList.remove('open');b.setAttribute('aria-expanded','false');});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){l.classList.remove('open');}});
+ l.querySelectorAll('.lang-menu a').forEach(function(a){
+   a.addEventListener('click',function(){try{localStorage.setItem('atmos_lang',a.getAttribute('data-lang'));}catch(e){}});
+ });
+})();
+</script>
+</body>
+</html>
