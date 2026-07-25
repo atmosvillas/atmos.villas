@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atmos Villas — краткая информация о проекте</title>
+<meta name="description" content="Проект Atmos Villas на Ко Пангане: участок, виллы, поэтапная оплата, схема сделки. Краткая презентация для агентов.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=107725303','ym');
+   ym(107725303,'init',{ssr:true,webvisor:true,clickmap:true,referrer:document.referrer,url:location.href,accurateTrackBounce:true,trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/107725303" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{color-scheme:dark only;--bg:#0B0C0B;--card:#151310;--card2:#1C1912;--gold:#C9A86A;--gold2:#E4C98A;
+--ink:#F3EFE7;--muted:#9C968B;--muted2:#C6C0B5;--line:rgba(201,168,106,.22);--line2:rgba(243,239,231,.09);
+--f:'Manrope',system-ui,Arial,sans-serif;--grad:linear-gradient(135deg,#E4C98A 0%,#C9A86A 55%,#A8894E 100%);--wa:#25D366}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh}
+#bgfix{position:fixed;inset:0;background:var(--bg);z-index:-1}
+.logo{height:17px;width:auto;display:block;max-width:56vw}
+.lg-mark{fill:var(--gold)}.lg-text{fill:var(--ink)}
+header{position:sticky;top:0;z-index:50;background:rgba(11,12,11,.9);backdrop-filter:blur(12px);
+border-bottom:1px solid var(--line2);padding:13px 18px;display:flex;align-items:center;justify-content:space-between}
+.hwa{background:var(--wa);color:#fff;font-weight:800;font-size:12.5px;padding:8px 13px;border-radius:30px;
+text-decoration:none;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.bar{height:3px;background:var(--line2);position:relative;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;height:100%;background:var(--grad);width:0;transition:width .4s cubic-bezier(.2,.8,.2,1)}
+main{padding:0 0 120px;max-width:680px;margin:0 auto}
+.islide{display:none;animation:fade .4s ease;padding:0 18px}
+.islide.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.ihead{padding:24px 0 4px}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--gold);text-transform:uppercase}
+h2{font-size:clamp(22px,5.4vw,30px);font-weight:800;line-height:1.16;letter-spacing:-.015em;margin-top:5px}
+.lead{color:var(--muted2);font-size:15px;margin-top:12px;line-height:1.55}
+.imgfull{width:100%;border-radius:16px;margin-top:16px;display:block;border:1px solid var(--line2)}
+.imgrow{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}
+.imgrow img{width:100%;border-radius:12px;border:1px solid var(--line2);aspect-ratio:4/3;object-fit:cover}
+.cap{font-size:12.5px;color:var(--muted);margin-top:7px;text-align:center}
+.facts{display:grid;gap:10px;margin-top:16px}
+.fact{display:flex;gap:11px;font-size:14.5px;align-items:flex-start;background:var(--card);border:1px solid var(--line2);border-radius:12px;padding:13px 15px}
+.fact .i{font-size:20px;flex:none}
+.fact b{color:var(--gold2)}
+.hl{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--gold);border-radius:16px;padding:18px;margin-top:16px}
+.hl .t{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
+.hl p{font-size:14.5px;color:var(--ink);line-height:1.55}
+.hl b{color:var(--gold2)}
+.plots{margin-top:14px}
+.plotgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:12px}
+.plotcell{aspect-ratio:1;border-radius:9px;border:1px solid var(--line2);display:flex;flex-direction:column;
+align-items:center;justify-content:center;font-size:13px;font-weight:800;background:var(--card)}
+.plotcell.free{border-color:var(--gold);color:var(--gold2)}
+.plotcell.sold{opacity:.4;color:var(--muted)}
+.plotcell small{font-size:9px;font-weight:600;margin-top:2px;letter-spacing:.03em}
+.plotleg{display:flex;gap:16px;justify-content:center;margin-top:12px;font-size:12px;color:var(--muted2)}
+.plotleg span{display:inline-flex;align-items:center;gap:6px}
+.plotleg i{width:9px;height:9px;border-radius:50%}
+.villabtn{display:flex;align-items:center;justify-content:center;gap:9px;background:var(--wa);color:#fff;
+font-weight:800;font-size:15px;padding:15px;border-radius:13px;text-decoration:none;margin-top:16px;width:100%}
+.pay{display:grid;gap:9px;margin-top:16px}
+.payrow{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line2);border-radius:12px;padding:13px 15px}
+.payrow .n{width:30px;height:30px;border-radius:50%;background:var(--grad);color:#1a1206;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex:none}
+.payrow .tx{font-size:14px}
+.payrow .tx b{color:var(--gold2)}
+.steps2{display:grid;gap:12px;margin-top:16px}
+.st2{display:flex;gap:13px;align-items:flex-start}
+.st2 .n{width:34px;height:34px;border-radius:50%;background:var(--grad);color:#1a1206;font-weight:800;flex:none;display:flex;align-items:center;justify-content:center}
+.st2 h4{font-size:15px;font-weight:800;margin-bottom:2px}
+.st2 p{font-size:13.5px;color:var(--muted2)}
+.contractor{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:16px;text-align:center}
+.contractor .big{font-size:19px;font-weight:800;color:var(--gold2);margin-bottom:6px}
+.contractor p{font-size:14px;color:var(--muted2)}
+.idock{position:fixed;left:0;right:0;bottom:0;z-index:48;padding:12px 18px 18px;
+background:linear-gradient(180deg,transparent,#0B0C0B 34%);pointer-events:none;display:flex;gap:10px;max-width:680px;margin:0 auto}
+.idock .btn{pointer-events:auto;flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+border:0;cursor:pointer;font-family:var(--f);font-weight:800;font-size:15px;padding:15px;border-radius:13px;transition:.2s;text-decoration:none}
+.idock .btn:active{transform:scale(.98)}
+.btn-gold{background:var(--grad);color:#1a1206;box-shadow:0 10px 26px rgba(201,168,106,.26)}
+.btn-back{background:var(--card);border:1.5px solid var(--line2);color:var(--muted2);flex:0 0 54px}
+.iprog{text-align:center;font-size:12px;color:var(--muted);padding:14px 0 0}
+.qfoot{text-align:center;padding:22px 18px;font-size:11px;color:var(--muted)}
+.qfoot a{color:var(--muted2);text-decoration:underline;margin:0 6px}
+
+.maplink{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--gold);
+border-radius:14px;padding:15px 16px;margin-top:16px;text-decoration:none;color:var(--ink)}
+.maplink .mi{font-size:24px;flex:none}
+.maplink .mt{flex:1}
+.maplink .mt b{display:block;font-size:15px;color:var(--gold2)}
+.maplink .mt small{font-size:12.5px;color:var(--muted);font-weight:500}
+.maplink .ma{font-size:20px;color:var(--gold);flex:none}
+
+.paytable{margin-top:16px;display:grid;gap:6px}
+.paytable .payrow{display:flex;align-items:center;gap:11px;background:var(--card);border:1px solid var(--line2);
+border-radius:10px;padding:11px 13px}
+.paytable .payrow .n{width:24px;height:24px;border-radius:50%;background:var(--grad);color:#1a1206;
+font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;flex:none}
+.paytable .payrow .tx{flex:1;font-size:13.5px}
+.paytable .payrow .pv{font-size:13.5px;font-weight:700;color:var(--gold2);white-space:nowrap}
+.paytable .payrow.total{background:var(--card2);border-color:var(--gold)}
+.paytable .payrow.total .n{background:transparent}
+.paytable .payrow.total .tx b,.paytable .payrow.total .pv b{color:var(--ink)}
+
+.dist{margin-top:16px;display:grid;gap:7px}
+.dist .d{display:flex;align-items:center;gap:11px;background:var(--card);border:1px solid var(--line2);border-radius:11px;padding:11px 14px}
+.dist .dn{font-size:18px;flex:none}
+.dist .dt{flex:1;font-size:14px}
+.dist .dv{font-size:13px;font-weight:700;color:var(--gold2);white-space:nowrap}
+
+.yield{margin-top:16px;display:grid;gap:8px}
+.yield .yr{display:flex;justify-content:space-between;align-items:center;background:var(--card);
+border:1px solid var(--line2);border-radius:12px;padding:14px 16px}
+.yield .yk{font-size:14px;color:var(--muted2)}
+.yield .yv{font-size:16px;font-weight:800;color:var(--gold2)}
+.disc-y{font-size:11px;color:var(--muted);margin-top:14px;line-height:1.5;font-style:italic}
+.imgrow3{grid-template-columns:1fr 1fr 1fr;gap:7px}
+.imgrow3 img{aspect-ratio:1;object-fit:cover}
+</style>
+</head>
+<body>
+<div id="bgfix"></div>
+<header>
+  <a href="ru.html" aria-label="Atmos Villas"><svg class="logo" viewBox="0 0 1518 143" role="img" aria-label="Atmos Villas" xmlns="http://www.w3.org/2000/svg"><g class="lg-mark"><path d="M78.5232 71.8122C65.5269 71.8122 26.1744 139.198 0 139.198C0 117.46 65.5269 3.33996 78.5232 3.33996C91.5195 3.33996 157.046 117.46 157.046 139.198C130.872 139.198 91.5195 71.8122 78.5232 71.8122Z"/><path d="M63.5664 106.791C63.5664 98.5307 70.2628 91.8343 78.5232 91.8343C86.7836 91.8343 93.48 98.5307 93.48 106.791C93.48 115.052 86.7836 121.748 78.5232 121.748C70.2628 121.748 63.5664 115.052 63.5664 106.791Z"/></g><g class="lg-text"><path d="M283.395 2.82874V14.5478H236.014V139.821H206.514V14.5478H159.032V2.82874H283.395Z"/><path d="M309.46 2.82874H338.354L386.139 96.8844L436.046 2.82874H464.233V139.821H434.733V42.027L386.139 139.821H376.845L326.736 42.2291V139.821H309.46V2.82874Z"/><path d="M575.16 142.852C564.384 142.852 554.348 141.067 545.054 137.497C535.76 133.928 527.677 128.944 520.808 122.545C514.005 116.079 508.651 108.435 504.744 99.6122C500.838 90.7218 498.885 80.9896 498.885 70.4155C498.885 60.0434 500.838 50.5469 504.744 41.926C508.651 33.2377 514.005 25.7954 520.808 19.5991C527.677 13.4029 535.76 8.58726 545.054 5.15235C554.348 1.71745 564.384 0 575.16 0C585.936 0 595.971 1.75113 605.266 5.25338C614.56 8.68828 622.642 13.5039 629.512 19.7002C636.382 25.8965 641.77 33.3051 645.676 41.926C649.583 50.4796 651.536 59.8751 651.536 70.1124C651.536 81.0233 649.583 90.9576 645.676 99.9152C641.77 108.873 636.382 116.551 629.512 122.949C622.642 129.28 614.56 134.197 605.266 137.699C595.971 141.134 585.936 142.852 575.16 142.852ZM575.16 131.334C582.164 131.334 588.327 129.819 593.648 126.788C599.036 123.69 603.548 119.447 607.185 114.059C610.822 108.671 613.55 102.273 615.368 94.8639C617.254 87.388 618.197 79.2385 618.197 70.4155C618.197 61.7272 617.254 53.7798 615.368 46.5732C613.55 39.3667 610.822 33.1704 607.185 27.9844C603.548 22.7983 599.036 18.7573 593.648 15.8612C588.327 12.9651 582.164 11.517 575.16 11.517C568.088 11.517 561.858 12.9651 556.47 15.8612C551.149 18.7573 546.67 22.7983 543.034 27.9844C539.464 33.1704 536.736 39.3667 534.85 46.5732C533.032 53.7798 532.123 61.7272 532.123 70.4155C532.123 79.2385 533.032 87.388 534.85 94.8639C536.736 102.273 539.464 108.671 543.034 114.059C546.67 119.447 551.149 123.69 556.47 126.788C561.858 129.819 568.088 131.334 575.16 131.334Z"/><path d="M732.357 141.841C724.477 141.841 717.574 140.898 711.647 139.013C705.787 137.059 700.77 134.399 696.594 131.031C692.485 127.664 689.185 123.656 686.693 119.009C684.201 114.295 682.484 109.142 681.541 103.552H700.938C701.746 106.987 702.958 110.186 704.575 113.15C706.191 116.113 708.246 118.706 710.738 120.929C713.297 123.084 716.328 124.801 719.83 126.081C723.4 127.293 727.508 127.9 732.155 127.9C735.253 127.9 738.318 127.597 741.349 126.99C744.379 126.384 747.073 125.408 749.431 124.061C751.855 122.646 753.809 120.861 755.29 118.706C756.772 116.484 757.513 113.756 757.513 110.523C757.513 106.819 756.536 103.485 754.583 100.521C752.63 97.4906 750.037 94.7292 746.804 92.2372C743.571 89.6779 739.833 87.3206 735.59 85.1654C731.414 82.9428 727.104 80.7202 722.659 78.4976C718.011 76.2077 713.398 73.8167 708.818 71.3247C704.238 68.8327 700.13 66.0377 696.493 62.9395C692.856 59.774 689.926 56.1708 687.703 52.1297C685.481 48.0886 684.37 43.3741 684.37 37.986C684.37 32.5305 685.515 27.5129 687.805 22.933C690.094 18.2858 693.395 14.2784 697.705 10.9109C702.083 7.47596 707.404 4.8156 713.667 2.92977C719.998 0.97659 727.171 0 735.186 0C741.719 0 747.646 0.942914 752.967 2.82874C758.355 4.71457 763.103 7.34126 767.211 10.7088C771.32 14.009 774.788 17.9154 777.617 22.4279C780.446 26.8731 782.635 31.655 784.184 36.7737H766.908C765.696 33.5408 764.248 30.4427 762.564 27.4792C760.948 24.5158 758.86 21.9228 756.301 19.7002C753.809 17.4776 750.744 15.7265 747.107 14.4468C743.537 13.0998 739.227 12.4263 734.176 12.4263C729.394 12.4263 725.386 12.9987 722.154 14.1437C718.921 15.2887 716.294 16.7704 714.273 18.5889C712.32 20.34 710.906 22.3269 710.03 24.5494C709.155 26.7047 708.717 28.8262 708.717 30.9141C708.717 34.0796 709.694 37.0431 711.647 39.8045C713.667 42.5658 716.328 45.1925 719.628 47.6845C722.928 50.1765 726.666 52.5675 730.842 54.8574C735.085 57.08 739.395 59.3026 743.773 61.5252C748.555 63.9498 753.337 66.5091 758.119 69.2032C762.901 71.8299 767.211 74.7596 771.05 77.9925C774.889 81.2253 777.988 84.8623 780.345 88.9034C782.769 92.8771 783.982 97.3896 783.982 102.441C783.982 108.031 782.87 113.217 780.648 117.999C778.425 122.781 775.125 126.957 770.747 130.526C766.437 134.029 761.049 136.79 754.583 138.81C748.185 140.831 740.776 141.841 732.357 141.841Z"/><path d="M887.494 5.85954L939.523 113.453L987.106 5.85954H997.613L936.997 142.75L932.754 142.953L867.39 5.85954H887.494Z"/><path d="M1018.32 5.85954H1036.81V139.821H1018.32V5.85954Z"/><path d="M1077.32 5.85954H1095.81V131.132H1163.3V139.821H1077.32V5.85954Z"/><path d="M1187.44 5.85954H1205.93V131.132H1273.42V139.821H1187.44V5.85954Z"/><path d="M1346.15 2.82874L1409.19 139.821H1389.9L1369.49 95.167H1310.19L1289.28 139.821H1278.37L1342.42 2.82874H1346.15ZM1314.33 86.4787H1365.35L1339.69 32.0254L1314.33 86.4787Z"/><path d="M1473.55 134.466C1477.12 134.466 1480.62 134.029 1484.06 133.153C1487.56 132.21 1490.66 130.863 1493.35 129.112C1496.11 127.293 1498.33 125.105 1500.02 122.545C1501.7 119.918 1502.54 116.888 1502.54 113.453C1502.54 109.748 1501.57 106.381 1499.61 103.35C1497.66 100.319 1495.07 97.5243 1491.83 94.9649C1488.6 92.3382 1484.86 89.8799 1480.62 87.59C1476.44 85.2327 1472.13 82.9091 1467.69 80.6192C1462.97 78.1945 1458.29 75.7026 1453.65 73.1432C1449.07 70.5165 1444.92 67.5868 1441.22 64.3539C1437.58 61.0537 1434.62 57.3494 1432.33 53.241C1430.11 49.0652 1429 44.2159 1429 38.6932C1429 33.5745 1429.91 28.8262 1431.72 24.4484C1433.54 20.0706 1436.2 16.2989 1439.7 13.1334C1443.27 9.9006 1447.65 7.37494 1452.84 5.55646C1458.02 3.73798 1463.95 2.82874 1470.62 2.82874C1476.61 2.82874 1481.97 3.50225 1486.68 4.84927C1491.46 6.19629 1495.64 8.21682 1499.21 10.9109C1502.85 13.5376 1505.94 16.8041 1508.5 20.7104C1511.06 24.6168 1513.18 29.1293 1514.87 34.248L1506.79 37.986C1505.51 34.0796 1503.79 30.51 1501.63 27.2772C1499.55 23.977 1496.99 21.1819 1493.96 18.892C1490.93 16.5347 1487.39 14.7162 1483.35 13.4365C1479.31 12.1569 1474.73 11.517 1469.61 11.517C1465.03 11.517 1461.02 12.1232 1457.59 13.3355C1454.15 14.4805 1451.29 16.0295 1449 17.9827C1446.78 19.8686 1445.09 22.0238 1443.95 24.4484C1442.8 26.8057 1442.23 29.2303 1442.23 31.7223C1442.23 34.7531 1443.21 37.6492 1445.16 40.4106C1447.18 43.1047 1449.81 45.6977 1453.04 48.1897C1456.34 50.6816 1460.08 53.1063 1464.25 55.4636C1468.43 57.7535 1472.71 60.0434 1477.08 62.3334C1481.93 64.8254 1486.78 67.4857 1491.63 70.3145C1496.48 73.0759 1500.86 76.174 1504.77 79.6089C1508.67 82.9765 1511.84 86.7144 1514.26 90.8229C1516.75 94.8639 1518 99.4101 1518 104.461C1518 109.782 1517.02 114.8 1515.07 119.514C1513.12 124.162 1510.22 128.236 1506.38 131.739C1502.54 135.174 1497.73 137.901 1491.94 139.922C1486.21 141.942 1479.54 142.953 1471.93 142.953C1465.87 142.953 1460.42 142.245 1455.57 140.831C1450.72 139.417 1446.41 137.362 1442.63 134.668C1438.93 131.907 1435.73 128.573 1433.04 124.667C1430.41 120.693 1428.19 116.181 1426.37 111.129L1434.96 107.593C1436.3 111.836 1438.19 115.608 1440.61 118.908C1443.11 122.208 1446 125.037 1449.3 127.394C1452.6 129.684 1456.31 131.436 1460.42 132.648C1464.52 133.86 1468.9 134.466 1473.55 134.466Z"/></g></svg></a>
+  <a class="hwa" href="https://wa.me/66656352972?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B5%20Atmos%20Villas." target="_blank" rel="noopener">Написать</a>
+</header>
+<div class="bar"><i id="bar"></i></div>
+
+<main>
+<!-- СЛАЙД 1: УЧАСТОК -->
+<section class="islide on" data-i="0">
+  <div class="ihead"><p class="kicker">Участок</p><h2>Участок проекта <span style="color:var(--gold2)">Atmos Villas</span></h2></div>
+  <img class="imgfull" src="img/m/a7582516e1.webp" alt="Участок Atmos — пальмовая роща" loading="eager">
+  <p class="cap">3200 м² в сердце западной части Пангана · популярной у туристов</p>
+  <div class="facts">
+    <div class="fact"><span class="i">🌴</span><div>Плоский участок с пальмами под бутиковый проект из 8 вилл</div></div>
+    <div class="fact"><span class="i">🛣</span><div>Городская дорога подходит прямо к участку, электричество подведено</div></div>
+    <div class="fact"><span class="i">🏪</span><div>Рядом 7-Eleven, магазины, торговые точки и ночные рынки</div></div>
+    <div class="fact"><span class="i">🏖</span><div>Пляж Хин Конг с закатами и ресторанами — в двух шагах</div></div>
+  </div>
+  <div class="dist">
+    <div class="d"><span class="dn">🏖</span><span class="dt">Пляж Хин Конг · закаты, рестораны</span><span class="dv">5 мин</span></div>
+    <div class="d"><span class="dn">🏪</span><span class="dt">7-Eleven, магазины, ночные рынки</span><span class="dv">2 мин</span></div>
+    <div class="d"><span class="dn">⛵</span><span class="dt">Пирс Тонг Сала</span><span class="dv">10 мин</span></div>
+    <div class="d"><span class="dn">✈️</span><span class="dt">Аэропорт Самуи (через паром)</span><span class="dv">1,5 ч</span></div>
+  </div>
+  <div class="hl" style="margin-top:14px"><div class="t">Важно для клиента</div><p>Можно приехать <b>на показ</b> и лично оценить качество строительства. Организуем и <b>онлайн-показ</b>.</p></div>
+  <a class="maplink" href="https://maps.app.goo.gl/ogRgGNCtzNd1ayyX8" target="_blank" rel="noopener">
+    <span class="mi">📍</span><span class="mt"><b>Atmos Villas на карте</b><small>Открыть локацию в Google Maps</small></span><span class="ma">→</span>
+  </a>
+  <p class="lead" style="margin-top:14px;font-size:14px">В самом сердце западной части острова Панган. Локация очень нравится клиентам, которые приезжают её смотреть.</p>
+</section>
+
+<!-- СЛАЙД 2: ПОДГОТОВКА + СТРОЙКА -->
+<section class="islide" data-i="1">
+  <div class="ihead"><p class="kicker">Ход работ · этап 3 из 4</p><h2>Участок <span style="color:var(--gold2)">готовят к стройке</span></h2></div>
+  <img class="imgfull" src="img/m/2b65b93207.webp" alt="Завоз земли" loading="lazy">
+  <p class="cap">Завоз земли, подготовка участка</p>
+  <img class="imgfull" src="quiz/img/st3.webp" alt="Строительство односпальной виллы на участке 2" loading="lazy" style="margin-top:14px">
+  <p class="cap">Строительство односпальной виллы на участке №2 · крыша завершена, начинаются стены</p>
+  <div class="hl"><div class="t">Важно для клиента</div><p>Проект <b>не на бумаге</b> — работы идут прямо сейчас. В реальной жизни вилла получается очень просторной, и клиентам это нравится.</p></div>
+</section>
+
+<!-- СЛАЙД 3: МАСТЕР-ПЛАН -->
+<section class="islide" data-i="2">
+  <div class="ihead"><p class="kicker">Мастер-план</p><h2>8 вилл · <span style="color:var(--gold2)">доступные участки</span></h2></div>
+  <img class="imgfull" src="img/w/6fddd45be5.webp" alt="Генплан Atmos — 8 участков" loading="lazy">
+  <div class="plots">
+    <div class="plotgrid">
+      <div class="plotcell sold">1<small>ПРОДАН</small></div>
+      <div class="plotcell sold">2<small>ПРОДАН</small></div>
+      <div class="plotcell free">3<small>320 м²</small></div>
+      <div class="plotcell free">4<small>367 м²</small></div>
+      <div class="plotcell free">5<small>370 м²</small></div>
+      <div class="plotcell free">6<small>377 м²</small></div>
+      <div class="plotcell free">7<small>370 м²</small></div>
+      <div class="plotcell sold">8<small>ПРОДАН</small></div>
+    </div>
+    <div class="plotleg">
+      <span><i style="background:var(--gold)"></i>свободен</span>
+      <span><i style="background:#4a4945"></i>продан</span>
+    </div>
+  </div>
+</section>
+
+<!-- СЛАЙД 4: ВИЛЛА 1BR ЭКСТЕРЬЕР -->
+<section class="islide" data-i="3">
+  <div class="ihead"><p class="kicker">Односпальная вилла · 105 м²</p><h2>Вилла <span style="color:var(--gold2)">под ключ</span></h2></div>
+  <img class="imgfull" src="img/m/ea7daa1131.webp" alt="Экстерьер виллы" loading="lazy">
+  <div class="imgrow" style="margin-top:9px">
+    <img src="img/m/9766551cef.webp" alt="Бассейн и терраса" loading="lazy">
+    <img src="img/m/21bb46f5f1.webp" alt="Въезд и раздвижные ворота" loading="lazy">
+    <img src="img/m/1e216f841a.webp" alt="BBQ-зона" loading="lazy">
+    <img src="img/m/a290d09a51.webp" alt="Уличный душ" loading="lazy">
+  </div>
+  <p class="cap">Терраса с бассейном · раздвижные ворота · BBQ-зона · уличный душ</p>
+  <div class="facts">
+    <div class="fact"><span class="i">🏊</span><div>Приватная территория за забором, свой бассейн 15 м²</div></div>
+    <div class="fact"><span class="i">🚗</span><div>Раздвижные ворота, парковка, дорожки</div></div>
+  </div>
+  <div class="hl"><div class="t">★ Что редко где встретишь</div><p>В стоимость уже включено <b>всё</b>: техника, мебель, озеленение сада и забор по периметру. Клиент заходит и живёт — <b>ничего не докупая</b>.</p></div>
+</section>
+
+<!-- СЛАЙД 5: ВИЛЛА 1BR ИНТЕРЬЕР -->
+<section class="islide" data-i="4">
+  <div class="ihead"><p class="kicker">Односпальная вилла · интерьер</p><h2>Внутри <span style="color:var(--gold2)">всё готово</span></h2></div>
+  <img class="imgfull" src="img/m/66b85cc106.webp" alt="Гостиная и кухня" loading="lazy">
+  <p class="cap">Гостиная-кухня</p>
+  <div class="imgrow" style="margin-top:12px">
+    <img src="img/m/ee5095727a.webp" alt="Спальня" loading="lazy">
+    <img src="img/m/6b7f850826.webp" alt="Ванная" loading="lazy">
+  </div>
+  <p class="cap">Спальня · ванная</p>
+  <div class="facts">
+    <div class="fact"><span class="i">🛋</span><div>Полностью меблирована, техника установлена</div></div>
+    <div class="fact"><span class="i">📐</span><div>105 м²: дом 52 · терраса 33 · бассейн 15</div></div>
+  </div>
+</section>
+
+<!-- СЛАЙД 6: ВИЛЛА 3BR -->
+<section class="islide" data-i="5">
+  <div class="ihead"><p class="kicker">Трёхспальная вилла · 158 м²</p><h2>Больше места <span style="color:var(--gold2)">для семьи</span></h2></div>
+  <img class="imgfull" src="quiz/img/v3a.webp" alt="Экстерьер трёхспальной виллы" loading="lazy">
+  <div class="imgrow" style="margin-top:9px">
+    <img src="quiz/img/v3b.webp" alt="Вход в виллу" loading="lazy">
+    <img src="quiz/img/v3plan2.webp" alt="Планировка 158 м²" loading="lazy">
+  </div>
+  <div class="facts">
+    <div class="fact"><span class="i">🛏</span><div><b>3 спальни · 3 санузла</b> · просторный living room</div></div>
+    <div class="fact"><span class="i">🧺</span><div>Отдельная laundry (прачечная)</div></div>
+    <div class="fact"><span class="i">❄️</span><div>Холодильник с льдогенератором</div></div>
+    <div class="fact"><span class="i">🔥</span><div>Крытая терраса, BBQ-зона</div></div>
+  </div>
+  <a class="villabtn" href="https://wa.me/66656352972?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A0%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D1%82%D1%80%D1%91%D1%85%D1%81%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%83%D1%8E%20%D0%B2%D0%B8%D0%BB%D0%BB%D1%83%20Atmos%20%28158%20%D0%BC%C2%B2%29." target="_blank" rel="noopener">Подробнее о трёхспальной вилле →</a>
+</section>
+
+<!-- СЛАЙД 7: ОПЛАТА -->
+<section class="islide" data-i="6">
+  <div class="ihead"><p class="kicker">Оплата · односпальная вилла</p><h2>Рассрочка <span style="color:var(--gold2)">0% по этапам</span></h2></div>
+  <p class="lead">Клиент платит за уже выполненные работы — не всю сумму вперёд. Прозрачно и безопасно.</p>
+  <div class="paytable">
+    <div class="payrow"><span class="n">1</span><span class="tx">Депозит — бронь виллы и цены</span><span class="pv">150 000 ฿</span></div>
+    <div class="payrow"><span class="n">2</span><span class="tx">Регистрация земли в Land Office</span><span class="pv">850 000 ฿</span></div>
+    <div class="payrow"><span class="n">3</span><span class="tx">Фундамент, пол, колонны</span><span class="pv">850 000 ฿</span></div>
+    <div class="payrow"><span class="n">4</span><span class="tx">Крыша и стены</span><span class="pv">750 000 ฿</span></div>
+    <div class="payrow"><span class="n">5</span><span class="tx">Отделка стен</span><span class="pv">640 000 ฿</span></div>
+    <div class="payrow"><span class="n">6</span><span class="tx">Отделка пола и потолка</span><span class="pv">350 000 ฿</span></div>
+    <div class="payrow"><span class="n">7</span><span class="tx">Двери и окна</span><span class="pv">300 000 ฿</span></div>
+    <div class="payrow"><span class="n">8</span><span class="tx">Мебель, кухня, техника</span><span class="pv">450 000 ฿</span></div>
+    <div class="payrow"><span class="n">9</span><span class="tx">Благоустройство + ключи</span><span class="pv">350 000 ฿</span></div>
+    <div class="payrow total"><span class="n"></span><span class="tx"><b>Итого</b></span><span class="pv"><b>4 690 000 ฿</b></span></div>
+  </div>
+  <div class="hl" style="margin-top:16px"><div class="t">★ Главное</div><p>После переоформления земли на покупателя приступаем к строительству. Дальше — <b>платежи по мере готовности виллы</b>, рассрочка <b>0%</b>.</p></div>
+</section>
+
+<!-- СЛАЙД 8: ЦИКЛ СДЕЛКИ -->
+<section class="islide" data-i="7">
+  <div class="ihead"><p class="kicker">Как проходит сделка</p><h2>Всё <span style="color:var(--gold2)">на имя покупателя</span></h2></div>
+  <div class="steps2">
+    <div class="st2"><span class="n">1</span><div><h4>Депозит</h4><p>Клиент вносит депозит — цена и участок закреплены за ним.</p></div></div>
+    <div class="st2"><span class="n">2</span><div><h4>Регистрация земли в Land Office</h4><p>Оплата ~750 000 ฿ — земля регистрируется <b style="color:var(--gold2)">на имя покупателя</b> в государственном Земельном департаменте. Это ключевой момент: право оформлено официально.</p></div></div>
+    <div class="st2"><span class="n">3</span><div><h4>Оплата строительства по этапам</h4><p>Дальше — платежи по мере готовности виллы, рассрочка 0%.</p></div></div>
+  </div>
+</section>
+
+<!-- СЛАЙД: почему безопасно (leasehold) -->
+<section class="islide" data-i="8">
+  <div class="ihead"><p class="kicker">Право собственности</p><h2>Почему это <span style="color:var(--gold2)">безопасно и легально</span></h2></div>
+  <p class="lead">Главный вопрос иностранного покупателя — «это законно, я реально буду владеть?». Да. Это прозрачная схема, а не серый номинал.</p>
+  <div class="facts" style="margin-top:16px">
+    <div class="fact"><span class="i">📜</span><div><b>30-летний leasehold</b> с правом продления — <b>прямой договор аренды с собственником земли, не субаренда</b></div></div>
+    <div class="fact"><span class="i">🏛</span><div>Договор <b>регистрируется в Land Office</b> — государственном Земельном департаменте, на имя покупателя</div></div>
+    <div class="fact"><span class="i">🚫</span><div>Никаких номинальных тайских компаний и подставных лиц — клиенту нужен <b>только паспорт</b></div></div>
+    <div class="fact"><span class="i">👪</span><div>Право можно передать по наследству · лёгкая продажа актива через трансфер земли</div></div>
+  </div>
+  <div class="hl" style="margin-top:16px"><div class="t">Что это даёт клиенту</div><p>Официально оформленное право, защищённое государственной регистрацией. <b>Прозрачно и понятно</b> — легко объяснить и легко проверить.</p></div>
+</section>
+
+<!-- СЛАЙД: доходность (оценочно) -->
+<section class="islide" data-i="9">
+  <div class="ihead"><p class="kicker">Аренда · оценочно</p><h2>Вилла <span style="color:var(--gold2)">может работать</span></h2></div>
+  <p class="lead">Панган — растущее направление, спрос на аренду вилл высокий круглый год. Ниже — <b>ориентировочные</b> цифры для понимания потенциала.</p>
+  <div class="yield">
+    <div class="yr"><span class="yk">Высокий сезон</span><span class="yv">≈ 6 000 ฿/ночь</span></div>
+    <div class="yr"><span class="yk">Низкий сезон</span><span class="yv">≈ 3 000 ฿/ночь</span></div>
+    <div class="yr"><span class="yk">Загрузка (скромная оценка)</span><span class="yv">≈ 76%</span></div>
+  </div>
+  <div class="yield" style="margin-top:12px">
+    <div class="yr" style="border-color:var(--gold)"><span class="yk">Чистый доход в год</span><span class="yv">≈ 820 000 ฿</span></div>
+    <div class="yr" style="border-color:var(--gold)"><span class="yk">Доходность (ROI)</span><span class="yv">≈ 18% / год</span></div>
+    <div class="yr"><span class="yk">Окупаемость</span><span class="yv">≈ 5,5 лет</span></div>
+  </div>
+  <div class="facts" style="margin-top:16px">
+    <div class="fact"><span class="i">📈</span><div>Актив дорожает: цена растёт по мере строительства и с готовностью проекта</div></div>
+    <div class="fact"><span class="i">🔑</span><div>Вилла под ключ, полностью укомплектована — готова к сдаче сразу</div></div>
+  </div>
+  <p class="disc-y">Цифры приведены исключительно для оценки потенциала и не являются гарантией дохода. Фактические результаты зависят от сезона, управления и рынка.</p>
+</section>
+
+<!-- СЛАЙД 9: ПОДРЯДЧИК -->
+<section class="islide" data-i="10">
+  <div class="ihead"><p class="kicker">Кто строит</p><h2>Строит <span style="color:var(--gold2)">First Construction 47</span></h2></div>
+  <img class="imgfull" src="img/m/902c9592ff.webp" alt="Заливка бетона для бассейна виллы Atmos" loading="lazy">
+  <p class="cap">Заливка бетона для бассейна односпальной виллы Atmos</p>
+  <div class="contractor">
+    <div class="big">First Construction 47</div>
+    <p>Тайская лицензированная строительная компания. Множество готовых объектов на острове и безупречная репутация.</p>
+  </div>
+  <p class="cap" style="margin-top:16px;text-align:left;font-weight:700;color:var(--muted2)">Завершённые объекты компании:</p>
+  <div class="imgrow imgrow3">
+    <img src="img/m/fc47a.webp" alt="Завершённый объект First Construction 47" loading="lazy">
+    <img src="img/m/fc47b.webp" alt="Объект в строительстве" loading="lazy">
+    <img src="img/m/fc47c.webp" alt="Объект на отделке" loading="lazy">
+  </div>
+  <div class="facts" style="margin-top:16px">
+    <div class="fact"><span class="i">🏘</span><div>Много завершённых вилл на Ко Пангане — есть что показать клиенту</div></div>
+    <div class="fact"><span class="i">📄</span><div>Договор строительства оформляется на имя клиента</div></div>
+    <div class="fact"><span class="i">🛡</span><div>Гарантия 5 лет на конструктив, 2 года на интерьер</div></div>
+  </div>
+  <div class="hl" style="margin-top:18px"><div class="t">Готовы работать?</div><p>Напишите нам — вышлем полную информацию о планировке и условиях вознаграждения для партнёров. Можем согласовать просмотр объектов.</p></div>
+  <a class="villabtn" href="https://wa.me/66656352972?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B5%20Atmos%20Villas." target="_blank" rel="noopener" style="margin-top:14px">Написать · согласовать просмотр →</a>
+</section>
+
+<footer class="qfoot">© 2026 Atmos Villas · <a href="ru.html">Основной сайт</a> · <a href="partners.html">Вознаграждение агентам</a> · <a href="privacy.html">Конфиденциальность</a></footer>
+</main>
+
+<div class="idock">
+  <button class="btn btn-back" id="iback" aria-label="Назад">‹</button>
+  <button class="btn btn-gold" id="inext">Далее →</button>
+</div>
+
+<script>
+var slides=[].slice.call(document.querySelectorAll('.islide'));
+var cur=0, MAX=slides.length-1;
+var bar=document.getElementById('bar');
+var iback=document.getElementById('iback'), inext=document.getElementById('inext');
+function show(n){
+  cur=Math.max(0,Math.min(n,MAX));
+  slides.forEach(function(s){s.classList.toggle('on', +s.getAttribute('data-i')===cur);});
+  bar.style.width=((cur+1)/(MAX+1)*100)+'%';
+  window.scrollTo(0,0);
+  iback.style.visibility = cur===0 ? 'hidden':'visible';
+  inext.textContent = cur===MAX ? 'Вернуться к началу' : 'Далее →';
+  try{if(window.ym)ym(107725303,'reachGoal','info_slide'+cur);}catch(e){}
+}
+iback.addEventListener('click',function(){show(cur-1);});
+inext.addEventListener('click',function(){ if(cur===MAX){show(0);} else {show(cur+1);} });
+show(0);
+</script>
+</body>
+</html>
