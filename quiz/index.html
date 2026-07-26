@@ -26,7 +26,6 @@ src="https://www.facebook.com/tr?id=4608548576089764&ev=PageView&noscript=1" alt
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="../img/m/aaab99e3ec.webp" fetchpriority="high">
 <style>
 :root{color-scheme:dark only;
  --bg:#0B0C0B; --card:#151310; --card2:#1C1912; --gold:#C9A86A; --gold2:#E4C98A;
@@ -369,6 +368,25 @@ body.s0 #dock{display:none}
 .consent a:hover{color:var(--gold2)}
 .qfoot{text-align:center;padding:20px 0 8px;font-size:11px;color:var(--muted)}
 .qfoot a{color:var(--muted2);text-decoration:underline;margin:0 6px}
+
+/* === Q1: галереи вилл (замена статичных карточек) === */
+.vgal{margin-top:20px;border:1px solid var(--line2);border-radius:16px;overflow:hidden;background:var(--card)}
+.vgal[hidden]{display:none}
+.vgal .slider{margin-top:0;border:0;border-radius:0}
+.vgal .dots{margin:10px 0}
+.vgal .vg-body{padding:2px 16px 16px}
+.vgal .vg-title{font-size:20px;font-weight:800;color:var(--gold2);line-height:1.25;letter-spacing:-.01em}
+.vgal .vg-feat{font-size:13px;line-height:1.6;color:var(--muted2);margin-top:8px}
+@media(max-width:360px){.vgal .vg-title{font-size:18px}}
+
+/* === Q2: схема без рамки, крупнее площадь участка === */
+.plan-wrap{border:0}
+.plotbtn .pa{font-size:12.5px}
+
+/* === Q3: блок преимуществ под вопросом === */
+.after-adv{margin-top:26px;padding-top:22px;border-top:1px solid var(--line2)}
+.after-adv[hidden]{display:none}
+.after-adv .sub:first-child{margin-top:0}
 </style>
 <script>
 (function(){
@@ -414,55 +432,53 @@ body.s0 #dock{display:none}
 
 <main>
 
-<!-- ЭКРАН 0: старт -->
-<section class="step on hero-step" data-s="0">
-  <div class="hero-bg"></div>
-  <div class="hero-inner">
-    <span class="hero-tag">5 OF 8 LEFT</span>
-    <h1>Your own pool villa<br><span class="gold">on Koh Phangan</span></h1>
-    <p class="sub">Wake up to palm trees, have breakfast by your own pool, watch the sunset from your terrace. A boutique project of 8 turnkey villas — pick yours in 60 seconds.</p>
-    <button class="btn btn-gold hero-cta" data-next>See villas and prices →</button>
-  </div>
-</section>
 
 <!-- ЭКРАН 1: выбор виллы -->
-<section class="step" data-s="1">
-  <div class="qhead"><button class="barrow" data-back aria-label="Back">‹</button><div><p class="kicker">Question 1 of 4</p>
+<section class="step on" data-s="0">
+  <div class="qhead"><div><p class="kicker">Question 1 of 4</p>
   <h2>Which villa do you need?</h2></div></div>
-  <div class="cards">
-    <button class="vcard" data-villa="1-bedroom villa">
-      <img src="img/v1.webp" alt="One-bedroom villa" loading="lazy">
-      <span class="tick"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2.5 7.5l3 3 6-7" stroke="#1a1206" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-      <span class="vb"><span class="vtext"><span class="vt">One-bedroom villa · 105 m²</span>
-      <span class="vfeat">🏊 Pool 15 m² · terrace 33 m² · BBQ area · outdoor shower · parking & paths 47 m² · tropical garden</span></span>
-      <span class="vprice"><span class="vp-now">4 690 000 ฿</span><span class="vp-lbl">current stage</span><span class="vp-next">next 4,990,000 ฿</span></span></span>
-    </button>
-    <button class="vcard" data-villa="3-bedroom villa">
-      <span class="badge">Priced like a smaller villa</span>
-      <img src="img/v3.webp" alt="Three-bedroom villa" loading="lazy">
-      <span class="tick"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2.5 7.5l3 3 6-7" stroke="#1a1206" stroke-width="2.2" stroke-linecap="round"/></svg></span>
-      <span class="vb"><span class="vtext"><span class="vt">Three-bedroom villa · 158 m²</span>
-      <span class="vfeat">🛏 3 bedrooms · 3 bathrooms · large terrace with pool · BBQ area · for family & premium rental</span></span>
-      <span class="vprice"><span class="vp-now">7 490 000 ฿</span><span class="vp-lbl">current stage</span><span class="vp-next">next 7,990,000 ฿</span></span></span>
-    </button>
-    <button class="opt-any" data-villa="Both (undecided)">Not sure yet — show me both</button>
+  <div class="chips">
+    <button class="chip" data-villa="1-bedroom villa"><span class="ico">🏠</span>1-bedroom</button>
+    <button class="chip" data-villa="3-bedroom villa"><span class="ico">🏡</span>3-bedroom</button>
+    <button class="chip" data-villa="Both (undecided)"><span class="ico">✨</span>Not sure yet — show me both</button>
   </div>
-  
+
+  <div id="show1" class="vgal" hidden>
+    <div class="slider">
+      <div class="slides"></div>
+      <button class="snav prev" aria-label="Back">‹</button>
+      <button class="snav next" aria-label="Forward">›</button>
+    </div>
+    <div class="dots"></div>
+    <div class="vg-body">
+      <div class="vg-title">1-bedroom · 105 m²</div>
+      <div class="vg-feat">🏊 Pool 15 m² · terrace 33 m² · BBQ area · outdoor shower · parking &amp; paths 47 m² · tropical garden</div>
+    </div>
+  </div>
+
+  <div id="show3" class="vgal" hidden>
+    <div class="slider">
+      <div class="slides"></div>
+      <button class="snav prev" aria-label="Back">‹</button>
+      <button class="snav next" aria-label="Forward">›</button>
+    </div>
+    <div class="dots"></div>
+    <div class="vg-body">
+      <div class="vg-title">3-bedroom · 158 m²</div>
+      <div class="vg-feat">🛏 3 bedrooms · 3 bathrooms · large terrace with pool · BBQ area · for family &amp; premium rental</div>
+    </div>
+  </div>
 </section>
 
 <!-- ЭКРАН 2: участок -->
-<section class="step" data-s="2">
+<section class="step" data-s="1">
   <div class="qhead"><button class="barrow" data-back aria-label="Back">‹</button><div><p class="kicker">Question 2 of 4</p>
   <h2>Which plot interests you most?</h2></div></div>
   <p class="sub">Flat land with palm trees, road on two sides. Plots 320–383 m² — well above the island average. Any villa fits any free plot.</p>
-  <div class="progress">
-    <p class="prog-h">Already under construction — stage 3 of 4</p>
-    <div class="prog-grid">
-      <div class="prog-cell done"><img src="img/st1.webp" alt="Land plot" loading="lazy"><span class="pl">1 · Land</span></div>
-      <div class="prog-cell done"><img src="img/st2.webp" alt="Groundwork" loading="lazy"><span class="pl">2 · Groundwork</span></div>
-      <div class="prog-cell now"><img src="img/st3.webp" alt="Construction" loading="lazy"><span class="pl">3 · Construction<b>we are here</b></span></div>
-      <div class="prog-cell future"><img src="img/st4.webp" alt="Finished villa" loading="lazy"><span class="pl">4 · Handover · Sep 2027</span></div>
-    </div>
+
+  <p class="pgrid-h">Choose a plot <span style="color:var(--muted);font-weight:600">— or skip, we will advise</span></p>
+  <div class="pgrid"><button class="plotbtn sold" disabled>#1<span class="pa">sold</span></button><button class="plotbtn sold" disabled>#2<span class="pa">sold</span></button><button class="plotbtn" data-plot="Plot #3">#3<span class="pa">367.5 m²</span></button><button class="plotbtn" data-plot="Plot #4">#4<span class="pa">320 m²</span></button><button class="plotbtn" data-plot="Plot #5">#5<span class="pa">369.6 m²</span></button><button class="plotbtn" data-plot="Plot #6">#6<span class="pa">377.3 m²</span></button><button class="plotbtn" data-plot="Plot #7">#7<span class="pa">369.6 m²</span></button><button class="plotbtn sold" disabled>#8<span class="pa">sold</span></button></div>
+  <button class="chip help" data-plot="Help me choose a plot" style="margin-top:10px"><span class="ico">🤝</span>Help me choose a plot</button>
 
   <div class="plan-wrap" id="plan">
     <img src="../img/w/6fddd45be5.webp" loading="lazy" alt="Atmos Villas master plan — 8 plots">
@@ -470,99 +486,56 @@ body.s0 #dock{display:none}
   <div class="plan-note">
     <span><i class="dot" style="background:var(--gold)"></i><b>available</b></span>
     <span><i class="dot" style="background:#4a4945"></i><b>sold</b></span>
-
   </div>
-  <p class="pgrid-h">Choose a plot <span style="color:var(--muted);font-weight:600">— or skip, we will advise</span></p>
-  <div class="pgrid"><button class="plotbtn sold" disabled>#1<span class="pa">sold</span></button><button class="plotbtn sold" disabled>#2<span class="pa">sold</span></button><button class="plotbtn" data-plot="Plot #3">#3<span class="pa">367.5 m²</span></button><button class="plotbtn" data-plot="Plot #4">#4<span class="pa">320 m²</span></button><button class="plotbtn" data-plot="Plot #5">#5<span class="pa">369.6 m²</span></button><button class="plotbtn" data-plot="Plot #6">#6<span class="pa">377.3 m²</span></button><button class="plotbtn" data-plot="Plot #7">#7<span class="pa">369.6 m²</span></button><button class="plotbtn sold" disabled>#8<span class="pa">sold</span></button></div>
-  <button class="chip help" data-plot="Help me choose a plot" style="margin-top:10px"><span class="ico">🤝</span>Help me choose a plot</button>
-  
 </section>
 
-<!-- ЭКРАН 3: галерея + вопрос -->
-<section class="step" data-s="3">
+<!-- ЭКРАН 3: цель + преимущества -->
+<section class="step" data-s="2">
   <div class="qhead"><button class="barrow" data-back aria-label="Back">‹</button><div><p class="kicker">Question 3 of 4</p>
-  <h2>This is your villa</h2></div></div>
-  <div class="slider" id="slider">
-    <div class="slides" id="slides"></div>
-    <button class="snav prev" id="sprev" aria-label="Back">‹</button>
-    <button class="snav next" id="snext" aria-label="Forward">›</button>
-  </div>
-  <div class="dots" id="sdots"></div>
-  <p style="text-align:center;color:var(--muted);font-size:11.5px;margin-top:8px" id="scount">Swipe photos →</p>
-  <p class="sub" style="margin-top:14px">Are you looking at the villa for yourself or as an investment?</p>
+  <h2>Are you looking at the villa for yourself or as an investment?</h2></div></div>
+  <p class="sub">Either way works — Atmos villas are designed both to live in and to rent out.</p>
   <div class="chips">
     <button class="chip" data-pri="For myself"><span class="ico">🏡</span>For myself — to live or holiday</button>
     <button class="chip" data-pri="For rental / investment"><span class="ico">📈</span>For rental — as an investment</button>
     <button class="chip" data-pri="Both"><span class="ico">✨</span>Both — live and rent out</button>
   </div>
-  
+
+  <div class="after-adv" hidden>
+    <p class="sub">The only legal way for a foreigner to own a villa in Thailand — transparent, in your name.</p>
+    <div class="deal-sec">
+      <p class="deal-h">🏝 Land · 30-year leasehold</p>
+      <table class="dtable">
+        <thead><tr><th class="us">✓ Atmos Villas</th><th class="them">✗ Often elsewhere</th></tr></thead>
+        <tbody>
+          <tr><td>Direct contract with the land owner</td><td>Contract via a nominee Thai company</td></tr>
+          <tr><td>Registered at the Land Office</td><td>Sublease without registration</td></tr>
+          <tr><td>Only your passport is needed</td><td>Complex ownership schemes</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="deal-sec">
+      <p class="deal-h">🏗 Construction</p>
+      <table class="dtable">
+        <thead><tr><th class="us">✓ Atmos Villas</th><th class="them">✗ Often elsewhere</th></tr></thead>
+        <tbody>
+          <tr><td>Contract with a licensed Thai company</td><td>Contract with a nominee company</td></tr>
+          <tr><td>Payment by completed work stages</td><td>Full prepayment with no guarantees</td></tr>
+          <tr><td>5-year structural, 2-year interior warranty</td><td>No liability or quality guarantee</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </section>
 
-<!-- ЭКРАН 4: оформление -->
-<section class="step" data-s="4">
-  <div class="qhead"><button class="barrow" data-back aria-label="Back">‹</button><div><p class="kicker">Question 4 of 4 · how it works</p>
-  <h2>How you <span class="gold">become the owner</span></h2></div></div>
-  <p class="sub">The only legal way for a foreigner to own a villa in Thailand — transparent, in your name.</p>
-
-  <div class="deal-sec">
-    <p class="deal-h">🏝 Land · 30-year leasehold</p>
-    <table class="dtable">
-      <thead><tr><th class="us">✓ Atmos Villas</th><th class="them">✗ Often elsewhere</th></tr></thead>
-      <tbody>
-        <tr><td>Direct contract with the land owner</td><td>Contract via a nominee Thai company</td></tr>
-        <tr><td>Registered at the Land Office</td><td>Sublease without registration</td></tr>
-        <tr><td>Only your passport is needed</td><td>Complex ownership schemes</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="deal-sec">
-    <p class="deal-h">🏗 Construction</p>
-    <table class="dtable">
-      <thead><tr><th class="us">✓ Atmos Villas</th><th class="them">✗ Often elsewhere</th></tr></thead>
-      <tbody>
-        <tr><td>Contract with a licensed Thai company</td><td>Contract with a nominee company</td></tr>
-        <tr><td>Payment by completed work stages</td><td>Full prepayment with no guarantees</td></tr>
-        <tr><td>5-year structural, 2-year interior warranty</td><td>No liability or quality guarantee</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="after-q"><p class="sub" style="font-size:14px;margin-top:0">When are you planning to buy?</p></div>
-  <div class="chips" style="margin-top:10px">
+<!-- ЭКРАН 4: сроки -->
+<section class="step" data-s="3">
+  <div class="qhead"><button class="barrow" data-back aria-label="Back">‹</button><div><p class="kicker">Question 4 of 4</p>
+  <h2>When are you planning to buy?</h2></div></div>
+  <p class="sub">The villas are already under construction — handover from Sep 2027.</p>
+  <div class="chips">
     <button class="chip" data-when="Within 1–3 months"><span class="ico">🔥</span>Within 1–3 months</button>
     <button class="chip" data-when="This year"><span class="ico">📅</span>This year</button>
     <button class="chip" data-when="Just exploring"><span class="ico">👀</span>Just exploring</button>
-  </div>
-  
-</section>
-
-<!-- ЭКРАН 5: итог + WhatsApp -->
-<section class="step" data-s="5">
-  <div class="qhead"><button class="barrow" data-back aria-label="Back">‹</button><div><p class="kicker">Done</p>
-  <h2>Done — <span class="gold">get your selection</span></h2></div></div>
-  <div class="sum" id="sum"></div>
-  <p class="gift-h">We will send you:</p>
-  <div class="gift">
-    <span>📕 Project <b>presentation</b></span>
-    <span>📐 <b>Floor plans</b> of both villas</span>
-    <span>💰 <b>Stage prices</b> and payment plan</span>
-    <span>🎬 <b>Construction video</b></span>
-  </div>
-  <p class="count" style="margin-top:14px">We reply personally, <b>within 15 min on average</b> · no spam</p>
-<p class="consent">By submitting, you agree to our <a href="../privacy.html" target="_blank">privacy policy</a>.</p>
-</section>
-
-<!-- ЭКРАН 6: после клика -->
-<section class="step" data-s="6">
-  <div class="fin">
-    <div class="big">✅</div>
-    <h2>Your message is ready — tap Send in WhatsApp</h2>
-    <p class="sub">If WhatsApp did not open, tap again. While you wait:</p>
-  </div>
-  <div class="actions">
-    <button class="btn btn-wa" id="wabtn2">Open WhatsApp again</button>
-    <a class="btn btn-line" href="../index.html#tour">Take the 3D villa tour →</a>
-    <a class="btn btn-line" href="../index.html">Open the project website</a>
   </div>
 </section>
 
@@ -575,22 +548,18 @@ body.s0 #dock{display:none}
 <script>
 var S={villa:null,plot:null,pri:null,when:null};
 var PHONE='66656352972';
+var SITE='https://atmos.villas/'+(location.pathname.split('/').pop()||'index.html');
 var steps=[].slice.call(document.querySelectorAll('.step'));
-var cur=0, MAX=6;
+var cur=0, MAX=3;
 var dock=document.getElementById('dock'), dockbtn=document.getElementById('dockbtn');
 
 /* какие шаги требуют выбора перед "Дальше". Шаг 2 (участок) — НЕ обязателен. */
-var REQUIRED={1:function(){return !!S.villa}, 3:function(){return !!S.pri}, 4:function(){return !!S.when}};
-var LABELS={0:'See villas and prices →',1:'Next →',2:'Next →',3:'Next →',4:'Get the offer →'};
+var REQUIRED={0:function(){return !!S.villa}, 2:function(){return !!S.pri}, 3:function(){return !!S.when}};
+var LABELS={0:'Next →',1:'Next →',2:'Next →',3:'Get the offer →'};
 
-function bar(){document.getElementById('bar').style.width=Math.round(cur/(MAX-1)*100)+'%';}
+function bar(){document.getElementById('bar').style.width=Math.round((cur+1)/(MAX+1)*100)+'%';}
 function refreshDock(){
-  document.body.classList.toggle('s0',cur===0);
-  dock.classList.remove('wa','hide');
-  if(cur===0){ dock.classList.add('hide'); return; }
-  if(cur===5){ dock.classList.add('wa'); dockbtn.textContent='Get it on WhatsApp'; dockbtn.disabled=false; dockbtn.style.opacity='1'; return; }
-  if(cur===6){ dock.classList.add('hide'); return; }
-  dockbtn.textContent=LABELS[cur]||'Дальше →';
+  dockbtn.textContent=LABELS[cur]||'Next →';
   var need=REQUIRED[cur]?!REQUIRED[cur]():false;
   dockbtn.disabled=need; dockbtn.style.opacity=need?'.5':'1';
 }
@@ -599,12 +568,11 @@ function show(n){
   cur=n; steps[cur].classList.add('on');
   window.scrollTo({top:0});
   bar(); refreshDock();
-  if(n===5) sum();
   try{if(window.fbq)fbq('trackCustom','QuizStep',{step:n});}catch(e){}
 }
 dockbtn.addEventListener('click',function(){
   if(dockbtn.disabled) return;
-  if(cur===5){ goWA(); return; }
+  if(cur===MAX){ goWA(); return; }
   show(Math.min(cur+1,MAX));
 });
 document.addEventListener('click',function(e){
@@ -613,13 +581,47 @@ document.addEventListener('click',function(e){
   if(nx&&!nx.disabled) show(Math.min(cur+1,MAX));
 });
 
-/* Экран 1: вилла */
+/* Экран 1: галереи вилл (порядок и подписи слайдов сохранены) */
+var CAP1=[['img/v1.webp','Exterior',0],['../img/w/ea7daa1131.webp','Entrance and parking',0],
+  ['../img/w/21bb46f5f1.webp','Pool and terrace',0],['../img/w/7315b72ba9.webp','Terrace and pool',0],
+  ['../img/w/66b85cc106.webp','Living room and kitchen',0],['../img/w/95b939da00.webp','Kitchen',0],
+  ['../img/w/cea6f2aea3.webp','Living room',0],['../img/w/ee5095727a.webp','Bedroom',0],
+  ['../img/w/6b7f850826.webp','Bathroom',0],['img/v1plan.webp','Floor plan · 105 m²',1]];
+var CAP3=[['img/v3a.webp','Exterior and terrace',0],['img/v3b.webp','Villa entrance',0],
+  ['img/v3plan2.webp','Floor plan · 158 m²',1]];
+function buildGallery(root,data){
+  var box=root.querySelector('.slides'); box.innerHTML='';
+  var dots=root.querySelector('.dots'); dots.innerHTML='';
+  data.forEach(function(s,k){
+    var d=document.createElement('div'); d.className='slide'+(s[2]?' contain':'');
+    d.innerHTML='<img src="'+s[0]+'" alt="'+s[1]+'" loading="lazy"><span class="cap">'+s[1]+'</span>';
+    box.appendChild(d);
+    var o=document.createElement('i'); if(k===0)o.className='on'; dots.appendChild(o);
+  });
+  var idx=0, n=data.length, slider=root.querySelector('.slider');
+  function go(m){ idx=(m+n)%n; box.style.transform='translateX(-'+idx*100+'%)';
+    [].forEach.call(dots.children,function(d,j){d.className=j===idx?'on':''}); }
+  root.querySelector('.snav.prev').addEventListener('click',function(){go(idx-1)});
+  root.querySelector('.snav.next').addEventListener('click',function(){go(idx+1)});
+  var tx=null;
+  slider.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+  slider.addEventListener('touchend',function(e){ if(tx===null)return;
+    var dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>40) go(idx+(dx<0?1:-1)); tx=null;},{passive:true});
+  go(0);
+}
+buildGallery(document.getElementById('show1'),CAP1);
+buildGallery(document.getElementById('show3'),CAP3);
+
+function updateVillaShow(){
+  var v=S.villa;
+  document.getElementById('show1').hidden=!(v==='1-bedroom villa'||v==='Both (undecided)');
+  document.getElementById('show3').hidden=!(v==='3-bedroom villa'||v==='Both (undecided)');
+}
 document.querySelectorAll('[data-villa]').forEach(function(b){
   b.addEventListener('click',function(){
     document.querySelectorAll('[data-villa]').forEach(function(x){x.classList.remove('sel')});
     b.classList.add('sel'); S.villa=b.getAttribute('data-villa');
-    refreshDock();
-    buildSlides();
+    updateVillaShow(); refreshDock();
   });
 });
 
@@ -632,68 +634,25 @@ document.querySelectorAll('.plotbtn:not(.sold), .chip[data-plot]').forEach(funct
   });
 });
 
-/* Экран 3: слайдер под выбранную виллу */
-var sl=0, slidesData=[];
-function buildSlides(){
-  var EXT=[['img/v1.webp','Exterior',0],['../img/w/21bb46f5f1.webp','Entrance and parking',0],
-           ['../img/w/7315b72ba9.webp','Terrace and pool',0]];
-  var G3ONLY=[['img/v3a.webp','Exterior and terrace',0],['img/v3b.webp','Villa entrance',0],
-           ['img/v3plan2.webp','Floor plan · 158 m²',1]];
-  var INT=[['../img/w/66b85cc106.webp','Living room and kitchen',0],['../img/w/95b939da00.webp','Kitchen',0],
-           ['../img/w/cea6f2aea3.webp','Living room',0],['../img/w/ee5095727a.webp','Bedroom',0],
-           ['../img/w/6b7f850826.webp','Bathroom',0]];
-  var G1=EXT.concat(INT).concat([['img/v1plan.webp','Floor plan · 105 m²',1]]);
-  var G3=G3ONLY;
-  if(S.villa==='3-bedroom villa') slidesData=G3;
-  else if(S.villa==='1-bedroom villa') slidesData=G1;
-  else slidesData=G1.map(function(s){return s.concat(['One-bedroom villa'])})
-                    .concat(G3.map(function(s){return s.concat(['Three-bedroom villa'])}));
-  var box=document.getElementById('slides'); box.innerHTML='';
-  var dots=document.getElementById('sdots'); dots.innerHTML='';
-  slidesData.forEach(function(s,i){
-    var d=document.createElement('div'); d.className='slide'+(s[2]?' contain':'');
-    var vbadge=s[3]?'<span class="vbadge">'+s[3]+'</span>':'';
-    d.innerHTML='<img src="'+s[0]+'" alt="'+s[1]+'" loading="lazy">'+vbadge+'<span class="cap">'+s[1]+'</span>';
-    box.appendChild(d);
-    var o=document.createElement('i'); if(i===0)o.className='on'; dots.appendChild(o);
-  });
-  sl=0; box.style.transform='translateX(0)';
-}
-function go(n){
-  sl=(n+slidesData.length)%slidesData.length;
-  document.getElementById('slides').style.transform='translateX(-'+sl*100+'%)';
-  [].forEach.call(document.getElementById('sdots').children,function(d,i){d.className=i===sl?'on':''});
-}
-document.getElementById('sprev').addEventListener('click',function(){go(sl-1)});
-document.getElementById('snext').addEventListener('click',function(){go(sl+1)});
-var tx=null;
-document.getElementById('slider').addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
-document.getElementById('slider').addEventListener('touchend',function(e){
-  if(tx===null)return; var dx=e.changedTouches[0].clientX-tx;
-  if(Math.abs(dx)>40) go(sl+(dx<0?1:-1)); tx=null;},{passive:true});
-
+/* Экран 3: цель */
 document.querySelectorAll('[data-pri]').forEach(function(b){
   b.addEventListener('click',function(){
     document.querySelectorAll('[data-pri]').forEach(function(x){x.classList.remove('sel')});
     b.classList.add('sel'); S.pri=b.getAttribute('data-pri');
+    var adv=document.querySelector('.after-adv'); if(adv) adv.hidden=false;
     refreshDock();
   });
 });
+
+/* Экран 4: сроки */
 document.querySelectorAll('[data-when]').forEach(function(b){
   b.addEventListener('click',function(){
     document.querySelectorAll('[data-when]').forEach(function(x){x.classList.remove('sel')});
     b.classList.add('sel'); S.when=b.getAttribute('data-when');
     refreshDock();
-    sum();
   });
 });
 
-/* Экран 5: итог */
-function sum(){
-  var rows=[['Villa',S.villa||'—'],['Plot',S.plot||'—'],['Goal',S.pri||'—'],['Timing',S.when||'—']];
-  document.getElementById('sum').innerHTML=rows.map(function(r){
-    return '<div class="row"><span class="k">'+r[0]+'</span><span class="v">'+r[1]+'</span></div>';}).join('');
-}
 function waLink(){
   var msg='Hello! I completed the Atmos villa quiz:\n'
     +'• Villa: '+(S.villa||'—')+'\n'
@@ -707,10 +666,9 @@ function goWA(){
   try{if(window.fbq)fbq('track','Lead',{content_name:'Quiz',content_category:S.when||'',
     content_ids:[S.villa||'',S.plot||'']});}catch(e){}
   window.open(waLink(),'_blank');
-  show(6);
+  setTimeout(function(){ window.location.href=SITE; },250);
 }
 
-document.getElementById('wabtn2').addEventListener('click',function(){window.open(waLink(),'_blank')});
 bar(); refreshDock();
 </script>
 <script>
