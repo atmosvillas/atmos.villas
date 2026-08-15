@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Partnervergütung — 5% mit Atmos Villas</title>
-<meta name="description" content="Bringen Sie einen Atmos-Villa-Käufer und erhalten Sie ab 5% Provision. Agenturen, private Makler und alle, die weiterempfehlen.">
+<title>Partnervergütung — 5% von Atmos Villas</title>
+<meta name="description" content="Bringen Sie einen Käufer für eine Atmos-Villa und verdienen Sie ab 5% Provision. Agenturen, private Makler und alle, die empfehlen.">
 <meta name="robots" content="noindex">
 <meta property="og:title" content="Verdienen Sie 5% mit Atmos Villas">
-<meta property="og:description" content="Bringen Sie einen Käufer — erhalten Sie 5%. Beantworten Sie 3 Fragen.">
+<meta property="og:description" content="Bringen Sie einen Käufer — verdienen Sie 5%. Beantworten Sie 3 Fragen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -30,37 +30,25 @@
 --f:'Manrope',system-ui,Arial,sans-serif;--grad:linear-gradient(135deg,#E4C98A 0%,#C9A86A 55%,#A8894E 100%);--wa:#25D366}
 body{background:var(--bg);color:var(--ink);font-family:var(--f);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh}
 #bgfix{position:fixed;inset:0;background:var(--bg);z-index:-1}
-.logo{height:17px;width:auto;display:block;max-width:56vw}
+.logo{height:13px;width:auto;display:block;max-width:110px}
 .lg-mark{fill:var(--gold)}.lg-text{fill:var(--ink)}
 header{position:sticky;top:0;z-index:50;background:rgba(11,12,11,.86);backdrop-filter:blur(12px);
-border-bottom:1px solid var(--line2);padding:13px 18px;display:flex;align-items:center;justify-content:space-between}
-.hwa{background:var(--wa);color:#fff;font-weight:800;font-size:12.5px;padding:8px 13px;border-radius:30px;
+border-bottom:1px solid var(--line2);padding:10px 14px;display:flex;align-items:center;gap:9px}
+.hwa{background:var(--wa);color:#fff;font-weight:700;font-size:12px;padding:7px 11px;border-radius:30px;
 text-decoration:none;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
-@media(max-width:360px){.hwa{font-size:11px;padding:7px 10px;gap:5px}.hwa span{font-size:11px}.logo{height:15px}}
-@media(max-width:450px){.hwa span{display:none}}
+@media(max-width:360px){.hwa{font-size:11px;padding:7px 10px;gap:5px}.hwa span{font-size:11.5px;letter-spacing:.2px}.logo{height:15px}}
+
 .bar{height:3px;background:var(--line2);position:relative;overflow:hidden}
 .bar i{position:absolute;left:0;top:0;height:100%;background:var(--grad);width:0;transition:width .4s cubic-bezier(.2,.8,.2,1)}
 main{padding:0 18px 120px;max-width:640px;margin:0 auto}
 .step{display:none;animation:fade .4s ease}
 .step.on{display:block}
 @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.step.on.hero-step{display:flex;flex-direction:column;padding:0}
-.hero-step{margin:0 -18px}
-.hero-bg{position:relative;width:100%;height:42vh;min-height:270px;
-background:url('../img/m/aaab99e3ec.webp') center 55%/cover;z-index:0}
-.hero-bg::after{content:"";position:absolute;inset:0;
-background:linear-gradient(180deg,rgba(11,12,11,.2) 0%,rgba(11,12,11,.5) 55%,var(--bg) 100%)}
-.hero-inner{position:relative;z-index:1;margin-top:-72px;padding:0 18px}
-.hero-tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--gold2);
-border:1px solid var(--line);border-radius:30px;padding:7px 13px;margin-bottom:14px;background:rgba(11,12,11,.5)}
-h1{font-size:clamp(26px,6.6vw,38px);font-weight:800;line-height:1.14;letter-spacing:-.02em;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+
+
+h1{font-size:clamp(25px,6vw,36px);font-weight:800;line-height:1.1;letter-spacing:-.02em;text-shadow:0 2px 20px rgba(0,0,0,.5)}
 .gold{color:var(--gold2)}
-.big5{display:flex;align-items:baseline;gap:12px;margin:22px 0 6px}
-.big5 .num{font-size:clamp(52px,15vw,84px);font-weight:800;line-height:.9;letter-spacing:-.03em;
-background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.big5{align-items:center}
-.big5 .lbl{font-size:13.5px;color:var(--muted2);font-weight:600;max-width:15ch;line-height:1.35}
-.hero-step .sub{color:#e8e4db;font-size:15px;margin-top:8px;max-width:38ch;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero-step .sub{color:#e8e4db;font-size:14px;margin-top:6px;max-width:40ch;line-height:1.45;text-shadow:0 1px 12px rgba(0,0,0,.5)}
 .hero-cta{margin-top:22px;width:100%;font-size:17px;padding:17px;box-shadow:0 12px 34px rgba(201,168,106,.4);animation:ctaGlow 2.2s ease-in-out infinite}
 @keyframes ctaGlow{0%,100%{box-shadow:0 12px 34px rgba(201,168,106,.3)}50%{box-shadow:0 12px 40px rgba(201,168,106,.55)}}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;cursor:pointer;
@@ -89,14 +77,8 @@ font-size:15.5px;font-weight:600;color:var(--ink);transition:.16s}
 .sum .r{display:flex;justify-content:space-between;gap:12px;font-size:14px}
 .sum .r .k{color:var(--muted)}
 .sum .r .v{font-weight:700;text-align:right}
-.big5-mid{text-align:center;margin:22px 0}
-.big5-mid .n{font-size:64px;font-weight:800;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.big5-mid .t{font-size:14px;color:var(--muted2);margin-top:4px}
 .consent{font-size:10.5px;color:var(--muted);text-align:center;margin-top:14px;line-height:1.5}
 .consent a{color:var(--muted2);text-decoration:underline}
-.dockbtn{position:fixed;left:0;right:0;bottom:0;z-index:48;padding:12px 18px 18px;
-background:linear-gradient(180deg,transparent,#0B0C0B 32%);pointer-events:none;display:flex;justify-content:center}
-.dockbtn .btn{pointer-events:auto;max-width:604px;width:100%}
 #dock.hide{display:none}
 body.s0 #dock{display:none}
 .qfoot{text-align:center;padding:20px 0 8px;font-size:11px;color:var(--muted)}
@@ -171,13 +153,6 @@ font-weight:800;font-size:15px;padding:15px;border-radius:13px;text-decoration:n
 .contractor .big{font-size:19px;font-weight:800;color:var(--gold2);margin-bottom:6px}
 .contractor p{font-size:14px;color:var(--muted2)}
 .iprog{text-align:center;font-size:12px;color:var(--muted);padding:14px 0 0}
-.maplink{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--gold);
-border-radius:14px;padding:15px 16px;margin-top:16px;text-decoration:none;color:var(--ink)}
-.maplink .mi{font-size:24px;flex:none}
-.maplink .mt{flex:1}
-.maplink .mt b{display:block;font-size:15px;color:var(--gold2)}
-.maplink .mt small{font-size:12.5px;color:var(--muted);font-weight:500}
-.maplink .ma{font-size:20px;color:var(--gold);flex:none}
 .paytable{margin-top:16px;display:grid;gap:6px}
 .paytable .payrow{display:flex;align-items:center;gap:11px;background:var(--card);border:1px solid var(--line2);
 border-radius:10px;padding:11px 13px}
@@ -206,8 +181,8 @@ border:1px solid var(--line2);border-radius:12px;padding:14px 16px}
 body.mode-present .present{display:block}
 body.mode-present main>.step,body.mode-present #dock{display:none}
 body.mode-present header{position:sticky}
-.pslide{display:none;padding:0 18px;animation:fade .4s ease}
-.pslide.on{display:block}
+.pslide{display:block;padding:0 18px;margin-bottom:14px}
+
 .present{padding-bottom:120px}
 
 .finalcta{margin-top:20px;display:grid;gap:12px}
@@ -222,9 +197,7 @@ background:linear-gradient(180deg,transparent,#0B0C0B 34%);max-width:680px;margi
 body.mode-present .pdock{display:flex}
 .pbtn{border:0;cursor:pointer;font-family:var(--f);font-weight:800;font-size:15px;padding:14px;border-radius:13px;transition:.2s}
 .pbtn:active{transform:scale(.97)}
-.pback{background:var(--card);border:1.5px solid var(--line2);color:var(--muted2);flex:0 0 50px}
 .pwa{background:var(--wa);color:#fff;flex:0 0 54px;font-size:20px}
-.pnext{background:var(--grad);color:#1a1206;flex:1}
 
 .priceblock{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--gold);
 border-radius:14px;padding:16px;margin-top:16px;text-align:center}
@@ -233,7 +206,7 @@ border-radius:14px;padding:16px;margin-top:16px;text-align:center}
 .pb-comm{font-size:14px;color:var(--gold2);margin-top:10px;padding-top:10px;border-top:1px solid var(--line2)}
 .pb-comm b{font-size:16px}
 
-.forwho{margin-top:16px;font-size:14px;color:var(--muted2);line-height:1.55;
+.forwho{margin-top:12px;font-size:12.5px;color:var(--muted2);line-height:1.45;
 padding-left:14px;border-left:2px solid var(--gold)}
 
 .pcount{display:none;text-align:center;font-size:12px;font-weight:700;color:var(--gold2);padding:8px 0 0;letter-spacing:.03em}
@@ -241,7 +214,7 @@ body.mode-present .pcount{display:block}
 
 .langsw{position:relative;flex:none}
 .lang-cur{background:var(--card);border:1px solid var(--line2);color:var(--ink);font-family:var(--f);
-font-weight:700;font-size:12.5px;padding:8px 11px;border-radius:30px;cursor:pointer;white-space:nowrap}
+font-weight:700;font-size:11.5px;padding:8px 11px;border-radius:30px;cursor:pointer;white-space:nowrap}
 .lang-menu{position:absolute;top:calc(100% + 6px);right:0;background:var(--card2,#1C1912);border:1px solid var(--line);
 border-radius:12px;padding:6px;min-width:130px;display:none;z-index:60;box-shadow:0 10px 30px rgba(0,0,0,.4)}
 .lang-menu.open{display:block}
@@ -254,6 +227,180 @@ border-radius:12px;padding:6px;min-width:130px;display:none;z-index:60;box-shado
 .fl svg{width:100%;height:100%;display:block}
 .lang-item{display:flex;align-items:center;gap:10px}
 .lang-cur{display:inline-flex;align-items:center;gap:7px}
+
+
+
+
+
+
+
+
+/* lead-first landing режим */
+.present{display:none}
+body.sent .step.on.hero-step,body.sent .hero-step{display:none!important}
+
+.leadok{display:none}
+
+.leadok svg{flex:none}
+.pdock{display:none!important}
+.present .pbar,.present #bar,.present .pcount,#pcount{display:none!important}
+
+.logolink{flex:none;margin-right:auto}
+.langsw{flex:none}
+.hwa{flex:none}
+
+@media(max-width:380px){
+  .lang-cur{font-size:0;padding:6px 7px}
+  .lang-cur .fl{margin:0}
+  .hwa span{font-size:10.5px}
+  .hwa{padding:6px 9px}
+  .logo{max-width:92px}
+}
+
+
+@keyframes bounce{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(4px);opacity:1}}
+
+
+
+
+
+
+
+
+
+.growrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.growcell{background:rgba(201,168,106,.08);border:1px solid rgba(201,168,106,.3);border-radius:13px;padding:14px 10px;text-align:center}
+.growcell .gv{font-size:clamp(22px,6vw,28px);font-weight:800;color:var(--gold2);line-height:1}
+.growcell .gt{overflow-wrap:anywhere;word-break:break-word;font-size:11.5px;color:var(--muted2);margin-top:6px;line-height:1.35}
+.contractor .lic{font-size:12px;color:var(--gold2);margin-top:8px;font-weight:600}
+
+/* плашка "Заявка получена" — скруглённая карточка с воздухом, прилипает к шапке */
+body.sent .leadok{display:block;position:static;padding:16px 14px 6px}
+.leadok-card{display:flex;align-items:center;gap:11px;
+  padding:15px 16px;border-radius:16px;
+  background:linear-gradient(180deg,rgba(30,60,38,.97),rgba(20,44,27,.97));
+  border:1.5px solid rgba(80,200,110,.5);
+  box-shadow:0 10px 30px rgba(0,0,0,.4),0 0 0 4px rgba(60,180,90,.08);
+  backdrop-filter:blur(10px);
+  color:#8fe3a4;font-weight:700;font-size:14px;line-height:1.4}
+.leadok-card svg{flex:none}
+/* "Entdecken Sie das Projekt" — в потоке, НЕ держится на экране */
+.scroll-cta{display:none}
+body.sent .scroll-cta{display:flex;flex-direction:column;align-items:center;gap:2px;
+  margin:6px 0 14px;color:var(--gold2);font-weight:700;font-size:14px}
+.scroll-cta .chevs{font-size:22px;line-height:.6;animation:bounce 1.4s ease-in-out infinite}
+body.sent .present{display:block;padding-top:6px}
+
+
+
+
+.dist .dr{display:flex;align-items:center;justify-content:space-between;gap:11px;background:var(--card);border:1px solid var(--line2);border-radius:11px;padding:11px 14px}
+.dist .dr .dt{font-size:13.5px;color:#e8e4db}
+.dist .dr .dv{font-size:13.5px;font-weight:800;color:var(--gold2);white-space:nowrap}
+
+/* ============ HERO — фото-герой + чистый тёмный контент ============ */
+.hero-step{position:relative;display:flex;flex-direction:column;padding:0;
+  margin:0 -18px;min-height:calc(100vh - 53px)}
+.hero-photo{position:relative;height:32vh;min-height:210px;flex:none;
+  background:url('../img/m/hero3br.webp') center 42%/cover;
+  -webkit-mask-image:linear-gradient(180deg,#000 62%,transparent);
+  mask-image:linear-gradient(180deg,#000 62%,transparent)}
+.hero-body{position:relative;z-index:2;margin-top:-46px;padding:0 20px 22px;
+  max-width:520px;margin-left:auto;margin-right:auto;width:100%;
+  display:flex;flex-direction:column;box-sizing:border-box}
+.hero-kicker{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gold2);margin:0 0 12px;padding-left:34px;position:relative;line-height:1.3}
+.hero-kicker::before{content:"";position:absolute;left:0;top:50%;width:26px;height:1.5px;
+  background:var(--gold2);transform:translateY(-50%)}
+.hero-body h1{font-size:clamp(28px,7.4vw,40px);font-weight:800;line-height:1.08;
+  letter-spacing:-.02em;margin:0;text-shadow:0 2px 24px rgba(0,0,0,.6)}
+/* ставка 7% + мета */
+.rate{display:flex;align-items:center;gap:15px;margin:18px 0 18px}
+.rate-num{font-size:clamp(52px,15vw,66px);font-weight:800;line-height:.82;letter-spacing:-.04em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;flex:none}
+.rate-meta{display:flex;flex-direction:column;gap:5px;border-left:1.5px solid rgba(201,168,106,.35);padding-left:15px}
+.rate-bonus{font-size:13px;font-weight:800;color:var(--gold2);line-height:1.25}
+.rate-pay{font-size:12.5px;color:#cfc8bb;line-height:1.3}
+/* таблица комиссий — единственные карточки на экране */
+.commrow{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:0 0 16px}
+.commcell{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,106,.28);
+  border-radius:14px;padding:14px 12px;text-align:center}
+.cc-t{font-size:12px;color:var(--muted2);letter-spacing:.02em;margin-bottom:6px;text-transform:uppercase}
+.cc-v{font-size:clamp(19px,5.4vw,23px);font-weight:800;color:#fff;letter-spacing:-.01em;white-space:nowrap}
+.cc-usd{font-size:12px;color:var(--gold2);margin-top:3px}
+/* статус — тонкая строка, без плашки */
+.hero-status{display:flex;align-items:center;gap:8px;margin:0 0 16px;
+  font-size:12.5px;color:var(--muted2);line-height:1.4}
+.hero-status .dot{width:7px;height:7px;border-radius:50%;background:#5ec97a;flex:none;
+  box-shadow:0 0 0 3px rgba(94,201,122,.2)}
+/* форма */
+.hero-form{display:flex;flex-direction:column;gap:10px}
+.hero-form input{width:100%;box-sizing:border-box;padding:15px 16px;border-radius:13px;
+  background:rgba(255,255,255,.05);border:1px solid var(--line2);color:var(--ink);
+  font-size:15px;font-family:var(--f);outline:none;transition:border-color .2s}
+.hero-form input:focus{border-color:var(--gold2)}
+.hero-form input::placeholder{color:var(--muted2)}
+.hero-form .btn{margin-top:2px}
+.hero-form .fmsg{margin:0}
+.hero-form .fmsg:empty{display:none}
+
+@media(max-width:360px){
+  .cc-v{font-size:18px}
+  .commcell{padding:12px 8px}
+  .commrow{gap:8px}
+  .rate-num{font-size:52px}
+}
+
+.fact .ic{flex:none;width:26px;height:26px;color:var(--gold2);display:inline-flex;align-items:center;justify-content:center}
+.fact .ic svg{width:22px;height:22px}
+.thaiflag{display:inline-block;width:22px;height:15px;border-radius:2.5px;overflow:hidden;vertical-align:-2px;margin-left:8px;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
+.thaiflag svg{width:100%;height:100%;display:block}
+.mapimg{background:#0d0f0e;border:1px solid var(--line2)}
+
+.gmaps-btn{display:flex;align-items:center;gap:12px;margin-top:14px;padding:13px 15px;
+  background:#fff;border-radius:13px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.3);
+  transition:transform .15s}
+.gmaps-btn:active{transform:scale(.98)}
+.gm-ic{flex:none;width:34px;height:34px;border-radius:9px;background:#EA4335;
+  display:inline-flex;align-items:center;justify-content:center;color:#fff}
+.gm-ic svg{width:20px;height:20px}
+.gm-tx{flex:1;display:flex;flex-direction:column;line-height:1.25}
+.gm-tx b{color:#202124;font-size:14.5px}
+.gm-tx small{color:#5f6368;font-size:12px}
+.gm-ar{color:#5f6368;font-size:18px;flex:none}
+
+/* ===== ОФФЕР ДЛЯ КЛИЕНТА ===== */
+.offer-intro{padding-top:8px;padding-bottom:4px}
+.offer-band{background:linear-gradient(160deg,rgba(201,168,106,.16),rgba(201,168,106,.05));
+  border:1px solid rgba(201,168,106,.4);border-radius:18px;padding:22px 20px;text-align:center}
+.offer-eyebrow{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--gold2);margin-bottom:10px}
+.offer-band h2{font-size:clamp(22px,6vw,28px);font-weight:800;line-height:1.15;margin:0 0 10px}
+.offer-band p{font-size:14.5px;color:#d8d2c6;line-height:1.5;margin:0 0 16px}
+.offer-tags{display:flex;flex-direction:column;gap:8px}
+.otag{background:rgba(255,255,255,.06);border:1px solid rgba(201,168,106,.3);border-radius:10px;
+  padding:9px 12px;font-size:13px;font-weight:600;color:#f0ebe0}
+/* оффер-бейдж на карточке виллы */
+.offer-badge{display:inline-block;align-self:flex-start;background:var(--grad);color:#1a1206;
+  font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;
+  padding:5px 12px;border-radius:20px;margin-bottom:12px}
+.pslide{position:relative}
+
+.mid-cta{padding:8px 0}
+.midcta-box{background:linear-gradient(160deg,rgba(201,168,106,.14),rgba(201,168,106,.04));
+  border:1px solid rgba(201,168,106,.4);border-radius:18px;padding:24px 20px;text-align:center}
+.midcta-box h3{font-size:clamp(20px,5.5vw,25px);font-weight:800;margin:0 0 8px}
+.midcta-box p{font-size:14px;color:#d8d2c6;line-height:1.5;margin:0 0 16px}
+.midcta-box .villabtn{margin:0}
+@media(max-width:360px){
+.payrow{gap:8px;padding:11px 12px}
+.payrow .tx{font-size:13px;overflow-wrap:anywhere}
+.payrow .pv{font-size:12.5px}
+.payrow .n{width:26px;height:26px;font-size:13px}
+.perks .p{overflow-wrap:anywhere}.perks .p b{overflow-wrap:anywhere}.otag{overflow-wrap:anywhere}.fact div{overflow-wrap:anywhere}
+.growcell{padding-left:6px;padding-right:6px}
+.gv{font-size:clamp(20px,7vw,30px)}
+}
 </style>
 <script>window.ATMOS_FORM_ENDPOINT="https://atmos-form.magic-resu.workers.dev";</script>
 <!-- Meta Pixel -->
@@ -271,9 +418,9 @@ fbq('init','4608548576089764');fbq('track','PageView');
 <body>
 <div id="bgfix"></div>
 <header>
-  <a href="../ru.html" aria-label="Atmos Villas"><svg class="logo" viewBox="0 0 1518 143" role="img" aria-label="Atmos Villas" xmlns="http://www.w3.org/2000/svg"><g class="lg-mark"><path d="M78.5232 71.8122C65.5269 71.8122 26.1744 139.198 0 139.198C0 117.46 65.5269 3.33996 78.5232 3.33996C91.5195 3.33996 157.046 117.46 157.046 139.198C130.872 139.198 91.5195 71.8122 78.5232 71.8122Z"/><path d="M63.5664 106.791C63.5664 98.5307 70.2628 91.8343 78.5232 91.8343C86.7836 91.8343 93.48 98.5307 93.48 106.791C93.48 115.052 86.7836 121.748 78.5232 121.748C70.2628 121.748 63.5664 115.052 63.5664 106.791Z"/></g><g class="lg-text"><path d="M283.395 2.82874V14.5478H236.014V139.821H206.514V14.5478H159.032V2.82874H283.395Z"/><path d="M309.46 2.82874H338.354L386.139 96.8844L436.046 2.82874H464.233V139.821H434.733V42.027L386.139 139.821H376.845L326.736 42.2291V139.821H309.46V2.82874Z"/><path d="M575.16 142.852C564.384 142.852 554.348 141.067 545.054 137.497C535.76 133.928 527.677 128.944 520.808 122.545C514.005 116.079 508.651 108.435 504.744 99.6122C500.838 90.7218 498.885 80.9896 498.885 70.4155C498.885 60.0434 500.838 50.5469 504.744 41.926C508.651 33.2377 514.005 25.7954 520.808 19.5991C527.677 13.4029 535.76 8.58726 545.054 5.15235C554.348 1.71745 564.384 0 575.16 0C585.936 0 595.971 1.75113 605.266 5.25338C614.56 8.68828 622.642 13.5039 629.512 19.7002C636.382 25.8965 641.77 33.3051 645.676 41.926C649.583 50.4796 651.536 59.8751 651.536 70.1124C651.536 81.0233 649.583 90.9576 645.676 99.9152C641.77 108.873 636.382 116.551 629.512 122.949C622.642 129.28 614.56 134.197 605.266 137.699C595.971 141.134 585.936 142.852 575.16 142.852ZM575.16 131.334C582.164 131.334 588.327 129.819 593.648 126.788C599.036 123.69 603.548 119.447 607.185 114.059C610.822 108.671 613.55 102.273 615.368 94.8639C617.254 87.388 618.197 79.2385 618.197 70.4155C618.197 61.7272 617.254 53.7798 615.368 46.5732C613.55 39.3667 610.822 33.1704 607.185 27.9844C603.548 22.7983 599.036 18.7573 593.648 15.8612C588.327 12.9651 582.164 11.517 575.16 11.517C568.088 11.517 561.858 12.9651 556.47 15.8612C551.149 18.7573 546.67 22.7983 543.034 27.9844C539.464 33.1704 536.736 39.3667 534.85 46.5732C533.032 53.7798 532.123 61.7272 532.123 70.4155C532.123 79.2385 533.032 87.388 534.85 94.8639C536.736 102.273 539.464 108.671 543.034 114.059C546.67 119.447 551.149 123.69 556.47 126.788C561.858 129.819 568.088 131.334 575.16 131.334Z"/><path d="M732.357 141.841C724.477 141.841 717.574 140.898 711.647 139.013C705.787 137.059 700.77 134.399 696.594 131.031C692.485 127.664 689.185 123.656 686.693 119.009C684.201 114.295 682.484 109.142 681.541 103.552H700.938C701.746 106.987 702.958 110.186 704.575 113.15C706.191 116.113 708.246 118.706 710.738 120.929C713.297 123.084 716.328 124.801 719.83 126.081C723.4 127.293 727.508 127.9 732.155 127.9C735.253 127.9 738.318 127.597 741.349 126.99C744.379 126.384 747.073 125.408 749.431 124.061C751.855 122.646 753.809 120.861 755.29 118.706C756.772 116.484 757.513 113.756 757.513 110.523C757.513 106.819 756.536 103.485 754.583 100.521C752.63 97.4906 750.037 94.7292 746.804 92.2372C743.571 89.6779 739.833 87.3206 735.59 85.1654C731.414 82.9428 727.104 80.7202 722.659 78.4976C718.011 76.2077 713.398 73.8167 708.818 71.3247C704.238 68.8327 700.13 66.0377 696.493 62.9395C692.856 59.774 689.926 56.1708 687.703 52.1297C685.481 48.0886 684.37 43.3741 684.37 37.986C684.37 32.5305 685.515 27.5129 687.805 22.933C690.094 18.2858 693.395 14.2784 697.705 10.9109C702.083 7.47596 707.404 4.8156 713.667 2.92977C719.998 0.97659 727.171 0 735.186 0C741.719 0 747.646 0.942914 752.967 2.82874C758.355 4.71457 763.103 7.34126 767.211 10.7088C771.32 14.009 774.788 17.9154 777.617 22.4279C780.446 26.8731 782.635 31.655 784.184 36.7737H766.908C765.696 33.5408 764.248 30.4427 762.564 27.4792C760.948 24.5158 758.86 21.9228 756.301 19.7002C753.809 17.4776 750.744 15.7265 747.107 14.4468C743.537 13.0998 739.227 12.4263 734.176 12.4263C729.394 12.4263 725.386 12.9987 722.154 14.1437C718.921 15.2887 716.294 16.7704 714.273 18.5889C712.32 20.34 710.906 22.3269 710.03 24.5494C709.155 26.7047 708.717 28.8262 708.717 30.9141C708.717 34.0796 709.694 37.0431 711.647 39.8045C713.667 42.5658 716.328 45.1925 719.628 47.6845C722.928 50.1765 726.666 52.5675 730.842 54.8574C735.085 57.08 739.395 59.3026 743.773 61.5252C748.555 63.9498 753.337 66.5091 758.119 69.2032C762.901 71.8299 767.211 74.7596 771.05 77.9925C774.889 81.2253 777.988 84.8623 780.345 88.9034C782.769 92.8771 783.982 97.3896 783.982 102.441C783.982 108.031 782.87 113.217 780.648 117.999C778.425 122.781 775.125 126.957 770.747 130.526C766.437 134.029 761.049 136.79 754.583 138.81C748.185 140.831 740.776 141.841 732.357 141.841Z"/><path d="M887.494 5.85954L939.523 113.453L987.106 5.85954H997.613L936.997 142.75L932.754 142.953L867.39 5.85954H887.494Z"/><path d="M1018.32 5.85954H1036.81V139.821H1018.32V5.85954Z"/><path d="M1077.32 5.85954H1095.81V131.132H1163.3V139.821H1077.32V5.85954Z"/><path d="M1187.44 5.85954H1205.93V131.132H1273.42V139.821H1187.44V5.85954Z"/><path d="M1346.15 2.82874L1409.19 139.821H1389.9L1369.49 95.167H1310.19L1289.28 139.821H1278.37L1342.42 2.82874H1346.15ZM1314.33 86.4787H1365.35L1339.69 32.0254L1314.33 86.4787Z"/><path d="M1473.55 134.466C1477.12 134.466 1480.62 134.029 1484.06 133.153C1487.56 132.21 1490.66 130.863 1493.35 129.112C1496.11 127.293 1498.33 125.105 1500.02 122.545C1501.7 119.918 1502.54 116.888 1502.54 113.453C1502.54 109.748 1501.57 106.381 1499.61 103.35C1497.66 100.319 1495.07 97.5243 1491.83 94.9649C1488.6 92.3382 1484.86 89.8799 1480.62 87.59C1476.44 85.2327 1472.13 82.9091 1467.69 80.6192C1462.97 78.1945 1458.29 75.7026 1453.65 73.1432C1449.07 70.5165 1444.92 67.5868 1441.22 64.3539C1437.58 61.0537 1434.62 57.3494 1432.33 53.241C1430.11 49.0652 1429 44.2159 1429 38.6932C1429 33.5745 1429.91 28.8262 1431.72 24.4484C1433.54 20.0706 1436.2 16.2989 1439.7 13.1334C1443.27 9.9006 1447.65 7.37494 1452.84 5.55646C1458.02 3.73798 1463.95 2.82874 1470.62 2.82874C1476.61 2.82874 1481.97 3.50225 1486.68 4.84927C1491.46 6.19629 1495.64 8.21682 1499.21 10.9109C1502.85 13.5376 1505.94 16.8041 1508.5 20.7104C1511.06 24.6168 1513.18 29.1293 1514.87 34.248L1506.79 37.986C1505.51 34.0796 1503.79 30.51 1501.63 27.2772C1499.55 23.977 1496.99 21.1819 1493.96 18.892C1490.93 16.5347 1487.39 14.7162 1483.35 13.4365C1479.31 12.1569 1474.73 11.517 1469.61 11.517C1465.03 11.517 1461.02 12.1232 1457.59 13.3355C1454.15 14.4805 1451.29 16.0295 1449 17.9827C1446.78 19.8686 1445.09 22.0238 1443.95 24.4484C1442.8 26.8057 1442.23 29.2303 1442.23 31.7223C1442.23 34.7531 1443.21 37.6492 1445.16 40.4106C1447.18 43.1047 1449.81 45.6977 1453.04 48.1897C1456.34 50.6816 1460.08 53.1063 1464.25 55.4636C1468.43 57.7535 1472.71 60.0434 1477.08 62.3334C1481.93 64.8254 1486.78 67.4857 1491.63 70.3145C1496.48 73.0759 1500.86 76.174 1504.77 79.6089C1508.67 82.9765 1511.84 86.7144 1514.26 90.8229C1516.75 94.8639 1518 99.4101 1518 104.461C1518 109.782 1517.02 114.8 1515.07 119.514C1513.12 124.162 1510.22 128.236 1506.38 131.739C1502.54 135.174 1497.73 137.901 1491.94 139.922C1486.21 141.942 1479.54 142.953 1471.93 142.953C1465.87 142.953 1460.42 142.245 1455.57 140.831C1450.72 139.417 1446.41 137.362 1442.63 134.668C1438.93 131.907 1435.73 128.573 1433.04 124.667C1430.41 120.693 1428.19 116.181 1426.37 111.129L1434.96 107.593C1436.3 111.836 1438.19 115.608 1440.61 118.908C1443.11 122.208 1446 125.037 1449.3 127.394C1452.6 129.684 1456.31 131.436 1460.42 132.648C1464.52 133.86 1468.9 134.466 1473.55 134.466Z"/></g></svg></a>
+  <a href="../de.html" aria-label="Atmos Villas" class="logolink"><svg class="logo" viewBox="0 0 1518 143" role="img" aria-label="Atmos Villas" xmlns="http://www.w3.org/2000/svg"><g class="lg-mark"><path d="M78.5232 71.8122C65.5269 71.8122 26.1744 139.198 0 139.198C0 117.46 65.5269 3.33996 78.5232 3.33996C91.5195 3.33996 157.046 117.46 157.046 139.198C130.872 139.198 91.5195 71.8122 78.5232 71.8122Z"/><path d="M63.5664 106.791C63.5664 98.5307 70.2628 91.8343 78.5232 91.8343C86.7836 91.8343 93.48 98.5307 93.48 106.791C93.48 115.052 86.7836 121.748 78.5232 121.748C70.2628 121.748 63.5664 115.052 63.5664 106.791Z"/></g><g class="lg-text"><path d="M283.395 2.82874V14.5478H236.014V139.821H206.514V14.5478H159.032V2.82874H283.395Z"/><path d="M309.46 2.82874H338.354L386.139 96.8844L436.046 2.82874H464.233V139.821H434.733V42.027L386.139 139.821H376.845L326.736 42.2291V139.821H309.46V2.82874Z"/><path d="M575.16 142.852C564.384 142.852 554.348 141.067 545.054 137.497C535.76 133.928 527.677 128.944 520.808 122.545C514.005 116.079 508.651 108.435 504.744 99.6122C500.838 90.7218 498.885 80.9896 498.885 70.4155C498.885 60.0434 500.838 50.5469 504.744 41.926C508.651 33.2377 514.005 25.7954 520.808 19.5991C527.677 13.4029 535.76 8.58726 545.054 5.15235C554.348 1.71745 564.384 0 575.16 0C585.936 0 595.971 1.75113 605.266 5.25338C614.56 8.68828 622.642 13.5039 629.512 19.7002C636.382 25.8965 641.77 33.3051 645.676 41.926C649.583 50.4796 651.536 59.8751 651.536 70.1124C651.536 81.0233 649.583 90.9576 645.676 99.9152C641.77 108.873 636.382 116.551 629.512 122.949C622.642 129.28 614.56 134.197 605.266 137.699C595.971 141.134 585.936 142.852 575.16 142.852ZM575.16 131.334C582.164 131.334 588.327 129.819 593.648 126.788C599.036 123.69 603.548 119.447 607.185 114.059C610.822 108.671 613.55 102.273 615.368 94.8639C617.254 87.388 618.197 79.2385 618.197 70.4155C618.197 61.7272 617.254 53.7798 615.368 46.5732C613.55 39.3667 610.822 33.1704 607.185 27.9844C603.548 22.7983 599.036 18.7573 593.648 15.8612C588.327 12.9651 582.164 11.517 575.16 11.517C568.088 11.517 561.858 12.9651 556.47 15.8612C551.149 18.7573 546.67 22.7983 543.034 27.9844C539.464 33.1704 536.736 39.3667 534.85 46.5732C533.032 53.7798 532.123 61.7272 532.123 70.4155C532.123 79.2385 533.032 87.388 534.85 94.8639C536.736 102.273 539.464 108.671 543.034 114.059C546.67 119.447 551.149 123.69 556.47 126.788C561.858 129.819 568.088 131.334 575.16 131.334Z"/><path d="M732.357 141.841C724.477 141.841 717.574 140.898 711.647 139.013C705.787 137.059 700.77 134.399 696.594 131.031C692.485 127.664 689.185 123.656 686.693 119.009C684.201 114.295 682.484 109.142 681.541 103.552H700.938C701.746 106.987 702.958 110.186 704.575 113.15C706.191 116.113 708.246 118.706 710.738 120.929C713.297 123.084 716.328 124.801 719.83 126.081C723.4 127.293 727.508 127.9 732.155 127.9C735.253 127.9 738.318 127.597 741.349 126.99C744.379 126.384 747.073 125.408 749.431 124.061C751.855 122.646 753.809 120.861 755.29 118.706C756.772 116.484 757.513 113.756 757.513 110.523C757.513 106.819 756.536 103.485 754.583 100.521C752.63 97.4906 750.037 94.7292 746.804 92.2372C743.571 89.6779 739.833 87.3206 735.59 85.1654C731.414 82.9428 727.104 80.7202 722.659 78.4976C718.011 76.2077 713.398 73.8167 708.818 71.3247C704.238 68.8327 700.13 66.0377 696.493 62.9395C692.856 59.774 689.926 56.1708 687.703 52.1297C685.481 48.0886 684.37 43.3741 684.37 37.986C684.37 32.5305 685.515 27.5129 687.805 22.933C690.094 18.2858 693.395 14.2784 697.705 10.9109C702.083 7.47596 707.404 4.8156 713.667 2.92977C719.998 0.97659 727.171 0 735.186 0C741.719 0 747.646 0.942914 752.967 2.82874C758.355 4.71457 763.103 7.34126 767.211 10.7088C771.32 14.009 774.788 17.9154 777.617 22.4279C780.446 26.8731 782.635 31.655 784.184 36.7737H766.908C765.696 33.5408 764.248 30.4427 762.564 27.4792C760.948 24.5158 758.86 21.9228 756.301 19.7002C753.809 17.4776 750.744 15.7265 747.107 14.4468C743.537 13.0998 739.227 12.4263 734.176 12.4263C729.394 12.4263 725.386 12.9987 722.154 14.1437C718.921 15.2887 716.294 16.7704 714.273 18.5889C712.32 20.34 710.906 22.3269 710.03 24.5494C709.155 26.7047 708.717 28.8262 708.717 30.9141C708.717 34.0796 709.694 37.0431 711.647 39.8045C713.667 42.5658 716.328 45.1925 719.628 47.6845C722.928 50.1765 726.666 52.5675 730.842 54.8574C735.085 57.08 739.395 59.3026 743.773 61.5252C748.555 63.9498 753.337 66.5091 758.119 69.2032C762.901 71.8299 767.211 74.7596 771.05 77.9925C774.889 81.2253 777.988 84.8623 780.345 88.9034C782.769 92.8771 783.982 97.3896 783.982 102.441C783.982 108.031 782.87 113.217 780.648 117.999C778.425 122.781 775.125 126.957 770.747 130.526C766.437 134.029 761.049 136.79 754.583 138.81C748.185 140.831 740.776 141.841 732.357 141.841Z"/><path d="M887.494 5.85954L939.523 113.453L987.106 5.85954H997.613L936.997 142.75L932.754 142.953L867.39 5.85954H887.494Z"/><path d="M1018.32 5.85954H1036.81V139.821H1018.32V5.85954Z"/><path d="M1077.32 5.85954H1095.81V131.132H1163.3V139.821H1077.32V5.85954Z"/><path d="M1187.44 5.85954H1205.93V131.132H1273.42V139.821H1187.44V5.85954Z"/><path d="M1346.15 2.82874L1409.19 139.821H1389.9L1369.49 95.167H1310.19L1289.28 139.821H1278.37L1342.42 2.82874H1346.15ZM1314.33 86.4787H1365.35L1339.69 32.0254L1314.33 86.4787Z"/><path d="M1473.55 134.466C1477.12 134.466 1480.62 134.029 1484.06 133.153C1487.56 132.21 1490.66 130.863 1493.35 129.112C1496.11 127.293 1498.33 125.105 1500.02 122.545C1501.7 119.918 1502.54 116.888 1502.54 113.453C1502.54 109.748 1501.57 106.381 1499.61 103.35C1497.66 100.319 1495.07 97.5243 1491.83 94.9649C1488.6 92.3382 1484.86 89.8799 1480.62 87.59C1476.44 85.2327 1472.13 82.9091 1467.69 80.6192C1462.97 78.1945 1458.29 75.7026 1453.65 73.1432C1449.07 70.5165 1444.92 67.5868 1441.22 64.3539C1437.58 61.0537 1434.62 57.3494 1432.33 53.241C1430.11 49.0652 1429 44.2159 1429 38.6932C1429 33.5745 1429.91 28.8262 1431.72 24.4484C1433.54 20.0706 1436.2 16.2989 1439.7 13.1334C1443.27 9.9006 1447.65 7.37494 1452.84 5.55646C1458.02 3.73798 1463.95 2.82874 1470.62 2.82874C1476.61 2.82874 1481.97 3.50225 1486.68 4.84927C1491.46 6.19629 1495.64 8.21682 1499.21 10.9109C1502.85 13.5376 1505.94 16.8041 1508.5 20.7104C1511.06 24.6168 1513.18 29.1293 1514.87 34.248L1506.79 37.986C1505.51 34.0796 1503.79 30.51 1501.63 27.2772C1499.55 23.977 1496.99 21.1819 1493.96 18.892C1490.93 16.5347 1487.39 14.7162 1483.35 13.4365C1479.31 12.1569 1474.73 11.517 1469.61 11.517C1465.03 11.517 1461.02 12.1232 1457.59 13.3355C1454.15 14.4805 1451.29 16.0295 1449 17.9827C1446.78 19.8686 1445.09 22.0238 1443.95 24.4484C1442.8 26.8057 1442.23 29.2303 1442.23 31.7223C1442.23 34.7531 1443.21 37.6492 1445.16 40.4106C1447.18 43.1047 1449.81 45.6977 1453.04 48.1897C1456.34 50.6816 1460.08 53.1063 1464.25 55.4636C1468.43 57.7535 1472.71 60.0434 1477.08 62.3334C1481.93 64.8254 1486.78 67.4857 1491.63 70.3145C1496.48 73.0759 1500.86 76.174 1504.77 79.6089C1508.67 82.9765 1511.84 86.7144 1514.26 90.8229C1516.75 94.8639 1518 99.4101 1518 104.461C1518 109.782 1517.02 114.8 1515.07 119.514C1513.12 124.162 1510.22 128.236 1506.38 131.739C1502.54 135.174 1497.73 137.901 1491.94 139.922C1486.21 141.942 1479.54 142.953 1471.93 142.953C1465.87 142.953 1460.42 142.245 1455.57 140.831C1450.72 139.417 1446.41 137.362 1442.63 134.668C1438.93 131.907 1435.73 128.573 1433.04 124.667C1430.41 120.693 1428.19 116.181 1426.37 111.129L1434.96 107.593C1436.3 111.836 1438.19 115.608 1440.61 118.908C1443.11 122.208 1446 125.037 1449.3 127.394C1452.6 129.684 1456.31 131.436 1460.42 132.648C1464.52 133.86 1468.9 134.466 1473.55 134.466Z"/></g></svg></a>
   <div class="langsw">
-    <button class="lang-cur" id="langBtn" aria-label="Language"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="13.34" fill="#000"/><rect y="13.34" width="60" height="13.33" fill="#DD0000"/><rect y="26.67" width="60" height="13.33" fill="#FFCE00"/></svg></span>DE</button>
+    <button class="lang-cur" id="langBtn" aria-label="Language"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="13.34" fill="#fff"/><rect y="13.34" width="60" height="13.33" fill="#0039A6"/><rect y="26.67" width="60" height="13.33" fill="#D52B1E"/></svg></span>DE</button>
     <div class="lang-menu" id="langMenu">
       <a href="index.html" class="lang-item" data-lang="en"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0l60 40M60 0L0 40" stroke="#C8102E" stroke-width="4"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="13"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="7"/></svg></span>English</a>
       <a href="ru.html" class="lang-item" data-lang="ru"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="13.34" fill="#fff"/><rect y="13.34" width="60" height="13.33" fill="#0039A6"/><rect y="26.67" width="60" height="13.33" fill="#D52B1E"/></svg></span>Русский</a>
@@ -284,215 +431,205 @@ fbq('init','4608548576089764');fbq('track','PageView');
       <a href="he.html" class="lang-item" data-lang="he"><span class="fl"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#fff"/><rect y="4" width="60" height="4.5" fill="#0038B8"/><rect y="31.5" width="60" height="4.5" fill="#0038B8"/><path d="M30 12.5l5.6 9.7H24.4zM30 27.5l-5.6-9.7h11.2z" fill="none" stroke="#0038B8" stroke-width="1.5"/></svg></span>עברית</a>
     </div>
   </div>
-  <a class="hwa" href="https://wa.me/66656352972?text=Hallo%21%20Ich%20interessiere%20mich%20f%C3%BCr%20eine%20Zusammenarbeit%20als%20Makler%20mit%20Atmos%20Villas.%20Bitte%20senden%20Sie%20die%20Partnerkonditionen." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="flex:none"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 15.1 3.6 13.6 3.6 12 3.6 7.4 7.4 3.6 12 3.6s8.4 3.8 8.4 8.4-3.8 8.3-8.4 8.3z"/></svg><span>+66 656 352 972</span></a>
+  <a class="hwa" href="https://wa.me/66656352972?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%20Atmos%20Villas.%20%D0%9F%D1%80%D0%B8%D1%88%D0%BB%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%B2." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="flex:none"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 15.1 3.6 13.6 3.6 12 3.6 7.4 7.4 3.6 12 3.6s8.4 3.8 8.4 8.4-3.8 8.3-8.4 8.3z"/></svg><span>+66 656 352 972</span></a>
 </header>
 <div class="bar"><i id="bar"></i></div>
-<div class="pcount" id="pcount"></div>
-
 <main>
 <!-- ЭКРАН 0 -->
 <section class="step on hero-step" data-s="0">
-  <div class="hero-bg"></div>
-  <div class="hero-inner">
-    <span class="hero-tag">PARTNERVERGÜTUNG</span>
-    <h1>Bringen Sie einen Käufer<br><span class="gold">erhalten Sie Provision</span></h1>
-    <div class="big5"><span class="num">5%</span><span class="lbl">für jede verkaufte Atmos-Villa</span></div>
-    <p class="sub">Eine Villa mit einem oder drei Schlafzimmern auf Koh Phangan, schlüsselfertig. Beantworten Sie 3 Fragen — wir senden die Konditionen und Werbematerialien für Ihre Kunden.</p>
-    <p class="forwho">Für Immobilienagenturen, private Makler und alle, die weiterempfehlen</p>
-    <button class="btn btn-gold hero-cta" data-next>Konditionen ansehen →</button>
+  <div class="hero-photo"></div>
+  <div class="hero-body">
+    <p class="hero-kicker">Partnervergütung</p>
+    <h1>Bringen Sie einen Käufer —<br><span class="gold">verdienen Sie Provision</span></h1>
+    <div class="rate">
+      <span class="rate-num">7%</span>
+      <div class="rate-meta">
+        <span class="rate-bonus">5% + 2% Bonus bis Ende September</span>
+        <span class="rate-pay">Auszahlung direkt nach der ersten Zahlung des Kunden</span>
+      </div>
+    </div>
+    <div class="commrow">
+      <div class="commcell"><div class="cc-t">1 Schlafzimmer</div><div class="cc-v">328 300 ฿</div><div class="cc-usd">≈ $10 100</div></div>
+      <div class="commcell"><div class="cc-t">3 Schlafzimmer</div><div class="cc-v">524 300 ฿</div><div class="cc-usd">≈ $16 100</div></div>
+    </div>
+    <p class="hero-status"><span class="dot"></span>5 verfügbar · 3 verkauft · erste Villa fertig im Dezember 2026</p>
+    <div class="pform hero-form">
+      <input id="fphone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Ihr WhatsApp für die Präsentation">
+      <p class="fmsg" id="fmsg"></p>
+      <button class="btn btn-gold" id="heroSubmit"><svg class="pdf-ic" width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:-3px;margin-right:7px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><text x="12" y="17.5" font-size="6.5" font-weight="700" text-anchor="middle" fill="currentColor" font-family="Arial">PDF</text></svg>Präsentation erhalten</button>
+    </div>
   </div>
 </section>
 
 <!-- ЭКРАН 1 -->
-<section class="step" data-s="1">
-  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div>
-    <p class="kicker">Frage 1 von 3</p><h2>Wer sind Sie?</h2></div></div>
-  <p class="qsub">Alle drei Gruppen nehmen teil. So wissen wir, wie wir am besten mit Ihnen zusammenarbeiten.</p>
-  <div class="chips">
-    <button class="chip" data-who="Immobilienagentur"><span class="ico">🏢</span><span class="tx">Immobilienagentur<small>Wir verkaufen professionell</small></span></button>
-    <button class="chip" data-who="Privater Makler"><span class="ico">🤝</span><span class="tx">Privater Makler<small>Ich arbeite selbst mit Kunden</small></span></button>
-    <button class="chip" data-who="Ich empfehle weiter"><span class="ico">💬</span><span class="tx">Ich empfehle einfach weiter<small>Ich kenne Interessenten</small></span></button>
-  </div>
-</section>
-
 <!-- ЭКРАН 2 -->
-<section class="step" data-s="2">
-  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div>
-    <p class="kicker">Frage 2 von 3</p><h2>Haben Sie einen Käufer im Blick?</h2></div></div>
-  <div class="chips">
-    <button class="chip" data-lead="Kunde ist bereits da"><span class="ico">🔥</span><span class="tx">Ja, ich habe schon einen Kunden<small>Kann ihn bald vorstellen</small></span></button>
-    <button class="chip" data-lead="Kommt bald"><span class="ico">⏳</span><span class="tx">Kommt bald<small>Ich habe jemanden im Blick</small></span></button>
-    <button class="chip" data-lead="Ich informiere mich"><span class="ico">📋</span><span class="tx">Ich informiere mich zuerst<small>Schaue, was Sie anbieten</small></span></button>
-  </div>
-</section>
-
 <!-- ЭКРАН 3 -->
-<section class="step" data-s="3">
-  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div>
-    <p class="kicker">Frage 3 von 3</p><h2>Wo befinden Sie sich?</h2></div></div>
-  <p class="qsub">Damit wir wissen, mit welchem Markt Sie arbeiten.</p>
-  <div class="chips">
-    <button class="chip" data-where="Koh Phangan"><span class="ico">🏝</span><span class="tx">Koh Phangan<small>Ich arbeite auf der Insel</small></span></button>
-    <button class="chip" data-where="Koh Samui"><span class="ico">⛵</span><span class="tx">Koh Samui<small>Nebenan, die Nachbarinsel</small></span></button>
-    <button class="chip" data-where="Andere Region Thailands"><span class="ico">🇹🇭</span><span class="tx">Andere Region Thailands<small>Festland oder andere Inseln</small></span></button>
-    <button class="chip" data-where="Anderes Land"><span class="ico">🌍</span><span class="tx">Anderes Land<small>Ich arbeite mit Kunden aus dem Ausland</small></span></button>
-  </div>
-</section>
-
 <!-- ЭКРАН 5: итог -->
 <!-- ЭКРАН 4: форма -->
-<section class="step" data-s="4">
-  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div>
-    <p class="kicker">Letzter Schritt</p><h2>Wohin senden wir <span class="gold">Konditionen und Materialien?</span></h2></div></div>
-  <p class="qsub">Hinterlassen Sie Name und WhatsApp — wir senden die Vergütungskonditionen und Villa-Werbematerialien für Ihre Kunden.</p>
-  <div class="pform">
-    <label class="fld"><span>Ihr Name</span><input id="fname" type="text" autocomplete="name" placeholder="Wie dürfen wir Sie nennen"></label>
-    <label class="fld"><span>WhatsApp / Telefon</span><input id="fphone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+66 ..."></label>
-    <p class="fmsg" id="fmsg"></p>
-  </div>
-</section>
-<section class="step" data-s="5">
-  <div class="qhead"><button class="barrow" data-back aria-label="Назад">‹</button><div>
-    <p class="kicker">Anfrage erhalten ✓</p><h2>Ihre <span class="gold">5% warten</span></h2></div></div>
-  <div class="okbox">Wir haben Ihre Anfrage erhalten und melden uns bald. Für eine schnellere Antwort — schreiben Sie uns jetzt auf WhatsApp.</div>
-  <div class="finalcta" style="margin-top:16px">
-    <div class="wa-hint">↓ Anfrage senden — wir antworten sofort ↓</div>
-    <button class="btn btn-wa-big" id="waBig">💬 Anfrage über WhatsApp senden</button>
-  </div>
-  <p style="text-align:center;font-size:15px;color:var(--muted2);margin-top:16px"><b style="color:var(--gold2)">5% für jede verkaufte Villa</b></p>
-  <div class="commtable">
-    <div class="ct-col">
-      <div class="ct-h">Ein Schlafzimmer<br>105 m²</div>
-      <div class="ct-price">ab 4.690.000 ฿</div>
-      <div class="ct-comm">Ihre <b>234.500 ฿</b></div>
-    </div>
-    <div class="ct-col">
-      <div class="ct-h">Drei Schlafzimmer<br>158 m²</div>
-      <div class="ct-price">ab 7.490.000 ฿</div>
-      <div class="ct-comm">Ihre <b>374.500 ฿</b></div>
-    </div>
-  </div>
-  <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:10px">5% Provision — Auszahlung direkt nach der ersten Zahlung des Kunden</p>
-  <div class="sum" id="sum"></div>
-  <div class="perks">
-    <div class="p"><span>📑</span><div><b>Verkaufsmaterialien</b> — Präsentation, Grundrisse, Renderings, Baustellenvideos</div></div>
-    <div class="p"><span>📝</span><div><b>Schriftliche Konditionen</b> — wir sichern Ihnen den Kunden und die Vergütung</div></div>
-    <div class="p"><span>🤝</span><div>Wir arbeiten mit Agenturen, privaten Maklern und über Empfehlungen</div></div>
-  </div>
-  <p class="consent">Mit dem Klick stimmen Sie der <a href="../privacy.html" target="_blank">Datenschutzrichtlinie zu</a>. Die 5% Provision wird direkt nach der ersten Zahlung des Kunden ausgezahlt.</p>
-</section>
-
-
 <!-- ВСТРОЕННАЯ ПРЕЗЕНТАЦИЯ (после квиза) -->
-<div id="present" class="present">
-<section class="pslide on" data-p="0">
-  <div class="ihead"><p class="kicker">Atmos Villas Grundstück</p><h2>Grundstück <span style="color:var(--gold2)">3.200 m²</span> für ein Projekt mit 8 Villen</h2></div>
-  <img class="imgfull" src="../img/m/a7582516e1.webp" alt="Участок Atmos — пальмовая роща" loading="lazy">
-  <p class="cap">Im Herzen des Westens von Phangan · beliebt bei Touristen</p>
-  <div class="facts">
-    <div class="fact"><span class="i">🌴</span><div>Flaches Grundstück mit Palmen für ein Boutique-Projekt mit 8 Villen</div></div>
-    <div class="fact"><span class="i">🛣</span><div>Eine öffentliche Straße führt direkt zum Grundstück, Strom ist angeschlossen</div></div>
-          </div>
-  <div class="dist">
-    <div class="d"><span class="dn">🏖</span><span class="dt">Hin-Kong-Strand · Sonnenuntergänge, Restaurants</span><span class="dv">5 Min</span></div>
-    <div class="d"><span class="dn">🏪</span><span class="dt">7-Eleven, Geschäfte, Nachtmärkte</span><span class="dv">2 Min</span></div>
-    <div class="d"><span class="dn">⛵</span><span class="dt">Thong-Sala-Pier</span><span class="dv">10 Min</span></div>
-    <div class="d"><span class="dn">✈️</span><span class="dt">Flughafen Samui (per Fähre)</span><span class="dv">1,5 Std</span></div>
+<div class="leadok" id="leadok">
+  <div class="leadok-card">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(60,180,90,.25)" stroke="#7ee0a0" stroke-width="2"/><path d="M8 12l2.5 2.5L16 9" stroke="#7ee0a0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Anfrage erhalten — wir senden die Präsentation in Kürze per WhatsApp</span>
   </div>
-  <div class="hl" style="margin-top:14px"><div class="t">Wichtig für den Kunden</div><p>Sie können <b>zur Besichtigung</b> kommen, ein freies Grundstück wählen und die Bauqualität persönlich prüfen. Wir bieten auch eine <b>Online-Besichtigung</b> an.</p></div>
-  <a class="maplink" href="https://maps.app.goo.gl/ogRgGNCtzNd1ayyX8" target="_blank" rel="noopener">
-    <span class="mi">📍</span><span class="mt"><b>Atmos Villas auf der Karte</b><small>Standort in Google Maps öffnen</small></span><span class="ma">→</span>
-  </a>
-  <p class="lead" style="margin-top:14px;font-size:14px">Direkt im Herzen des Westens von Koh Phangan. Kunden, die kommen, mögen den Standort sehr.</p>
+</div>
+<div class="scroll-cta" id="scrollCta">Entdecken Sie das Projekt<span class="chevs">⌄</span></div>
+<div id="present" class="present">
+<section class="pslide on" data-p="-2">
+  <div class="ihead"><p class="kicker">Koh Phangan, Thailand<span class="thaiflag"><svg viewBox="0 0 900 600"><rect fill="#A51931" width="900" height="600"/><rect fill="#F4F5F8" y="100" width="900" height="400"/><rect fill="#2D2A4A" y="200" width="900" height="200"/></svg></span></p><h2>Eine der <span style="color:var(--gold2)">am schnellsten wachsenden Inseln</span> Südostasiens</h2></div>
+  <img class="imgfull" src="../img/m/kohphangan.webp" alt="Ein Strand auf Koh Phangan" loading="lazy">
+  <p class="lead">Internationale Nachfrage, Premium-Tourismus und eine Welle von Umzügen — der Immobilienmarkt wächst stetig.</p>
+  <div class="growrow" style="grid-template-columns:1fr 1fr 1fr">
+    <div class="growcell"><div class="gv">1M+</div><div class="gt">Touristen<br>pro Jahr</div></div>
+    <div class="growcell"><div class="gv">№1</div><div class="gt">Surat Thani — Spitzenreiter beim Wachstum der<br>Tourismuseinnahmen</div></div>
+    <div class="growcell"><div class="gv">≈40%</div><div class="gt">der Insel —<br>Naturschutzgebiet</div></div>
+  </div>
 </section>
-<section class="pslide" data-p="1">
-  <div class="ihead"><p class="kicker">Baufortschritt · Phase 3 von 4</p><h2>Aktuelle Phase — <span style="color:var(--gold2)">Villenbau</span></h2></div>
-  <img class="imgfull" src="../img/m/2b65b93207.webp" alt="Завоз земли" loading="lazy">
-  <p class="cap">Erdanlieferung, Grundstücksvorbereitung</p>
-  <img class="imgfull" src="../img/m/902c9592ff.webp" alt="Betongießen für den Pool" loading="lazy" style="margin-top:14px">
-  <p class="cap">Betongießen für den Pool</p>
-  <img class="imgfull" src="../quiz/img/st3.webp" alt="Строительство односпальной виллы на участке 2" loading="lazy" style="margin-top:14px">
-  <p class="cap">Bau einer Ein-Zimmer-Villa auf Grundstück Nr. 2 · Dach fertig, Wände beginnen</p>
-  <div class="hl"><div class="t">Wichtig für den Kunden</div><p>Das Projekt ist <b>nicht nur auf dem Papier</b> — es wird gerade gebaut. In echt wirkt die Villa sehr geräumig: <b>hohe Decken, große überdachte Terrasse, hochwertige Materialien</b>. Kunden lieben es.</p></div>
+<section class="pslide" data-p="-1">
+  <div class="ihead"><p class="kicker">Wo wir sind</p><h2>Im Herzen <span style="color:var(--gold2)">des touristischen Teils</span> der Insel</h2></div>
+  <p class="lead">Im Herzen der Westküste der Insel, beliebt bei Touristen.</p>
+  <img class="imgfull mapimg" src="../img/m/panganmap.webp" alt="Karte von Koh Phangan mit Atmos Villas" loading="lazy">
+  <div class="dist">
+    <div class="dr"><span class="dt">Hin-Kong-Strand · Sonnenuntergänge, Restaurants</span><span class="dv">5 Min</span></div>
+    <div class="dr"><span class="dt">Sri Thanu</span><span class="dv">6 Min</span></div>
+    <div class="dr"><span class="dt">Thong-Sala-Pier</span><span class="dv">10 Min</span></div>
+    <div class="dr"><span class="dt">Haad Rin (Partys)</span><span class="dv">30 Min</span></div>
+    <div class="dr"><span class="dt">Flughafen Samui (per Fähre)</span><span class="dv">1,5 Std</span></div>
+  </div>
+  <div class="fact" style="margin-top:14px"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div>Nah an allen wichtigen Orten der Insel — <b>hohe Mietnachfrage</b> in dieser Gegend</div></div>
+</section>
+<section class="pslide" data-p="0">
+  <div class="ihead"><p class="kicker">Das Atmos-Villas-Grundstück</p><h2>Grundstück <span style="color:var(--gold2)">3200 м²</span> für ein Projekt aus 8 Villen</h2></div>
+  <img class="imgfull" src="../img/m/a7582516e1.webp" alt="Atmos-Grundstück — Palmenhain" loading="lazy">
+  <p class="cap">Ebenes Grundstück mit Palmen, Zufahrt von zwei Seiten</p>
+  <div class="facts">
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V9M12 9c-2-3-5-3-7-1M12 9c2-3 5-3 7-1M12 9c-1-3-3.5-4.5-6-4M12 9c1-3 3.5-4.5 6-4"/></svg></span><div>Jede der 8 Villen auf <b>einem eigenen privaten Grundstück</b> 320–383 м²</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22 8 2M20 22 16 2M12 6v2M12 12v2M12 18v2"/></svg></span><div>Eine öffentliche Straße führt direkt zum Grundstück, Strom ist verlegt</div></div>
+  </div>
+  <div class="hl" style="margin-top:14px"><div class="t">Wichtig für den Kunden</div><p>Sie können kommen zur <b>zur Besichtigung</b>, ein freies Grundstück auswählen und die Bauqualität persönlich prüfen. Wir können auch <b>eine Online-Besichtigung</b>.</p></div>
+  <a class="gmaps-btn" href="https://maps.app.goo.gl/ogRgGNCtzNd1ayyX8" target="_blank" rel="noopener">
+    <span class="gm-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+    <span class="gm-tx"><b>Grundstück auf der Karte</b><small>In Google Maps öffnen</small></span>
+    <span class="gm-ar">→</span>
+  </a>
 </section>
 <section class="pslide" data-p="2">
   <div class="ihead"><p class="kicker">Masterplan</p><h2>8 Villen · <span style="color:var(--gold2)">verfügbare Grundstücke</span></h2></div>
-  <img class="imgfull" src="../img/w/6fddd45be5.webp" alt="Генплан Atmos — 8 участков" loading="lazy">
+  <img class="imgfull" src="../img/w/6fddd45be5.webp" alt="Atmos-Masterplan — 8 Grundstücke" loading="lazy">
   <div class="plots">
     <div class="plotgrid">
       <div class="plotcell sold">1<small>VERKAUFT</small></div>
       <div class="plotcell sold">2<small>VERKAUFT</small></div>
-      <div class="plotcell free">3<small>320 m²</small></div>
-      <div class="plotcell free">4<small>367 m²</small></div>
-      <div class="plotcell free">5<small>370 m²</small></div>
-      <div class="plotcell free">6<small>377 m²</small></div>
-      <div class="plotcell free">7<small>370 m²</small></div>
+      <div class="plotcell free">3<small>320 м²</small></div>
+      <div class="plotcell free">4<small>367 м²</small></div>
+      <div class="plotcell free">5<small>370 м²</small></div>
+      <div class="plotcell free">6<small>377 м²</small></div>
+      <div class="plotcell free">7<small>370 м²</small></div>
       <div class="plotcell sold">8<small>VERKAUFT</small></div>
     </div>
     <div class="plotleg">
-      <span><i style="background:var(--gold)"></i>frei</span>
+      <span><i style="background:var(--gold)"></i>verfügbar</span>
       <span><i style="background:#4a4945"></i>verkauft</span>
     </div>
   </div>
 </section>
-<section class="pslide" data-p="3">
-  <div class="ihead"><p class="kicker">Villa mit einem Schlafzimmer · 105 m²</p><h2><span style="color:var(--gold2)">Schlüsselfertige</span> Villa</h2></div>
-  <img class="imgfull" src="../img/m/ea7daa1131.webp" alt="Экстерьер виллы" loading="lazy">
-  <div class="imgrow" style="margin-top:9px">
-    <img src="../img/m/9766551cef.webp" alt="Бассейн и терраса" loading="lazy">
-    <img src="../img/m/21bb46f5f1.webp" alt="Въезд и раздвижные ворота" loading="lazy">
-    <img src="../img/m/1e216f841a.webp" alt="BBQ-зона" loading="lazy">
-    <img src="../img/m/a290d09a51.webp" alt="Уличный душ" loading="lazy">
-  </div>
-  <p class="cap">Terrasse mit Pool · Schiebetor · BBQ-Bereich · Außendusche</p>
-  <div class="facts">
-    <div class="fact"><span class="i">🏊</span><div>Privates umzäuntes Gelände, eigener Pool 15 m²</div></div>
-    <div class="fact"><span class="i">🚗</span><div>Schiebetor, großzügiger Parkplatz</div></div>
-  </div>
-  <div class="priceblock">
-    <div class="pb-price">ab 4.690.000 ฿ <span>· Preis der aktuellen Phase</span></div>
-    <div class="pb-comm">Ihre 5% Provision — <b>234.500 ฿</b></div>
+<section class="pslide offer-intro" data-p="2b">
+  <div class="offer-band">
+    <span class="offer-eyebrow">Was Sie dem Kunden anbieten</span>
+    <h2>Ein starkes Angebot, das <span style="color:var(--gold2)">leicht zu verkaufen</span></h2>
+    <p>Eine schlüsselfertige Poolvilla, sicheres Eigentum nach thailändischem Recht und stabile Mieteinnahmen — genau das, was Ihr Kunde sucht.</p>
+    <div class="offer-tags">
+      <span class="otag">🏝 Alles inklusive — schlüsselfertige Villa</span>
+      <span class="otag">📑 Legales Eigentum für Ausländer</span>
+      <span class="otag">📈 Hohe Mieteinnahmen · ROI ab 15%</span>
+    </div>
   </div>
 </section>
-<section class="pslide" data-p="4">
-  <div class="ihead"><p class="kicker">Villa mit einem Schlafzimmer · Innen</p><h2>Innen <span style="color:var(--gold2)">alles fertig</span></h2></div>
-  <img class="imgfull" src="../img/m/66b85cc106.webp" alt="Гостиная и кухня" loading="lazy">
-  <p class="cap">Wohn-Küche</p>
-  <div class="imgrow" style="margin-top:12px">
-    <img src="../img/m/ee5095727a.webp" alt="Спальня" loading="lazy">
-    <img src="../img/m/6b7f850826.webp" alt="Ванная" loading="lazy">
+<section class="pslide" data-p="3">
+  <div class="ihead"><p class="kicker">Angebot für den Kunden</p><h2>Ein-Zimmer-Villa · <span style="color:var(--gold2)">105 м²</span></h2></div>
+  <img class="imgfull" src="../img/m/9766551cef.webp" alt="Pool und Terrasse der Villa" loading="lazy">
+  <div class="imgrow" style="margin-top:9px">
+    <img src="../img/m/21bb46f5f1.webp" alt="Einfahrt und Schiebetor" loading="lazy">
+    <img src="../img/m/1e216f841a.webp" alt="BBQ-зона" loading="lazy">
+    <img src="../img/m/a290d09a51.webp" alt="Außendusche" loading="lazy">
+    <img src="../img/m/ter1br.webp" alt="Terrasse und Pool" loading="lazy">
   </div>
-  <p class="cap">Schlafzimmer · Bad</p>
-  <div class="facts">
-    <div class="fact"><span class="i">🛋</span><div>Voll möbliert, Geräte installiert</div></div>
-    <div class="fact"><span class="i">📐</span><div>105 m²: Terrasse 33 · Pool 15</div></div>
+  <p class="cap">Poolterrasse · Schiebetor · BBQ-Bereich · Außendusche</p>
+  <img class="imgfull" src="../img/m/66b85cc106.webp" alt="Wohnzimmer und Küche" loading="lazy" style="margin-top:14px">
+  <div class="imgrow" style="margin-top:9px">
+    <img src="../img/m/ee5095727a.webp" alt="Schlafzimmer" loading="lazy">
+    <img src="../img/m/6b7f850826.webp" alt="Bad" loading="lazy">
   </div>
-  <div class="hl"><div class="t">★ Selten anderswo zu finden</div><p>Im Preis ist bereits <b>alles</b> enthalten: Geräte, Klimaanlagen, Möbel, Gartenbepflanzung und Zaun. Der Kunde zieht ein und lebt — <b>ohne etwas nachzukaufen</b>.</p></div>
+  <div class="hl"><div class="t">★ Alles inklusive</div><p>Im Preis bereits enthalten <b>Möbel, Geräte, Klimaanlagen, Gartengestaltung und Zaun</b> rundherum. Der Kunde zieht ein und wohnt — <b>nichts nachzukaufen</b>.</p></div>
+  <img class="imgfull" src="../quiz/img/v1plan.webp" alt="Grundriss der Ein-Zimmer-Villa" loading="lazy" style="margin-top:14px">
+  <p class="cap">Grundriss · 105 m²: Terrasse 33 · Pool 15</p>
+  <div class="priceblock">
+    <div class="pb-price">от 4 690 000 ฿ <span>· Preis der aktuellen Etappe</span></div>
+    <div class="pb-comm">Ihre Provision 7% — <b>от 328 300 ฿</b></div>
+  </div>
 </section>
 <section class="pslide" data-p="5">
-  <div class="ihead"><p class="kicker">Villa mit drei Schlafzimmern · 158 m²</p><h2>Mehr Platz <span style="color:var(--gold2)">für die Familie</span></h2></div>
-  <img class="imgfull" src="../quiz/img/v3a.webp" alt="Экстерьер трёхспальной виллы" loading="lazy">
+  <div class="ihead"><p class="kicker">Angebot für den Kunden</p><h2>Drei-Zimmer-Villa · <span style="color:var(--gold2)">158 м²</span></h2></div>
+  <img class="imgfull" src="../img/m/ext3br.webp" alt="Außenansicht der Drei-Zimmer-Villa" loading="lazy">
+  <img class="imgfull" src="../img/m/ext3br_b.webp" alt="Eingang der Drei-Zimmer-Villa" loading="lazy" style="margin-top:9px">
   <div class="imgrow" style="margin-top:9px">
-    <img src="../quiz/img/v3b.webp" alt="Вход в виллу" loading="lazy">
-    <img src="../quiz/img/v3plan2.webp" alt="Планировка 158 м²" loading="lazy">
+    <img src="../img/m/ter3br.webp" alt="Terrasse und Pool" loading="lazy">
+    <img src="../img/m/bbq3br.webp" alt="BBQ-Pavillon" loading="lazy">
+  </div>
+  <p class="cap">Großzügiges Außengelände · Poolterrasse · BBQ-Pavillon</p>
+  <img class="imgfull" src="../img/m/int3br_living.webp" alt="Wohnküche der Drei-Zimmer-Villa" loading="lazy" style="margin-top:14px">
+  <div class="imgrow" style="margin-top:9px">
+    <img src="../img/m/int3br_bed.webp" alt="Schlafzimmer der Drei-Zimmer-Villa" loading="lazy">
+    <img src="../img/m/int3br_bed2.webp" alt="Zweites Schlafzimmer" loading="lazy">
   </div>
   <div class="facts">
-    <div class="fact"><span class="i">🛏</span><div><b>3 Schlafzimmer · 3 Bäder</b> · geräumiges Wohnzimmer</div></div>
-    <div class="fact"><span class="i">🧺</span><div>Separater Waschraum</div></div>
-    <div class="fact"><span class="i">❄️</span><div>Kühlschrank mit Eiswürfelbereiter</div></div>
-    <div class="fact"><span class="i">🔥</span><div>Überdachte Terrasse, BBQ-Bereich</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 14h18M7 10V8a1 1 0 0 1 1-1h3M3 18v2M21 18v2"/></svg></span><div><b>3 Schlafzimmer · 3 Bäder</b> · geräumiges living room</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 6h.01M11 6h.01"/></svg></span><div>Separate laundry (Waschraum)</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M4.5 4.5l15 15M19.5 4.5l-15 15"/></svg></span><div>Kühlschrank mit Eiswürfelbereiter</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s5 4 5 9a5 5 0 0 1-10 0c0-2 1-3 1-3s3 1 4-6z"/></svg></span><div>Überdachte Terrasse, BBQ-Bereich</div></div>
   </div>
-  <a class="villabtn" href="https://wa.me/66656352972?text=Hallo%21%20Erz%C3%A4hlen%20Sie%20mehr%20%C3%BCber%20die%20Drei-Zimmer-Villa%20Atmos%20%28158%20m%C2%B2%29." target="_blank" rel="noopener">Mehr zur Drei-Zimmer-Villa →</a>
+  <img class="imgfull" src="../img/m/plan3br.webp" alt="Grundriss der Drei-Zimmer-Villa" loading="lazy" style="margin-top:14px">
+  <p class="cap">Grundriss · 158 m²</p>
   <div class="priceblock">
-    <div class="pb-price">ab 7.490.000 ฿ <span>· Preis der aktuellen Phase</span></div>
-    <div class="pb-comm">Ihre 5% Provision — <b>374.500 ฿</b></div>
+    <div class="pb-price">от 7 490 000 ฿ <span>· Preis der aktuellen Etappe</span></div>
+    <div class="pb-comm">Ihre Provision 7% — <b>от 524 300 ฿</b></div>
+  </div>
+</section>
+<section class="pslide" data-p="9">
+  <div class="ihead"><p class="kicker">Vermietung · geschätzt</p><h2>Villa <span style="color:var(--gold2)">kann für Sie arbeiten</span></h2></div>
+  <p class="lead">Phangan ist ein wachsendes Ziel, die Nachfrage nach Villenvermietung ist das ganze Jahr hoch. Unten stehen <b>Richtwerte</b> Zahlen zum Verständnis des Potenzials.</p>
+  <div class="yield">
+    <div class="yr"><span class="yk">Hochsaison</span><span class="yv">≈ 6 000 ฿/Nacht</span></div>
+    <div class="yr"><span class="yk">Nebensaison</span><span class="yv">≈ 3 000 ฿/Nacht</span></div>
+    <div class="yr"><span class="yk">Auslastung (konservative Schätzung)</span><span class="yv">≈ 76%</span></div>
+  </div>
+  <div class="yield" style="margin-top:12px">
+    <div class="yr" style="border-color:var(--gold)"><span class="yk">Nettoertrag pro Jahr</span><span class="yv">≈ 820 000 ฿</span></div>
+    <div class="yr" style="border-color:var(--gold)"><span class="yk">Rendite (ROI)</span><span class="yv">≈ 18% / Jahr</span></div>
+    <div class="yr"><span class="yk">Amortisation</span><span class="yv">≈ 5,5 Jahre</span></div>
+  </div>
+  <div class="growrow">
+    <div class="growcell"><div class="gv">+26%</div><div class="gt">Preiswachstum<br>während des Baus</div></div>
+    <div class="growcell"><div class="gv">+36–53%</div><div class="gt">Wachstumsprognose<br>in 4 Jahren</div></div>
+  </div>
+  <div class="facts" style="margin-top:16px">
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7M17 5h4v4"/></svg></span><div>Der Wert steigt: der Preis wächst mit dem Baufortschritt und der Fertigstellung</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4"/><path d="M11 11l8 8M16 16l2-2M18 18l2-2"/></svg></span><div>Schlüsselfertige Villa, voll ausgestattet — sofort vermietbar</div></div>
+  </div>
+  <p class="disc-y">Die Zahlen dienen ausschließlich der Potenzialabschätzung und sind keine Ertragsgarantie. Die tatsächlichen Ergebnisse hängen von Saison, Verwaltung und Markt ab.</p>
+</section>
+<section class="pslide mid-cta" data-p="midcta">
+  <div class="midcta-box">
+    <h3>Bereit, das dem Kunden anzubieten?</h3>
+    <p>Wir senden die Präsentation, Grundrisse und vollständigen Partnerkonditionen.</p>
+    <a class="villabtn" href="#" data-wa style="background:var(--grad);color:#1a1206;border:none">Auf WhatsApp schreiben</a>
   </div>
 </section>
 <section class="pslide" data-p="6">
-  <div class="ihead"><p class="kicker">Zahlung · Villa mit einem Schlafzimmer</p><h2><span style="color:var(--gold2)">0% Ratenzahlung</span> nach Phasen</h2></div>
-  <p class="lead">Der Kunde zahlt für bereits erledigte Arbeiten — nicht die volle Summe im Voraus. Transparent und sicher.</p>
+  <div class="ihead"><p class="kicker">Zahlung · Ein-Zimmer-Villa</p><h2>Etappenzahlung <span style="color:var(--gold2)">für erbrachte Leistungen</span></h2></div>
+  <p class="lead">Der Kunde zahlt für bereits erbrachte Leistungen — nicht die gesamte Summe im Voraus. Transparent und sicher.</p>
   <div class="paytable">
-    <div class="payrow"><span class="n">1</span><span class="tx">Anzahlung — Reservierung von Villa und Preis</span><span class="pv">150 000 ฿</span></div>
+    <div class="payrow"><span class="n">1</span><span class="tx">Anzahlung — reserviert Villa und Preis</span><span class="pv">150 000 ฿</span></div>
     <div class="payrow"><span class="n">2</span><span class="tx">Grundstücksregistrierung im Land Office</span><span class="pv">850 000 ฿</span></div>
     <div class="payrow"><span class="n">3</span><span class="tx">Fundament, Boden, Säulen</span><span class="pv">850 000 ฿</span></div>
     <div class="payrow"><span class="n">4</span><span class="tx">Dach und Wände</span><span class="pv">750 000 ฿</span></div>
@@ -500,132 +637,110 @@ fbq('init','4608548576089764');fbq('track','PageView');
     <div class="payrow"><span class="n">6</span><span class="tx">Boden- und Deckenausbau</span><span class="pv">350 000 ฿</span></div>
     <div class="payrow"><span class="n">7</span><span class="tx">Türen und Fenster</span><span class="pv">300 000 ฿</span></div>
     <div class="payrow"><span class="n">8</span><span class="tx">Möbel, Küche, Geräte</span><span class="pv">450 000 ฿</span></div>
-    <div class="payrow"><span class="n">9</span><span class="tx">Außenanlage + Schlüssel</span><span class="pv">350 000 ฿</span></div>
+    <div class="payrow"><span class="n">9</span><span class="tx">Außenanlagen + Schlüssel</span><span class="pv">350 000 ฿</span></div>
     <div class="payrow total"><span class="n"></span><span class="tx"><b>Gesamt</b></span><span class="pv"><b>4 690 000 ฿</b></span></div>
   </div>
-  <div class="hl" style="margin-top:16px"><div class="t">★ Wichtigstes</div><p>Nach der Übertragung des Grundstücks auf den Käufer beginnt der Bau. Danach — <b>Zahlungen je nach Baufortschritt</b>, <b>0%</b> Ratenzahlung.</p></div>
+  <div class="hl" style="margin-top:16px"><div class="t">★ Das Wichtigste</div><p>Nach der Übertragung des Grundstücks auf den Käufer beginnen wir mit dem Bau. Dann folgen <b>Zahlungen nach Baufortschritt</b>, Ratenzahlung <b>0%</b>.</p></div>
 </section>
-<section class="pslide" data-p="7">
-  <div class="ihead"><p class="kicker">So läuft der Kauf ab</p><h2>Alles <span style="color:var(--gold2)">auf den Namen des Käufers</span></h2></div>
-  <div class="steps2">
+<section class="pslide" data-p="1">
+  <div class="ihead"><p class="kicker">Baufortschritt · Etappe 3 von 4</p><h2>Aktuelle Etappe — <span style="color:var(--gold2)">Villenbau</span></h2></div>
+  <img class="imgfull" src="../img/m/2b65b93207.webp" alt="Erdanlieferung" loading="lazy">
+  <p class="cap">Erdanlieferung, Vorbereitung des Grundstücks</p>
+  <img class="imgfull" src="../img/m/902c9592ff.webp" alt="Betonieren für den Pool" loading="lazy" style="margin-top:14px">
+  <p class="cap">Betonieren für den Pool</p>
+  <img class="imgfull" src="../quiz/img/st3.webp" alt="Bau der Ein-Zimmer-Villa auf Grundstück 2" loading="lazy" style="margin-top:14px">
+  <p class="cap">Bau der Ein-Zimmer-Villa auf Grundstück Nr. 2 · Dach fertig, Wände beginnen</p>
+  <img class="imgfull" src="../img/m/walls.webp" alt="Errichtung der Villenwände" loading="lazy" style="margin-top:14px">
+  <p class="cap">Errichtung der Wände · doppeltes Mauerwerk mit Luftspalt für Wärme- und Schalldämmung</p>
+  <div class="hl"><div class="t">Wichtig für den Kunden</div><p>Projekt <b>nicht auf dem Papier</b> — die Arbeiten laufen gerade jetzt. In echt ist die Villa sehr geräumig: <b>hohe Decken, eine große überdachte Terrasse, hochwertige Materialien</b>. Kunden mögen es.</p></div>
+</section>
+<section class="pslide" data-p="deal">
+  <div class="ihead"><p class="kicker">Sichere Transaktion</p><h2>Всё <span style="color:var(--gold2)">auf den Namen des Käufers</span> — transparent und legal</h2></div>
+  <p class="lead">Die wichtigste Frage eines Ausländers — „ist das legal, werde ich wirklich Eigentümer?“. Ja. Eine transparente Struktur, kein grauer Nominee.</p>
+  <div class="steps2" style="margin-top:16px">
     <div class="st2"><span class="n">1</span><div><h4>Anzahlung</h4><p>Der Kunde zahlt eine Anzahlung — Preis und Grundstück sind für ihn reserviert.</p></div></div>
-    <div class="st2"><span class="n">2</span><div><h4>Grundstücksregistrierung im Land Office</h4><p>Zahlung ~850.000 ฿ — das Grundstück wird <b style="color:var(--gold2)">auf den Namen des Käufers</b> beim staatlichen Land Office registriert. Ein Schlüsselmoment: das Recht ist offiziell.</p></div></div>
-    <div class="st2"><span class="n">3</span><div><h4>Baubezahlung nach Phasen</h4><p>Danach — Zahlungen je nach Baufortschritt, 0% Ratenzahlung.</p></div></div>
-  </div>
-</section>
-<section class="pslide" data-p="8">
-  <div class="ihead"><p class="kicker">Eigentumsrecht</p><h2>Warum es <span style="color:var(--gold2)">sicher und legal</span> ist</h2></div>
-  <p class="lead">Die Hauptfrage eines ausländischen Käufers — „ist das legal, gehört es mir wirklich?". Ja. Es ist eine transparente Struktur, kein grauer Nominee.</p>
-  <div class="facts" style="margin-top:16px">
-    <div class="fact"><span class="i">📜</span><div><b>30-jähriges Leasehold</b> mit Verlängerungsrecht — <b>ein direkter Pachtvertrag mit dem Grundbesitzer, keine Untermiete</b></div></div>
-    <div class="fact"><span class="i">🏛</span><div>Der Vertrag wird <b>im Land Office registriert</b> — dem staatlichen Grundstücksamt, auf den Namen des Käufers</div></div>
-    <div class="fact"><span class="i">🚫</span><div>Keine Nominee-Firmen oder Strohmänner — der Kunde braucht nur <b>einen Reisepass</b></div></div>
-    <div class="fact"><span class="i">👪</span><div>Das Recht ist vererbbar · einfacher Weiterverkauf über Grundstücksübertragung</div></div>
-  </div>
-  <div class="hl" style="margin-top:16px"><div class="t">Was das dem Kunden bringt</div><p>Ein offiziell registriertes Recht, geschützt durch staatliche Registrierung. <b>Klar und einfach</b> — leicht zu erklären und zu prüfen.</p></div>
-</section>
-<section class="pslide" data-p="9">
-  <div class="ihead"><p class="kicker">Vermietung · Schätzung</p><h2>Die Villa <span style="color:var(--gold2)">kann Erträge bringen</span></h2></div>
-  <p class="lead">Phangan ist ein wachsendes Ziel mit ganzjährig hoher Nachfrage nach Villen. Unten — <b>ungefähre</b> Zahlen zum Potenzial.</p>
-  <div class="yield">
-    <div class="yr"><span class="yk">Hochsaison</span><span class="yv">≈ 6.000 ฿/Nacht</span></div>
-    <div class="yr"><span class="yk">Nebensaison</span><span class="yv">≈ 3.000 ฿/Nacht</span></div>
-    <div class="yr"><span class="yk">Auslastung (konservativ)</span><span class="yv">≈ 76%</span></div>
-  </div>
-  <div class="yield" style="margin-top:12px">
-    <div class="yr" style="border-color:var(--gold)"><span class="yk">Nettoertrag pro Jahr</span><span class="yv">≈ 820.000 ฿</span></div>
-    <div class="yr" style="border-color:var(--gold)"><span class="yk">Rendite (ROI)</span><span class="yv">≈ 18% / Jahr</span></div>
-    <div class="yr"><span class="yk">Amortisation</span><span class="yv">≈ 5,5 Jahre</span></div>
+    <div class="st2"><span class="n">2</span><div><h4>Grundstücksregistrierung im Land Office</h4><p>Das Grundstück wird eingetragen <b style="color:var(--gold2)">auf den Namen des Käufers</b> beim staatlichen Land Office — das Recht ist offiziell eingetragen.</p></div></div>
+    <div class="st2"><span class="n">3</span><div><h4>Baubezahlung in Etappen</h4><p>Danach — Zahlungen nach Baufortschritt, 0% Ratenzahlung.</p></div></div>
   </div>
   <div class="facts" style="margin-top:16px">
-    <div class="fact"><span class="i">📈</span><div>Der Wert steigt: der Preis erhöht sich mit dem Baufortschritt</div></div>
-    <div class="fact"><span class="i">🔑</span><div>Schlüsselfertige Villa, voll ausgestattet — sofort vermietbar</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h9a2 2 0 0 1 2 2v11a3 3 0 0 0 3 3H8a2 2 0 0 1-2-2zM6 4a2 2 0 0 0-2 2v2h2M10 9h5M10 13h5"/></svg></span><div><b>30-jähriges Leasehold</b> — ein direkter Pachtvertrag mit dem Grundeigentümer, <b>keine Untervermietung</b></div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21V10M20 21V10M4 10l8-6 8 6M4 10h16M8 21v-7M12 21v-7M16 21v-7"/></svg></span><div>Vertrag <b>wird im Land Office eingetragen</b> auf den Namen des Käufers</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span><div>Keine Nominee-Firmen oder Strohleute — der Kunde braucht nur <b>nur einen Reisepass</b></div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="2.5"/><circle cx="16" cy="9" r="2"/><path d="M4 20v-2a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2M15 13a3 3 0 0 1 3 3v4"/></svg></span><div>Das Recht ist vererbbar · einfacher Weiterverkauf durch Grundstücksübertragung</div></div>
   </div>
-  <p class="disc-y">Die Zahlen dienen nur zur Veranschaulichung des Potenzials und sind keine Ertragsgarantie. Die tatsächlichen Ergebnisse hängen von Saison, Verwaltung und Markt ab.</p>
 </section>
 <section class="pslide" data-p="10">
   <div class="ihead"><p class="kicker">Wer baut</p><h2>Gebaut von <span style="color:var(--gold2)">First Construction 47</span></h2></div>
   <div class="contractor">
-    <p>Ein lizenziertes thailändisches Bauunternehmen. Viele fertige Objekte auf der Insel und ein solider Ruf.</p>
+    <p>Ein lizenziertes thailändisches Bauunternehmen. Viele fertiggestellte Projekte auf der Insel und ein tadelloser Ruf.</p>
+    <p class="lic">Handelsministerium Nr. 0845566001796 · gegründet 2023 · Koh Phangan</p>
   </div>
-  <p class="cap" style="margin-top:16px;text-align:left;font-weight:700;color:var(--muted2)">Fertiggestellte Projekte des Unternehmens:</p>
+  <p class="cap" style="margin-top:16px;text-align:left;font-weight:700;color:var(--muted2)">Fertige Projekte des Unternehmens:</p>
   <div class="imgrow imgrow3">
-    <img src="../img/m/fc47a.webp" alt="Завершённый объект First Construction 47" loading="lazy">
-    <img src="../img/m/fc47b.webp" alt="Объект в строительстве" loading="lazy">
-    <img src="../img/m/fc47c.webp" alt="Объект на отделке" loading="lazy">
+    <img src="../img/m/fc47a.webp" alt="Ein fertiges Projekt von First Construction 47" loading="lazy">
+    <img src="../img/m/fc47b.webp" alt="Projekt im Bau" loading="lazy">
+    <img src="../img/m/fc47c.webp" alt="Projekt im Ausbau" loading="lazy">
   </div>
   <div class="facts" style="margin-top:16px">
-    <div class="fact"><span class="i">🏘</span><div>Viele fertige Villen auf Koh Phangan — genug, um es dem Kunden zu zeigen</div></div>
-    <div class="fact"><span class="i">📄</span><div>Der Bauvertrag läuft auf den Namen des Kunden</div></div>
-    <div class="fact"><span class="i">🛡</span><div>5 Jahre Garantie auf die Struktur, 2 Jahre auf den Innenausbau</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l6-4 6 4v11M3 21h12M9 21v-5h3v5M15 13V7l4-2 2 1.5V21M15 21h6"/></svg></span><div>Viele fertige Villen auf Koh Phangan — es gibt viel, was man dem Kunden zeigen kann</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM14 3v5h5M9 13h6M9 17h6"/></svg></span><div>Der Bauvertrag läuft auf den Namen des Kunden</div></div>
+    <div class="fact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div>5 Jahre Garantie auf die Struktur, 2 Jahre auf den Innenausbau</div></div>
   </div>
 </section>
-
-<!-- СЛАЙД 12: финал презентации -->
+<section class="pslide" data-p="12">
+  <div class="ihead"><p class="kicker">Was Sie bekommen</p><h2>Fertig <span style="color:var(--gold2)">ein Verkaufsset</span></h2></div>
+  <p class="lead">Sie müssen nichts selbst vorbereiten — wir liefern alles für den Kunden.</p>
+  <div class="perks" style="margin-top:16px">
+    <div class="p"><span>📊</span><div><b>Präsentation</b> des Projekts — für den Kunden, in seiner Sprache</div></div>
+    <div class="p"><span>🖼️</span><div><b>Renderings und Fotos</b> Villen, echte Fotos von der Baustelle</div></div>
+    <div class="p"><span>📐</span><div><b>Grundrisse</b> der 1- und 3-Zimmer-Villen mit Maßen</div></div>
+    <div class="p"><span>🌐</span><div><b>360°-тур</b> der Villa — der Kunde sieht alles online</div></div>
+    <div class="p"><span>💵</span><div><b>Preisliste und Zahlungsplan</b> — transparent in Etappen</div></div>
+  </div>
+</section>
+<section class="pslide" data-p="13">
+  <div class="ihead"><p class="kicker">Provisionsschutz</p><h2>Ihre Provision <span style="color:var(--gold2)">für Sie gesichert</span></h2></div>
+  <p class="lead">Wir arbeiten zu klaren Bedingungen — ohne Risiko, dass Ihr Kunde „abgeworben“ wird.</p>
+  <div class="perks" style="margin-top:16px">
+    <div class="p"><span>📝</span><div><b>Registrieren Sie den Lead</b> — senden Sie Namen und Kontakt des Kunden <b>vor der Vorstellung</b>. Das sichert Ihnen den Kunden.</div></div>
+    <div class="p"><span>⚡</span><div>Die Provision wird ausgezahlt <b>direkt nach der ersten Zahlung des Kunden</b> — kein Warten auf die Übergabe.</div></div>
+    <div class="p"><span>🤝</span><div><b>Schriftliche Bedingungen</b> — wir sichern Ihre Provision und Ihren Kunden schriftlich.</div></div>
+    <div class="p"><span>💰</span><div><b>Einheitlicher Satz 5%</b> für alle Partner + <b>2% Bonus</b> im August–September.</div></div>
+  </div>
+</section>
 <section class="pslide" data-p="11">
-  <div class="ihead"><p class="kicker">Legen wir los</p><h2>Bereit <span style="color:var(--gold2)">zusammenzuarbeiten?</span></h2></div>
+  <div class="ihead"><p class="kicker">Lassen Sie uns starten</p><h2>Bereit zur <span style="color:var(--gold2)">zusammenarbeiten?</span></h2></div>
   <p class="lead">Schreiben Sie uns — und wir senden alles, was Sie für den Verkauf brauchen.</p>
   <div class="perks" style="margin-top:16px">
     <div class="p"><span>📑</span><div>Wir senden <b>Präsentation, Grundrisse und Verträge</b></div></div>
     <div class="p"><span>💰</span><div>Vollständige <b>Partnervergütungskonditionen</b></div></div>
-    <div class="p"><span>👀</span><div>Auf WhatsApp vereinbaren wir eine <b>Besichtigung oder Online-Besichtigung</b> — Sie erhalten alle Infos</div></div>
+    <div class="p"><span>👀</span><div>Auf WhatsApp vereinbaren wir <b>Besichtigung vor Ort oder online</b> — erhalten Sie alle Informationen</div></div>
   </div>
-  <a class="villabtn" href="../ru.html" style="background:var(--card);border:1.5px solid var(--gold);color:var(--gold2)">Zur Hauptseite →</a>
+  <a class="villabtn" href="#" data-wa style="background:var(--grad);color:#1a1206;border:none;margin-bottom:10px">💬 Auf WhatsApp schreiben</a>
+  <a class="villabtn" href="../de.html" style="background:var(--card);border:1.5px solid var(--gold);color:var(--gold2)">Zur Hauptseite →</a>
 </section>
+
 </div>
 
 
-<div class="pdock" id="pdock">
-  <button class="pbtn pback" id="pback" aria-label="Назад">‹</button>
-  <button class="pbtn pnext" id="pnext">Weiter →</button>
-</div>
-
-<footer class="qfoot">© 2026 Atmos Villas · <a href="../index.html">Projektseite</a> · <a href="../privacy.html">Datenschutz</a></footer>
+<footer class="qfoot">© 2026 Atmos Villas · <a href="../de.html">Projekt-Website</a> · <a href="../privacy.html">Datenschutz</a></footer>
 </main>
 
-<div class="dockbtn" id="dock"><button class="btn btn-gold" id="dockbtn">Weiter →</button></div>
-
 <script>
-var S={who:null,lead:null,where:null,name:'',phone:'',sent:false};
+var S={name:'',phone:'',sent:false};
 var PHONE='66656352972';
-var steps=[].slice.call(document.querySelectorAll('.step'));
-var cur=0, MAX=5;
-var dock=document.getElementById('dock'), dockbtn=document.getElementById('dockbtn');
-var bar=document.getElementById('bar');
-var LABELS={0:'Konditionen ansehen →',1:'Weiter →',2:'Weiter →',3:'Weiter →',4:'Anfrage senden →'};
-var REQUIRED={1:function(){return S.who},2:function(){return S.lead},3:function(){return S.where}};
 
-function show(n){
-  cur=Math.max(0,Math.min(n,MAX));
-  steps.forEach(function(s){s.classList.toggle('on', +s.getAttribute('data-s')===cur);});
-  bar.style.width=(cur/MAX*100)+'%';
-  window.scrollTo(0,0);
-  refreshDock();
-  if(cur===5) fillSum();
-  try{if(window.ym)ym(107725303,'reachGoal','partner_step'+cur);}catch(e){}
+function submitForm(){
+  var fp=document.getElementById('fphone'), fm=document.getElementById('fmsg');
+  S.phone=(fp.value||'').trim();
+  if(S.phone.replace(/[^0-9]/g,'').length<7){ fm.textContent='Укажите корректный WhatsApp'; fm.className='fmsg'; fp.focus(); return false; }
+  fm.textContent='';
+  sendLead(null);
+  return true;
 }
-function refreshDock(){
-  document.body.classList.toggle('s0',cur===0);
-  dock.classList.remove('hide');
-  if(cur===0){ dock.classList.add('hide'); return; }
-  if(cur===5){ dockbtn.textContent='Projektpräsentation ansehen →'; dockbtn.disabled=false; dockbtn.style.opacity='1'; return; }
-  dockbtn.textContent=LABELS[cur]||'Weiter →';
-  var need=REQUIRED[cur]?!REQUIRED[cur]():false;
-  dockbtn.disabled=need; dockbtn.style.opacity=need?'.4':'1';
-}
-function fillSum(){
-  var rows=[['Sie',S.who],['Kunde',S.lead],['Standort',S.where]];
-  if(S.name) rows.push(['Name',S.name]);
-  document.getElementById('sum').innerHTML=rows.map(function(r){
-    return '<div class="r"><span class="k">'+r[0]+'</span><span class="v">'+(r[1]||'—')+'</span></div>';}).join('');
-}
+
 function waMsg(){
-  return 'Hallo! Ich möchte als Makler mit Ihnen zusammenarbeiten.\n'
-    +(S.name?'• Name: '+S.name+'\n':'')
-    +'• Rolle: '+(S.who||'—')+'\n'
-    +'• Kunde: '+(S.lead||'—')+'\n'
-    +'• Standort: '+(S.where||'—')+'\n'
-    +'Bitte senden Sie Präsentation, Grundrisse und Partnerkonditionen.';
+  return 'Hallo! Ich möchte ausführliche Informationen für Agenten erhalten.';
 }
 function goWA(){
   try{if(window.ym)ym(107725303,'reachGoal','partner_lead');}catch(e){}
@@ -638,7 +753,6 @@ function sendLead(cb){
   if(S.sent){ if(cb)cb(true); return; }
   var ep=window.ATMOS_FORM_ENDPOINT||'';
   var payload={name:S.name,phone:S.phone,how:'partner',
-    who:S.who,lead:S.lead,where:S.where,
     lang:document.documentElement.lang,page:location.href,source:'partner-quiz'};
   if(!ep){ if(cb)cb(false); return; }
   fetch(ep,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
@@ -646,74 +760,27 @@ function sendLead(cb){
     .catch(function(){ if(cb)cb(false); });
   // не блокируем UX: считаем лид отправленным сразу для аналитики
   try{if(window.ym)ym(107725303,'reachGoal','partner_form');}catch(e){}
-  try{if(window.fbq)fbq('track','Lead',{content_name:'Partner',content_category:S.who||''});}catch(e){}
+  try{if(window.fbq)fbq('track','Lead',{content_name:'Partner'});}catch(e){}
 }
-// валидация и отправка формы (экран 4)
-function submitForm(){
-  var fn=document.getElementById('fname'), fp=document.getElementById('fphone'), fm=document.getElementById('fmsg');
-  S.name=(fn.value||'').trim(); S.phone=(fp.value||'').trim();
-  if(!S.name){ fm.textContent='Bitte Namen angeben'; fm.className='fmsg'; fn.focus(); return false; }
-  if(S.phone.replace(/[^0-9]/g,'').length<7){ fm.textContent='Gültige WhatsApp-Nummer oder Telefon angeben'; fm.className='fmsg'; fp.focus(); return false; }
-  fm.textContent='Anfrage gesendet ✓'; fm.className='fmsg ok';
-  sendLead(null);
-  return true;
-}
+
 // хедер WhatsApp — прямая ссылка (без JS)
 
 
-document.addEventListener('click',function(e){
-  if(e.target.closest('[data-back]')){ show(Math.max(cur-1,0)); return; }
-  var nx=e.target.closest('[data-next]');
-  if(nx&&!nx.disabled){ show(Math.min(cur+1,MAX)); return; }
-  var chip=e.target.closest('.chip');
-  if(chip){
-    var grp=chip.parentNode;
-    grp.querySelectorAll('.chip').forEach(function(c){c.classList.remove('sel');});
-    chip.classList.add('sel');
-    if(chip.hasAttribute('data-who')) S.who=chip.getAttribute('data-who');
-    if(chip.hasAttribute('data-lead')) S.lead=chip.getAttribute('data-lead');
-    if(chip.hasAttribute('data-where')) S.where=chip.getAttribute('data-where');
-    refreshDock();
-    // автопереход только по вопросам-чипам (шаги 1-3), не на форме
-    setTimeout(function(){ if(cur<4) show(cur+1); else refreshDock(); },260);
-  }
-});
-dockbtn.addEventListener('click',function(){
-  if(dockbtn.disabled) return;
-  if(cur===4){ if(submitForm()){ show(5); } return; }  // форма -> отправка -> итог
-  if(cur===5){ enterPresent(); return; }
-  show(cur+1);
-});
-
-// ===== ВСТРОЕННАЯ ПРЕЗЕНТАЦИЯ =====
-var pslides=[].slice.call(document.querySelectorAll('.pslide'));
-var pcur=0, PMAX=pslides.length-1;
-var pback=document.getElementById('pback'), pnext=document.getElementById('pnext'), pwa=document.getElementById('pwa');
+// ===== ПРЕЗЕНТАЦИЯ-ЛЕНДИНГ =====
 var waBig=document.getElementById('waBig'), startPresent=document.getElementById('startPresent');
-function pshow(n){
-  pcur=Math.max(0,Math.min(n,PMAX));
-  pslides.forEach(function(s){s.classList.toggle('on',+s.getAttribute('data-p')===pcur);});
-  var pc=document.getElementById('pcount'); if(pc) pc.textContent='Folie '+(pcur+1)+' von '+(PMAX+1);
-  bar.style.width=((pcur+1)/(PMAX+1)*100)+'%';
-  window.scrollTo(0,0);
-  pback.style.visibility='visible';
-  pnext.textContent=(pcur===PMAX)?'Anfrage über WhatsApp senden':'Weiter →';
-  pnext.style.display='';
-  pback.style.flex='';
-  try{if(window.ym)ym(107725303,'reachGoal','present_slide'+pcur);}catch(e){}
-}
 function enterPresent(){
-  document.body.classList.add('mode-present');
-  pshow(0);
+  document.body.classList.add('sent');
+  window.scrollTo(0,0);
   try{if(window.ym)ym(107725303,'reachGoal','present_start');}catch(e){}
 }
 if(waBig) waBig.addEventListener('click',goWA);
 if(startPresent) startPresent.addEventListener('click',enterPresent);
-var pexit=document.getElementById('pexit');
-if(pexit) pexit.addEventListener('click',function(){ document.body.classList.remove('mode-present'); window.scrollTo(0,0); });
-if(pback) pback.addEventListener('click',function(){ if(pcur===0){ document.body.classList.remove('mode-present'); window.scrollTo(0,0); } else { pshow(pcur-1); } });
-if(pwa) pwa.addEventListener('click',goWA);
-if(pnext) pnext.addEventListener('click',function(){ if(pcur===PMAX){ try{if(window.ym)ym(107725303,'reachGoal','partner_lead');}catch(e){}try{if(window.fbq)fbq('track','Contact',{content_name:'Partner present'});}catch(e){}window.open('https://wa.me/66656352972?text=Hallo%21%20Bitte%20senden%20Sie%20Pr%C3%A4sentation%2C%20Grundrisse%20und%20Partnerkonditionen.','_blank'); } else { pshow(pcur+1); } });
+var heroSubmit=document.getElementById('heroSubmit');
+if(heroSubmit) heroSubmit.addEventListener('click',function(){ if(submitForm()){ enterPresent(); } });
+// WhatsApp-кнопки внутри лендинга (data-wa)
+[].forEach.call(document.querySelectorAll('[data-wa]'),function(el){
+  el.addEventListener('click',function(e){ e.preventDefault(); goWA(); });
+});
 // кнопки WhatsApp внутри слайдов (villabtn) — уже <a href=wa.me>, работают сами
 
 
@@ -729,8 +796,6 @@ if(pnext) pnext.addEventListener('click',function(){ if(pcur===PMAX){ try{if(win
     a.addEventListener('click',function(){try{localStorage.setItem('atmos_partner_lang',a.getAttribute('data-lang'));}catch(e){}});
   });
 })();
-
-show(0);
 </script>
 
 </body>
