@@ -752,7 +752,7 @@ function goWA(){
 function sendLead(cb){
   if(S.sent){ if(cb)cb(true); return; }
   var ep=window.ATMOS_FORM_ENDPOINT||'';
-  var payload={name:S.name,phone:S.phone,how:'partner',
+  var payload={name:(S.name||'Partner-Lead'),phone:S.phone,how:'partner',website:'',
     lang:document.documentElement.lang,page:location.href,source:'partner-quiz'};
   if(!ep){ if(cb)cb(false); return; }
   fetch(ep,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
